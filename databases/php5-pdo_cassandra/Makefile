@@ -30,7 +30,7 @@ USE_PHP=	pdo
 USE_PHPEXT=	yes
 DEFAULT_PHP_VER=5
 IGNORE_WITH_PHP=4 52
-THRIFT_CMD=	/usr/local/bin/thrift
+THRIFT_CMD=	${LOCALBASE}/bin/thrift
 
 post-configure:
 	thrift_version=`${THRIFT_CMD} -version | ${AWK} '{print $$3}'`; \
