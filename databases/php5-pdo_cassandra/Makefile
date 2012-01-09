@@ -30,18 +30,13 @@ USE_PHP=	pdo
 USE_PHPEXT=	yes
 DEFAULT_PHP_VER=5
 IGNORE_WITH_PHP=4 52
-
-.include <bsd.port.pre.mk>
-.if exists(${PORTSDIR}/devel/thrift/bsd.thrift.mk)
-.include "${PORTSDIR}/devel/thrift/bsd.thrift.mk"
-.endif
+THRIFT_CMD=	/usr/local/bin/thrift
 
 post-configure:
-.if defined(THRIFT_PORTVERSION)
-.   if ${THRIFT_PORTVERSION} == 0.8.0
-	${REINPLACE_CMD} 's/\([^:]\)apache::thrift/\1 ::apache::thrift/g' ${WRKSRC}/gen-cpp/Cassandra.h
-	${REINPLACE_CMD} 's/\([^:]\)apache::thrift/\1 ::apache::thrift/g' ${WRKSRC}/gen-cpp/Cassandra.cpp
-.   endif
-.endif
+	thrift_version=`${THRIFT_CMD} -version | ${AWK} '{print $$3}'`; \
+	if [ "$$thrift_version" = "0.8.0" ]; then \
+		${REINPLACE_CMD} 's/\([^:]\)apache::thrift/\1 ::apache::thrift/g' ${WRKSRC}/gen-cpp/Cassandra.h; \
+		${REINPLACE_CMD} 's/\([^:]\)apache::thrift/\1 ::apache::thrift/g' ${WRKSRC}/gen-cpp/Cassandra.cpp; \
+	fi
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
