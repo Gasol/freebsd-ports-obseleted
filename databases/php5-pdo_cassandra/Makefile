@@ -7,6 +7,7 @@
 
 PORTNAME=	pdo_cassandra
 PORTVERSION=	0.2.1
+PORTREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	https://github.com/${GITHUB_USER}/php-${PORTNAME}/tarball/${GITREVISION}/
 PKGNAMEPREFIX=	php5-
@@ -30,4 +31,17 @@ USE_PHPEXT=	yes
 DEFAULT_PHP_VER=5
 IGNORE_WITH_PHP=4 52
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+.if exists(${PORTSDIR}/devel/thrift/bsd.thrift.mk)
+.include "${PORTSDIR}/devel/thrift/bsd.thrift.mk"
+.endif
+
+post-configure:
+.if defined(THRIFT_PORTVERSION)
+.   if ${THRIFT_PORTVERSION} == 0.8.0
+	${REINPLACE_CMD} 's/\([^:]\)apache::thrift/\1 ::apache::thrift/g' ${WRKSRC}/gen-cpp/Cassandra.h
+	${REINPLACE_CMD} 's/\([^:]\)apache::thrift/\1 ::apache::thrift/g' ${WRKSRC}/gen-cpp/Cassandra.cpp
+.   endif
+.endif
+
+.include <bsd.port.post.mk>
