@@ -1,0 +1,4 @@
+Clued-in about your inclueds. Allows you trace through and dump the hierarchy
+of file inclusions and class inheritance at runtime.
+
+WWW: http://pecl.php.net/package/inclued
