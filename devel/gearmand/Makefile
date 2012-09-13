@@ -193,6 +193,10 @@ MAN8=	gearmand.8
 
 LDFLAGS+=	-lexecinfo
 
+.if ${ARCH} == "i386"
+LDFLAGS+=	-fstack-protector
+.endif
+
 # This hack is required for the test programs invoked by configure,
 # in the event that libmemcached was compiled with SASL support.
 .if exists(${LOCALBASE}/lib/libsasl.so)
