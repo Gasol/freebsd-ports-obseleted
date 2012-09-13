@@ -1,0 +1,11 @@
+remove -Werror in CXXFLAGS
+--- ./configure.ac.orig	2012-09-06 10:41:35.000000000 +0800
++++ ./configure.ac	2012-09-13 11:53:59.796281000 +0800
+@@ -35,6 +35,7 @@
+ #                +- increment if interfaces have been added, removed or changed
+ AC_SUBST(GEARMAN_LIBRARY_VERSION)
+ 
++ax_cv_check_cxxflags___Werror=false
+ LT_PREREQ([2.4])
+ LT_INIT([disable-static])
+ LT_LANG([C++])
