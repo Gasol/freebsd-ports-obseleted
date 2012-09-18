@@ -12,7 +12,7 @@ MASTER_SITES=	http://pear.pirum-project.org/get/
 PKGNAMEPREFIX=	pear-
 
 MAINTAINER=	gasol.wu@gmail.com
-COMMENT=	simple PEAR channel server manager
+COMMENT=	A simple PEAR channel server manager
 
 BUILD_DEPENDS=	${PEARDIR}/PEAR.php:${PORTSDIR}/devel/pear \
 		${PEARDIR}/.channels/pear.pirum-project.org.reg:${PORTSDIR}/devel/pear-channel-pirum
