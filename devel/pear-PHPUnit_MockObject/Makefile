@@ -14,6 +14,8 @@ PKGNAMEPREFIX=	pear-
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	Mock Object library for PHPUnit
 
+LICENSE=	BSD
+
 BUILD_DEPENDS=	pear>=1.9.4:${PORTSDIR}/devel/pear \
 		${PEARDIR}/Text/Template.php:${PORTSDIR}/textproc/pear-Text_Template \
 		${PEARDIR}/.channels/pear.phpunit.de.reg:${PORTSDIR}/devel/pear-channel-phpunit
