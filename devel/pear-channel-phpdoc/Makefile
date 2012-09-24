@@ -1,0 +1,19 @@
+# New ports collection makefile for:	pear-channel-pirum
+# Date created:		2012-09-18
+# Whom:			Gasol Wu <gasol.wu@gmail.com>
+#
+# $FreeBSD$
+#
+
+PORTNAME=	phpdoc
+PORTVERSION=	20120214
+CATEGORIES=	devel www pear
+
+MAINTAINER=	gasol.wu@gmail.com
+COMMENT=	PEAR channel ${PEAR_CHANNEL_HOST}
+
+PEAR_CHANNEL_HOST=	pear.phpdoc.org
+
+.include <bsd.port.pre.mk>
+.include "${PORTSDIR}/devel/pear/bsd.pear.channel.mk"
+.include <bsd.port.post.mk>
