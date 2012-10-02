@@ -1,5 +1,6 @@
 bin/gearadmin
 bin/gearman
+etc/rc.d/gearmand
 include/libgearman-1.0/actions.h
 include/libgearman-1.0/aggregator.h
 include/libgearman-1.0/allocator.h
