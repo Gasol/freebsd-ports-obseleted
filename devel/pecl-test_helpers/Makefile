@@ -9,7 +9,7 @@ PKGNAMEPREFIX=  pecl-
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	gasol.wu@gmail.com
-COMMENT=	An extension for the PHP Interpreter to ease testing of PHP code
+COMMENT=	An extension to ease testing of PHP code
 
 CONFIGURE_ARGS=	--enable-test-helpers
 USE_PHP=	yes
