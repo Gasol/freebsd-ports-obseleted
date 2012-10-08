@@ -5,7 +5,7 @@ PORTNAME=	test_helpers
 PORTVERSION=	1.1.0
 CATEGORIES=	devel pear
 MASTER_SITES=	http://pear.phpunit.de/get/
-PKGNAMEPREFIX=  pecl-
+PKGNAMEPREFIX=	pecl-
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	gasol.wu@gmail.com
@@ -15,9 +15,9 @@ CONFIGURE_ARGS=	--enable-test-helpers
 USE_PHP=	yes
 USE_PHPEXT=	yes
 USE_PHPIZE=	yes
-SUB_FILES=      pkg-message
+SUB_FILES=	pkg-message
 
-PKGMESSAGE=     ${WRKDIR}/pkg-message
+PKGMESSAGE=	${WRKDIR}/pkg-message
 
 post-install:
 	@${CAT} ${PKGMESSAGE}
