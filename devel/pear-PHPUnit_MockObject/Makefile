@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	PHPUnit_MockObject
-PORTVERSION=	1.2.0
+PORTVERSION=	1.2.1
 CATEGORIES=	devel pear
 MASTER_SITES=	http://pear.phpunit.de/get/
 PKGNAMEPREFIX=	pear-
