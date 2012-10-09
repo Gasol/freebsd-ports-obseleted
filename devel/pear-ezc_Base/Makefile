@@ -9,6 +9,8 @@ MASTER_SITES=	http://components.ez.no/get/
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	The Base package that all ezc components packages rely on
 
+LICENSE=	BSD
+
 BUILD_DEPENDS=	pear>=1.4.2:${PORTSDIR}/devel/pear \
 		${PEARDIR}/.channels/components.ez.no.reg:${PORTSDIR}/devel/pear-channel-ezc
 RUN_DEPENDS=	pear>=1.4.2:${PORTSDIR}/devel/pear \
