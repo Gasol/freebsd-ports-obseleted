@@ -1,11 +1,10 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
 # $FreeBSD$
 
-PORTNAME=	ezc_Base
+PORTNAME=	Base
 PORTVERSION=	1.8
 CATEGORIES=	devel pear
 MASTER_SITES=	http://components.ez.no/get/
-PKGNAMEPREFIX=	pear-
 DISTNAME=	Base-${PORTVERSION}
 
 MAINTAINER=	gasol.wu@gmail.com
