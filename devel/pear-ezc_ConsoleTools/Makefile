@@ -5,7 +5,6 @@ PORTNAME=	ConsoleTools
 PORTVERSION=	1.6.1
 CATEGORIES=	devel pear
 MASTER_SITES=	http://components.ez.no/get/
-DISTNAME=	ConsoleTools-${PORTVERSION}
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	A set of classes to do different actions with the console
