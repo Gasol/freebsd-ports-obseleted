@@ -22,9 +22,11 @@ RUN_DEPENDS=	pear>=1.9.4:${PORTSDIR}/devel/pear \
 		pear-ezc_ConsoleTools>=1.6:${PORTSDIR}/devel/pear-ezc_ConsoleTools \
 		${PEARDIR}/.channels/pear.phpunit.de.reg:${PORTSDIR}/devel/pear-channel-phpunit
 
+USE_PHP=	tokenizer
 PEAR_CHANNEL=	phpunit
 PEAR_AUTOINSTALL=	yes
 
 .include <bsd.port.pre.mk>
+.include "${PORTSDIR}/Mk/bsd.php.mk"
 .include "${PORTSDIR}/devel/pear/bsd.pear.mk"
 .include <bsd.port.post.mk>
