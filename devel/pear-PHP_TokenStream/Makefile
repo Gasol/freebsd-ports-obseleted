@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	PHP_TokenStream
-PORTVERSION=	1.1.3
+PORTVERSION=	1.1.5
 CATEGORIES=	devel pear
 MASTER_SITES=	http://pear.phpunit.de/get/
 PKGNAMEPREFIX=	pear-
