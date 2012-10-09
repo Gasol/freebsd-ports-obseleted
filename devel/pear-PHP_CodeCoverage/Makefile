@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	PHP_CodeCoverage
-PORTVERSION=	1.2.2
+PORTVERSION=	1.2.5
 CATEGORIES=	devel pear
 MASTER_SITES=	http://pear.phpunit.de/get/
 PKGNAMEPREFIX=	pear-
