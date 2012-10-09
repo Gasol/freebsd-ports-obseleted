@@ -5,7 +5,6 @@ PORTNAME=	Base
 PORTVERSION=	1.8
 CATEGORIES=	devel pear
 MASTER_SITES=	http://components.ez.no/get/
-DISTNAME=	Base-${PORTVERSION}
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	The Base package that all ezc components packages rely on
