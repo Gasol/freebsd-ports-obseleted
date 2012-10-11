@@ -1,0 +1,27 @@
+# Created by: Gasol Wu <gasol.wu@gmail.com>
+# $FreeBSD$
+
+PORTNAME=	DirectoryScanner
+PORTVERSION=	1.1.0
+CATEGORIES=	devel pear
+MASTER_SITES=	http://pear.netpirates.net/get/
+PKGNAMEPREFIX=	pear-TheSeer_
+
+MAINTAINER=	gasol.wu@gmail.com
+COMMENT=	A recursive directory scanner and filter
+
+LICENSE=	BSD
+
+BUILD_DEPENDS=	pear>=1.8.1:${PORTSDIR}/devel/pear
+RUN_DEPENDS=	pear>=1.8.1:${PORTSDIR}/devel/pear
+
+USE_PHP=	fileinfo
+PEAR_CHANNEL=	theseer
+PEAR_AUTOINSTALL=	yes
+
+DEFAULT_PHP_VER=5
+IGNORE_WITH_PHP=4 52
+
+.include <bsd.port.pre.mk>
+.include "${PORTSDIR}/devel/pear/bsd.pear.mk"
+.include <bsd.port.post.mk>
