@@ -18,12 +18,12 @@ LICENSE=	BSD
 
 BUILD_DEPENDS=	pear>=1.9.4:${PORTSDIR}/devel/pear \
 		pear-File_Iterator>=1.3.0:${PORTSDIR}/devel/pear-File_Iterator \
-		pear-PHP_TokenStream>=1.1.3:${PORTSDIR}/textproc/pear-PHP_TokenStream \
+		pear-PHP_TokenStream>=1.1.3:${PORTSDIR}/devel/pear-PHP_TokenStream \
 		pear-Text_Template>=1.1.1:${PORTSDIR}/textproc/pear-Text_Template \
 		${PEARDIR}/.channels/pear.phpunit.de.reg:${PORTSDIR}/devel/pear-channel-phpunit
 RUN_DEPENDS=	pear>=1.9.4:${PORTSDIR}/devel/pear \
 		pear-File_Iterator>=1.3.0:${PORTSDIR}/devel/pear-File_Iterator \
-		pear-PHP_TokenStream>=1.1.3:${PORTSDIR}/textproc/pear-PHP_TokenStream \
+		pear-PHP_TokenStream>=1.1.3:${PORTSDIR}/devel/pear-PHP_TokenStream \
 		pear-Text_Template>=1.1.1:${PORTSDIR}/textproc/pear-Text_Template \
 		${PEARDIR}/.channels/pear.phpunit.de.reg:${PORTSDIR}/devel/pear-channel-phpunit
 
