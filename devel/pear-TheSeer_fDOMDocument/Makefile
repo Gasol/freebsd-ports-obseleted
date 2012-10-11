@@ -17,13 +17,12 @@ BUILD_DEPENDS=	${PEARDIR}/PEAR.php:${PORTSDIR}/devel/pear \
 RUN_DEPENDS=	${PEARDIR}/PEAR.php:${PORTSDIR}/devel/pear \
 		${PEARDIR}/.channels/pear.netpirates.net.reg:${PORTSDIR}/devel/pear-channel-theseer
 
+USE_PHP=	dom xml
 PEAR_CHANNEL=	theseer
 PEAR_AUTOINSTALL=	yes
 
 DEFAULT_PHP_VER=5
 IGNORE_WITH_PHP=4 52
-
-USE_PHP=	dom xml
 
 .include <bsd.port.pre.mk>
 .include "${PORTSDIR}/devel/pear/bsd.pear.mk"
