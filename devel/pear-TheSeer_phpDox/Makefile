@@ -17,7 +17,7 @@ BUILD_DEPENDS=	pear>=1.9.2:${PORTSDIR}/devel/pear \
 		pear-TheSeer_fDOMDocument>=1.2.3:${PORTSDIR}/devel/pear-TheSeer_fDOMDocument \
 		pear-TheSeer_fXSL>=1.0.4:${PORTSDIR}/devel/pear-TheSeer_fXSL \
 		pear-ezc_ConsoleTools>=1.6:${PORTSDIR}/devel/pear-ezc_ConsoleTools \
-		pear-staticReflection>=0.2.1:${PORTSDIR}/devel/pear-staticReflection
+		pear-pdepend-staticReflection>=0.2.1:${PORTSDIR}/devel/pear-staticReflection
 RUN_DEPENDS=	pear>=1.9.2:${PORTSDIR}/devel/pear \
 		pear-TheSeer_DirectoryScanner>=1.1.0:${PORTSDIR}/devel/pear-TheSeer_DirectoryScanner \
 		pear-TheSeer_fDOMDocument>=1.2.3:${PORTSDIR}/devel/pear-TheSeer_fDOMDocument \
