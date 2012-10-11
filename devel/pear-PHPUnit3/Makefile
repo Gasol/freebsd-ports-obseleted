@@ -21,7 +21,7 @@ BUILD_DEPENDS=	pear>=1.9.4:${PORTSDIR}/devel/pear \
 		pear-PHP_CodeCoverage>=1.2.1:${PORTSDIR}/devel/pear-PHP_CodeCoverage \
 		pear-PHP_Timer>=1.0.2:${PORTSDIR}/devel/pear-PHP_Timer \
 		pear-PHPUnit_MockObject>=1.2.0:${PORTSDIR}/devel/pear-PHPUnit_MockObject \
-		pear-Yaml>=2.1.0:${PORTSDIR}/devel/pear-Yaml \
+		pear-Symfony_Component_Yaml>=2.1.0:${PORTSDIR}/textproc/pear-Symfony_Component_Yaml \
 		${PEARDIR}/.channels/pear.phpunit.de.reg:${PORTSDIR}/devel/pear-channel-phpunit
 RUN_DEPENDS=	pear>=1.9.4:${PORTSDIR}/devel/pear \
 		pear-File_Iterator>=1.3.1:${PORTSDIR}/devel/pear-File_Iterator \
@@ -29,7 +29,7 @@ RUN_DEPENDS=	pear>=1.9.4:${PORTSDIR}/devel/pear \
 		pear-PHP_CodeCoverage>=1.2.1:${PORTSDIR}/devel/pear-PHP_CodeCoverage \
 		pear-PHP_Timer>=1.0.2:${PORTSDIR}/devel/pear-PHP_Timer \
 		pear-PHPUnit_MockObject>=1.2.0:${PORTSDIR}/devel/pear-PHPUnit_MockObject \
-		pear-Yaml>=2.1.0:${PORTSDIR}/devel/pear-Yaml \
+		pear-Symfony_Component_Yaml>=2.1.0:${PORTSDIR}/textproc/pear-Symfony_Component_Yaml \
 		${PEARDIR}/.channels/pear.phpunit.de.reg:${PORTSDIR}/devel/pear-channel-phpunit
 
 CONFLICTS=	pear-PHPUnit-[12]*
