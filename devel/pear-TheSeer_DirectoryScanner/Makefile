@@ -12,8 +12,10 @@ COMMENT=	A recursive directory scanner and filter
 
 LICENSE=	BSD
 
-BUILD_DEPENDS=	pear>=1.8.1:${PORTSDIR}/devel/pear
-RUN_DEPENDS=	pear>=1.8.1:${PORTSDIR}/devel/pear
+BUILD_DEPENDS=	pear>=1.8.1:${PORTSDIR}/devel/pear \
+		${PEARDIR}/.channels/pear.netpirates.net.reg:${PORTSDIR}/devel/pear-channel-theseer
+RUN_DEPENDS=	pear>=1.8.1:${PORTSDIR}/devel/pear \
+		${PEARDIR}/.channels/pear.netpirates.net.reg:${PORTSDIR}/devel/pear-channel-theseer
 
 USE_PHP=	fileinfo
 PEAR_CHANNEL=	theseer
