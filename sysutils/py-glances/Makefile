@@ -1,15 +1,10 @@
-# New ports collection makefile for:	py27-Glances
-# Date created:		2012-09-10
-# Whom:			Gasol Wu <gasol.wu@gmail.com>
-#
-# $FreeBSD$
-#
+# Created by: Gasol Wu <gasol.wu@gmail.com>
+# $FreeBSD: ports/sysutils/py-glances/Makefile,v 1.2 2012/11/17 06:01:43 svnexp Exp $
 
-PORTNAME=	Glances
+PORTNAME=	glances
 PORTVERSION=	1.4.1.1
 CATEGORIES=	sysutils python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
-PKGNAMESUFFIX?=
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	A CLI curses based monitoring tool for GNU/Linux and BSD OS
@@ -26,6 +21,7 @@ GH_TAGNAME=	v${PORTVERSION}
 GH_COMMIT=	2920dcc
 USE_PYTHON=	2.6+
 USE_PYDISTUTILS=easy_install
+PYDISTUTILS_PKGNAME=	Glances
 
 PLIST_FILES=	bin/glances \
 		%%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%
