@@ -1,9 +1,5 @@
-# New ports collection makefile for:	pear-PHP_Timer
-# Date created:		2012-09-18
-# Whom:			Gasol Wu <gasol.wu@gmail.com>
-#
-# $FreeBSD$
-#
+# Created by: Gasol Wu <gasol.wu@gmail.com>
+# $FreeBSD: ports/devel/pear-PHP_Timer/Makefile,v 1.1 2012/11/18 07:02:16 svnexp Exp $
 
 PORTNAME=	PHP_Timer
 PORTVERSION=	1.0.4
