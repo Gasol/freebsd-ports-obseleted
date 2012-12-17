@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/shmcat/Makefile,v 1.1 2012/11/20 22:58:01 svnexp Exp $
 
 PORTNAME=	shmcat
 PORTVERSION=	1.5
@@ -8,9 +8,10 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	gasol.wu@gmail.com
-COMMENT=	A simple tool that dumps System V shared memory segments
+COMMENT=	Simple tool that dumps System V shared memory segments
 
 USE_BZIP2=	yes
+USE_ICONV=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-libintl-prefix=${LOCALBASE}
 
@@ -19,7 +20,7 @@ OPTIONS_DEFINE=	NLS
 MAN1=		shmcat.1 \
 		ftok.1
 
-.include <bsd.port.pre.mk>
+.include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MNLS}
 MANLANG=	"" de
@@ -30,4 +31,4 @@ CONFIGURE_ARGS+=--disable-nls
 PLIST_SUB+=	NLS="@comment "
 .endif
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
