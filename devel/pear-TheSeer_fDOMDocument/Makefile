@@ -2,7 +2,7 @@
 # $FreeBSD: ports/devel/pear-TheSeer_fDOMDocument/Makefile,v 1.1 2012/12/19 20:10:41 svnexp Exp $
 
 PORTNAME=	fDOMDocument
-PORTVERSION=	1.3.1
+PORTVERSION=	1.3.2
 CATEGORIES=	devel www pear
 MASTER_SITES=	http://pear.netpirates.net/get/
 PKGNAMEPREFIX=	pear-TheSeer_
