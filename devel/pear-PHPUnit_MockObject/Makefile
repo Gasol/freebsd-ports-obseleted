@@ -1,12 +1,8 @@
-# New ports collection makefile for:	pear-PHPUnit_MockObject
-# Date created:		2012-09-21
-# Whom:			Gasol Wu <gasol.wu@gmail.com>
-#
-# $FreeBSD$
-#
+# Created by: Gasol Wu <gasol.wu@gmail.com>
+# $FreeBSD: ports/devel/pear-PHPUnit_MockObject/Makefile,v 1.1 2012/11/18 07:28:47 svnexp Exp $
 
 PORTNAME=	PHPUnit_MockObject
-PORTVERSION=	1.2.1
+PORTVERSION=	1.2.2
 CATEGORIES=	devel pear
 MASTER_SITES=	http://pear.phpunit.de/get/
 PKGNAMEPREFIX=	pear-
