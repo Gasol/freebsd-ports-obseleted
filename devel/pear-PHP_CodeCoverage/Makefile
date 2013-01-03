@@ -1,12 +1,8 @@
-# New ports collection makefile for:	pear-PHP_CodeCoverage
-# Date created:		2012-09-21
-# Whom:			Gasol Wu <gasol.wu@gmail.com>
-#
-# $FreeBSD$
-#
+# Created by: Gasol Wu <gasol.wu@gmail.com>
+# $FreeBSD: ports/devel/pear-PHP_CodeCoverage/Makefile,v 1.1 2012/11/18 07:56:44 svnexp Exp $
 
 PORTNAME=	PHP_CodeCoverage
-PORTVERSION=	1.2.5
+PORTVERSION=	1.2.7
 CATEGORIES=	devel pear
 MASTER_SITES=	http://pear.phpunit.de/get/
 PKGNAMEPREFIX=	pear-
@@ -37,7 +33,7 @@ XDEBUG_DESC=	Enable Xdebug support
 DEFAULT_PHP_VER=5
 IGNORE_WITH_PHP=4
 
-.include <bsd.port.pre.mk>
+.include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MDOM}
 USE_PHP+=	dom
@@ -47,5 +43,6 @@ USE_PHP+=	dom
 RUN_DEPENDS+=	${LOCALBASE}/lib/php/${PHP_EXT_DIR}/xdebug.so:${PORTSDIR}/devel/php-xdebug
 .endif
 
+.include <bsd.port.pre.mk>
 .include "${PORTSDIR}/devel/pear/bsd.pear.mk"
 .include <bsd.port.post.mk>
