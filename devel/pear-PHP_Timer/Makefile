@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: ports/devel/pear-PHP_Timer/Makefile,v 1.1 2012/11/18 07:02:16 svnexp Exp $
+# $FreeBSD: ports/devel/pear-PHP_Timer/Makefile,v 1.2 2012/12/17 18:02:00 svnexp Exp $
 
 PORTNAME=	PHP_Timer
 PORTVERSION=	1.0.4

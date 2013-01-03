@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: ports/devel/pecl-test_helpers/Makefile,v 1.1 2012/12/29 12:37:19 svnexp Exp $
 
 PORTNAME=	test_helpers
 PORTVERSION=	1.1.0
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	pecl-
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	gasol.wu@gmail.com
-COMMENT=	An extension to ease testing of PHP code
+COMMENT=	Extension to ease testing of PHP code
 
 CONFIGURE_ARGS=	--enable-test-helpers
 USE_PHP=	yes

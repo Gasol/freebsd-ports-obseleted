@@ -1,9 +1,5 @@
-# Ports collection makefile for:  pear-PHPUnit3
-# Date created:			  17 May 2007
-# Whom:				  Gerrit Beine (<gerrit.beine@gmx.de>)
-#
-# $FreeBSD: ports/devel/pear-PHPUnit3/Makefile,v 1.41 2012/09/15 13:21:49 eadler Exp $
-#
+# Created by: Gerrit Beine (<gerrit.beine@gmx.de>)
+# $FreeBSD: ports/devel/pear-PHPUnit3/Makefile,v 1.43 2013/01/02 20:49:36 svnexp Exp $
 
 PORTNAME=	PHPUnit
 PORTVERSION=	3.7.6
@@ -43,9 +39,6 @@ OPTIONS_DEFINE=	JSON SIMPLEXML TOKENIZER
 JSON_DESC=	Enable JSON support
 SIMPLEXML_DESC=	Enable SIMPLEXML support
 TOKENIZER_DESC=	Enable Tokenizer support
-
-DEFAULT_PHP_VER=5
-IGNORE_WITH_PHP=4
 
 USE_PHP=	dom spl pcre
 

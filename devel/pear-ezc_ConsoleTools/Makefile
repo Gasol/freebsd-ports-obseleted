@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: ports/devel/pear-ezc_ConsoleTools/Makefile,v 1.1 2012/12/03 18:38:51 svnexp Exp $
 
 PORTNAME=	ConsoleTools
 PORTVERSION=	1.6.1
@@ -8,7 +8,7 @@ MASTER_SITES=	http://components.ez.no/get/
 PKGNAMEPREFIX=	pear-${PEAR_CHANNEL}_
 
 MAINTAINER=	gasol.wu@gmail.com
-COMMENT=	A set of classes to do different actions with the console
+COMMENT=	Set of classes to do different actions with the console
 
 LICENSE=	BSD
 

@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: ports/devel/pear-channel-phpmd/Makefile,v 1.1 2012/12/03 13:29:25 svnexp Exp $
 
 PORTNAME=	phpmd
 PORTVERSION=	20120607

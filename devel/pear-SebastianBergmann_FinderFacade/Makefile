@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: ports/devel/pear-SebastianBergmann_FinderFacade/Makefile,v 1.1 2013/01/02 19:07:45 svnexp Exp $
 
 PORTNAME=	FinderFacade
 PORTVERSION=	1.0.5
@@ -24,8 +24,7 @@ RUN_DEPENDS=	pear>=1.9.4:${PORTSDIR}/devel/pear \
 PEAR_CHANNEL=	phpunit
 PEAR_AUTOINSTALL=	yes
 
-DEFAULT_PHP_VER=5
-IGNORE_WITH_PHP=4 52
+IGNORE_WITH_PHP=52
 
 .include <bsd.port.pre.mk>
 .include "${PORTSDIR}/devel/pear/bsd.pear.mk"

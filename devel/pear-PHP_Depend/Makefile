@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: ports/devel/pear-PHP_Depend/Makefile,v 1.1 2012/12/03 16:02:43 svnexp Exp $
 
 PORTNAME=	PHP_Depend
 PORTVERSION=	1.1.0
@@ -20,7 +20,6 @@ RUN_DEPENDS=	pear>=1.6.0:${PORTSDIR}/devel/pear \
 PEAR_CHANNEL=	pdepend
 PEAR_AUTOINSTALL=	yes
 USE_PHP=	dom tokenizer simplexml
-IGNORE_WITH_PHP=4
 
 .include <bsd.port.pre.mk>
 .include "${PORTSDIR}/devel/pear/bsd.pear.mk"

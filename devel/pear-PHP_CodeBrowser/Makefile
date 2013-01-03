@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: ports/devel/pear-PHP_CodeBrowser/Makefile,v 1.1 2012/11/18 08:05:41 svnexp Exp $
 
 PORTNAME=	PHP_CodeBrowser
 PORTVERSION=	1.0.2
@@ -8,7 +8,7 @@ MASTER_SITES=	http://pear.phpunit.de/get/
 PKGNAMEPREFIX=	pear-
 
 MAINTAINER=	gasol.wu@gmail.com
-COMMENT=	A code browser that augments the code with information
+COMMENT=	Code browser that augments the code with information
 
 BUILD_DEPENDS=	pear>=1.8.1:${PORTSDIR}/devel/pear \
 		pear-Console_CommandLine>=1.1.3:${PORTSDIR}/devel/pear-Console_CommandLine \

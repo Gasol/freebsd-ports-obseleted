@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: ports/devel/pear-ezc_Base/Makefile,v 1.1 2012/12/03 16:00:06 svnexp Exp $
 
 PORTNAME=	Base
 PORTVERSION=	1.8
@@ -8,7 +8,7 @@ MASTER_SITES=	http://components.ez.no/get/
 PKGNAMEPREFIX=	pear-${PEAR_CHANNEL}_
 
 MAINTAINER=	gasol.wu@gmail.com
-COMMENT=	The Base package that all ezc components packages rely on
+COMMENT=	Base package that all ezc components packages rely on
 
 LICENSE=	BSD
 

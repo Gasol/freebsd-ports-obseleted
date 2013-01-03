@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: ports/devel/pear-TheSeer_fDOMDocument/Makefile,v 1.1 2012/12/19 20:10:41 svnexp Exp $
 
 PORTNAME=	fDOMDocument
 PORTVERSION=	1.3.1
@@ -8,7 +8,7 @@ MASTER_SITES=	http://pear.netpirates.net/get/
 PKGNAMEPREFIX=	pear-TheSeer_
 
 MAINTAINER=	gasol.wu@gmail.com
-COMMENT=	An Extension to PHP\'s standard DOM
+COMMENT=	Extension to PHP\'s standard DOM
 
 LICENSE=	BSD
 
@@ -21,8 +21,7 @@ USE_PHP=	dom xml
 PEAR_CHANNEL=	theseer
 PEAR_AUTOINSTALL=	yes
 
-DEFAULT_PHP_VER=5
-IGNORE_WITH_PHP=4 52
+IGNORE_WITH_PHP=52
 
 .include <bsd.port.pre.mk>
 .include "${PORTSDIR}/devel/pear/bsd.pear.mk"

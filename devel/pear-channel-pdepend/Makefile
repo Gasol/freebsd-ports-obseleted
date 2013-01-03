@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: ports/devel/pear-channel-pdepend/Makefile,v 1.1 2012/12/03 13:33:00 svnexp Exp $
 
 PORTNAME=	pdepend
 PORTVERSION=	20100520

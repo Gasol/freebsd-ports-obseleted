@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: ports/devel/pear-channel-ezc/Makefile,v 1.1 2012/12/03 13:26:07 svnexp Exp $
 
 PORTNAME=	ezc
 PORTVERSION=	20060124
