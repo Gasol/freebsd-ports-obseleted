@@ -1,9 +1,5 @@
-# New ports collection makefile for:	pear-PHP_TokenStream
-# Date created:		2012-09-21
-# Whom:			Gasol Wu <gasol.wu@gmail.com>
-#
-# $FreeBSD$
-#
+# Created by: Gasol Wu <gasol.wu@gmail.com>
+# $FreeBSD: ports/devel/pear-PHP_TokenStream/Makefile,v 1.1 2012/11/18 07:36:33 svnexp Exp $
 
 PORTNAME=	PHP_TokenStream
 PORTVERSION=	1.1.5
@@ -12,7 +8,7 @@ MASTER_SITES=	http://pear.phpunit.de/get/
 PKGNAMEPREFIX=	pear-
 
 MAINTAINER=	gasol.wu@gmail.com
-COMMENT=	Wrapper around PHP\'s tokenizer extension
+COMMENT=	Wrapper around PHP tokenizer extension
 
 LICENSE=	BSD
 
