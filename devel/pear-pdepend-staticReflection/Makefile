@@ -1,13 +1,14 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: ports/devel/pear-pdepend-staticReflection/Makefile,v 1.1 2012/12/03 18:41:28 svnexp Exp $
 
 PORTNAME=	staticReflection
 PORTVERSION=	1.0.0
 CATEGORIES=	devel pear
 MASTER_SITES=	http://pear.pdepend.org/get/
+PKGNAMEPREFIX=	pear-${PEAR_CHANNEL}_
 
 MAINTAINER=	gasol.wu@gmail.com
-COMMENT=	The staticReflection package for PHP
+COMMENT=	staticReflection package for PHP
 
 LICENSE=	BSD
 
@@ -19,7 +20,7 @@ RUN_DEPENDS=	pear>=1.6.0:${PORTSDIR}/devel/pear \
 USE_PHP=	tokenizer
 PEAR_CHANNEL=	pdepend
 PEAR_AUTOINSTALL=	yes
-IGNORE_WITH_PHP=4 52
+IGNORE_WITH_PHP=52
 
 .include <bsd.port.pre.mk>
 .include "${PORTSDIR}/devel/pear/bsd.pear.mk"
