@@ -1,9 +1,5 @@
-# Ports collection makefile for:  pear-File_Iterator
-# Date created:			  11 July 2011
-# Whom:				  Martin Matuska <mm@FreeBSD.org>
-#
-# $FreeBSD: ports/devel/pear-File_Iterator/Makefile,v 1.4 2012/08/16 08:51:39 mm Exp $
-#
+# Created by: Martin Matuska <mm@FreeBSD.org>
+# $FreeBSD: ports/devel/pear-File_Iterator/Makefile,v 1.6 2012/11/17 19:14:53 svnexp Exp $
 
 PORTNAME=	File_Iterator
 PORTVERSION=	1.3.3
