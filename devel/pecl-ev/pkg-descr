@@ -1,0 +1,4 @@
+ev is a PECL extension providing interface to libev library - high performance
+full-featured event loop written in C.
+
+WWW: http://pecl.php.net/package/ev
