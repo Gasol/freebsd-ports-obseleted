@@ -4,6 +4,7 @@
 
 PORTNAME=	nacl
 PORTVERSION=	20110221
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://hyperelliptic.org/nacl/
 
