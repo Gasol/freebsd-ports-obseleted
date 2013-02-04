@@ -14,9 +14,9 @@ MAINTAINER=	lx@FreeBSD.org
 COMMENT=	High speed cryptography library
 
 ALL_TARGET=	do
-USE_BZIP2=	YES
+USE_BZIP2=	yes
 USE_BINUTILS=	yes
-MAKE_JOBS_UNSAFE=	YES
+MAKE_JOBS_UNSAFE=	yes
 
 .include <bsd.port.pre.mk>
 
