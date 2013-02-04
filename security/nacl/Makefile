@@ -15,6 +15,7 @@ COMMENT=	High speed cryptography library
 
 ALL_TARGET=	do
 USE_BZIP2=	YES
+USE_BINUTILS=	yes
 MAKE_JOBS_UNSAFE=	YES
 
 .include <bsd.port.pre.mk>
@@ -27,6 +28,10 @@ HOSTNAME_CMD?=	/bin/hostname
 
 do-build:
 	cd ${WRKSRC} && ./do
+
+post-build:
+	${AR} -r ${WRKSRC}/build/`${HOSTNAME_CMD}`/lib/${ARCH}/libnacl.a \
+		${WRKSRC}/build/`${HOSTNAME_CMD}`/lib/${ARCH}/randombytes.o
 
 do-install:
 	@${INSTALL_PROGRAM} ${WRKSRC}/build/`${HOSTNAME_CMD} -s`/bin/nacl-sha256 \
