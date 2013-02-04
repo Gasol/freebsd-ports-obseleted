@@ -1,7 +1,4 @@
-# New ports collection makefile for:	nacl
-# Date created:		2011-10-03
-# Whom:			David Thiel <lx@FreeBSD.org>
-#
+# Created by: David Thiel <lx@FreeBSD.org>
 # $FreeBSD: ports/security/nacl/Makefile,v 1.8 2012/11/17 06:01:08 svnexp Exp $
 #
 
