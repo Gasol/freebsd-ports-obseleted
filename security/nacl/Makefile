@@ -26,6 +26,9 @@ BROKEN=		Does not compile on ia64, powerpc, or sparc64
 
 HOSTNAME_CMD?=	/bin/hostname
 
+post-patch:
+	@${REINPLACE_CMD} -i -e "s/$$/ -fPIC/" ${WRKSRC}/okcompilers/c
+
 do-build:
 	cd ${WRKSRC} && ./do
 
