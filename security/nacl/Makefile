@@ -29,6 +29,9 @@ HOSTNAME_CMD?=	/bin/hostname
 post-patch:
 	@${REINPLACE_CMD} -i -e "s/$$/ -fPIC/" ${WRKSRC}/okcompilers/c
 
+pre-build:
+	${RM} -rf ${WRKSRC}/crypto_onetimeauth/poly1305/amd64
+
 do-build:
 	cd ${WRKSRC} && ./do
 
