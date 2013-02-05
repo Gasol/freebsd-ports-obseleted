@@ -25,7 +25,7 @@ BROKEN=		Does not compile on ia64, powerpc, or sparc64
 HOSTNAME_CMD?=	/bin/hostname
 
 post-patch:
-	@${REINPLACE_CMD} -i -e "s/$$/ -fPIC/" ${WRKSRC}/okcompilers/c
+	@${REINPLACE_CMD} -e "s/$$/ -fPIC/" ${WRKSRC}/okcompilers/c
 
 pre-build:
 	${RM} -rf ${WRKSRC}/crypto_onetimeauth/poly1305/amd64
