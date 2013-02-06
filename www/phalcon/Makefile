@@ -2,7 +2,7 @@
 # $FreeBSD: ports/www/phalcon/Makefile,v 1.13 2013/01/28 01:57:44 svnexp Exp $
 
 PORTNAME=	phalcon
-PORTVERSION=	0.8.0
+PORTVERSION=	0.9.0
 CATEGORIES=	www
 MASTER_SITES=	https://github.com/${PORTNAME}/c${PORTNAME}/tarball/${GITVERSION}/
 DISTNAME=	${PORTNAME}-c${PORTNAME}-${GITVERSION}
@@ -13,7 +13,7 @@ COMMENT=	Phalcon PHP Framework written in C-language
 BUILD_DEPENDS=	${LOCALBASE}/include/php/ext/pdo/php_pdo_driver.h:${PORTSDIR}/databases/php5-pdo
 RUN_DEPENDS=	${LOCALBASE}/include/php/ext/pdo/php_pdo_driver.h:${PORTSDIR}/databases/php5-pdo
 
-GITVERSION=	10cbc51
+GITVERSION=	7b3b060
 FETCH_ARGS=	-pRr
 WRKSRC=		${WRKDIR}/${PORTNAME}-c${PORTNAME}-${GITVERSION}/build/
 
