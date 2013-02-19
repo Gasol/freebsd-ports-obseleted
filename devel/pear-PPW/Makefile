@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: ports/devel/pear-PPW/Makefile,v 1.1 2013/02/18 01:30:00 svnexp Exp $
 
 PORTNAME=	PPW
 PORTVERSION=	1.0.4
