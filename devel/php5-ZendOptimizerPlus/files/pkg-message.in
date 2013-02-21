@@ -1,7 +1,7 @@
 ****************************************************************************
 
-Please substitute an extension for zend_extension in
-%%PREFIX%%/etc/php/extensions.ini as following:
+Please replace extension with zend_extension in %%PREFIX%%/etc/php/extensions.ini
+as following:
 
 zend_extension=%%PREFIX%%/lib/php/%%PHP_EXT_DIR%%/%%PHP_MODNAME%%.so
 
