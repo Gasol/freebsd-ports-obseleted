@@ -1,0 +1,14 @@
+****************************************************************************
+
+Please substitute an extension for zend_extension in
+%%PREFIX%%/etc/php/extensions.ini as following:
+
+zend_extension=%%PREFIX%%/lib/php/%%PHP_EXT_DIR%%/%%PHP_MODNAME%%.so
+
+NOTE:
+
+In case you are going to use Zend Optimizer+ together with Xdebug,
+be sure that Xdebug is loaded after Optimizer+. "php -v" must show Xdebug
+after Optimizer+.
+
+****************************************************************************
