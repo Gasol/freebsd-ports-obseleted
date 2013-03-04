@@ -1,12 +1,9 @@
-# Ports collection makefile for:	moreutils
-# Date created:	16 June 2009
-# Whom:		Charlie Kester <corky1951@comcast.net>
-#
+# Created by: Charlie Kester <corky1951@comcast.net>
 # $FreeBSD: ports/sysutils/moreutils/Makefile,v 1.19 2012/11/17 06:01:39 svnexp Exp $
 #
 
 PORTNAME=	moreutils
-PORTVERSION=	0.46
+PORTVERSION=	0.47
 CATEGORIES=	sysutils
 MASTER_SITES=	DEBIAN_POOL
 DISTNAME=	${PORTNAME}_${PORTVERSION}
@@ -22,6 +19,7 @@ WRKSRC=		${WRKDIR}/${PORTNAME}
 
 PLIST_FILES=	bin/chronic \
 		bin/combine \
+		bin/errno \
 		bin/ifne \
 		bin/isutf8 \
 		bin/lckdo \
@@ -36,7 +34,8 @@ PLIST_FILES=	bin/chronic \
 .if !defined(NO_INSTALL_MANPAGES)
 ALL_TARGET+=	mans extraman
 
-CANNED_MAN=	ifne.1 \
+CANNED_MAN=	errno.1 \
+		ifne.1 \
 		isutf8.1 \
 		lckdo.1 \
 		mispipe.1 \
