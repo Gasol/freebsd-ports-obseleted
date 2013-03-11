@@ -1,13 +1,14 @@
 # $FreeBSD: ports/devel/pear-channel-symfony2/bsd.symfony2.mk,v 1.1 2012/11/18 08:03:23 svnexp Exp $
 
 MASTER_SITES?=	http://pear.symfony.com/get/
-PKGNAMEPREFIX?=	pear-
 
 BUILD_DEPENDS+=	${PEARDIR}/PEAR.php:${PORTSDIR}/devel/pear \
 		${PEARDIR}/.channels/pear.symfony.com.reg:${PORTSDIR}/devel/pear-channel-symfony2
 
 RUN_DEPENDS+=	${PEARDIR}/PEAR.php:${PORTSDIR}/devel/pear \
 		${PEARDIR}/.channels/pear.symfony.com.reg:${PORTSDIR}/devel/pear-channel-symfony2
+
+PKGNAMEPREFIX?=	pear-
 
 DIST_SUBDIR=	Symfony2
 PEAR_CHANNEL=	symfony2
