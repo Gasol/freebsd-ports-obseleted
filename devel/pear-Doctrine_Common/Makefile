@@ -13,8 +13,10 @@ COMMENT=	Doctrine Common PHP Extensions
 
 LICENSE=	LGPL3
 
-BUILD_DEPENDS=	pear>=1.6.0:${PORTSDIR}/devel/pear
-RUN_DEPENDS=	pear>=1.6.0:${PORTSDIR}/devel/pear
+BUILD_DEPENDS=	pear>=1.6.0:${PORTSDIR}/devel/pear \
+		${PEARDIR}/.channels/pear.doctrine-project.org.reg:${PORTSDIR}/devel/pear-channel-doctrine
+RUN_DEPENDS=	pear>=1.6.0:${PORTSDIR}/devel/pear \
+		${PEARDIR}/.channels/pear.doctrine-project.org.reg:${PORTSDIR}/devel/pear-channel-doctrine
 
 PEAR_CHANNEL=	doctrine
 PEAR_AUTOINSTALL=	yes

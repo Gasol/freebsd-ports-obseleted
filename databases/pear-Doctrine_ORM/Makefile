@@ -17,11 +17,13 @@ BUILD_DEPENDS=	pear>=1.6.0:${PORTSDIR}/devel/pear \
 		pear-Doctrine_Common>=2.2.0:${PORTSDIR}/devel/pear-Doctrine_Common \
 		pear-Doctrine_DBAL>=2.2.0:${PORTSDIR}/devel/pear-Doctrine_DBAL \
 		pear-Symfony_Component_Console>=2.0.0:${PORTSDIR}/devel/pear-Symfony_Component_Console \
-		pear-Symfony_Component_Yaml>=2.0.0:${PORTSDIR}/textproc/pear-Symfony_Component_Yaml
+		pear-Symfony_Component_Yaml>=2.0.0:${PORTSDIR}/textproc/pear-Symfony_Component_Yaml \
+		${PEARDIR}/.channels/pear.doctrine-project.org.reg:${PORTSDIR}/devel/pear-channel-doctrine
 RUN_DEPENDS=	pear>=1.6.0:${PORTSDIR}/devel/pear \
 		pear-Doctrine_Common>=2.2.0:${PORTSDIR}/devel/pear-Doctrine_Common \
 		pear-Symfony_Component_Console>=2.0.0:${PORTSDIR}/devel/pear-Symfony_Component_Console \
-		pear-Symfony_Component_Yaml>=2.0.0:${PORTSDIR}/textproc/pear-Symfony_Component_Yaml
+		pear-Symfony_Component_Yaml>=2.0.0:${PORTSDIR}/textproc/pear-Symfony_Component_Yaml \
+		${PEARDIR}/.channels/pear.doctrine-project.org.reg:${PORTSDIR}/devel/pear-channel-doctrine
 
 PEAR_CHANNEL=	doctrine
 PEAR_AUTOINSTALL=	yes

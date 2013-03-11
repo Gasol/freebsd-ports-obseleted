@@ -15,10 +15,12 @@ LICENSE=	LGPL3
 
 BUILD_DEPENDS=	pear>=1.6.0:${PORTSDIR}/devel/pear \
 		pear-Doctrine_Common>=2.0.1:${PORTSDIR}/devel/pear-Doctrine_Common \
-		pear-Symfony_Component_Console>=2.0.0:${PORTSDIR}/devel/pear-Symfony_Component_Console
+		pear-Symfony_Component_Console>=2.0.0:${PORTSDIR}/devel/pear-Symfony_Component_Console \
+		${PEARDIR}/.channels/pear.doctrine-project.org.reg:${PORTSDIR}/devel/pear-channel-doctrine
 RUN_DEPENDS=	pear>=1.6.0:${PORTSDIR}/devel/pear \
 		pear-Doctrine_Common>=2.0.1:${PORTSDIR}/devel/pear-Doctrine_Common \
-		pear-Symfony_Component_Console>=2.0.0:${PORTSDIR}/devel/pear-Symfony_Component_Console
+		pear-Symfony_Component_Console>=2.0.0:${PORTSDIR}/devel/pear-Symfony_Component_Console \
+		${PEARDIR}/.channels/pear.doctrine-project.org.reg:${PORTSDIR}/devel/pear-channel-doctrine
 
 PEAR_CHANNEL=	doctrine
 PEAR_AUTOINSTALL=	yes
