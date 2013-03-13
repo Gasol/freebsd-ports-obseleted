@@ -1,7 +1,4 @@
-# New ports collection makefile for:	php-Net_Gearman
-# Date created:		2008-01-10
-# Whom:			Gea-Suan Lin <gslin@gslin.org>
-#
+# Created by: Gea-Suan Lin <gslin@gslin.org>
 # $FreeBSD: ports/devel/pear-Net_Gearman/Makefile,v 1.8 2012/11/17 05:56:39 svnexp Exp $
 #
 
