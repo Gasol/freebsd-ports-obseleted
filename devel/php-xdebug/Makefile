@@ -1,9 +1,5 @@
-# New ports collection makefile for:	xdebug
-# Date created:				Thu Apr  3 12:44:57 GMT 2003
-# Whom:					Jens Rehsack <rehsack@liwing.de>
-#
-# $FreeBSD: ports/devel/php-xdebug/Makefile,v 1.27 2012/09/06 16:13:30 flo Exp $
-#
+# Created by: Jens Rehsack <rehsack@liwing.de>
+# $FreeBSD: ports/devel/php-xdebug/Makefile,v 1.29 2012/11/17 05:56:41 svnexp Exp $
 
 PORTNAME=	xdebug
 PORTVERSION=	2.2.1
