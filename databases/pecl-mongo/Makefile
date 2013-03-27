@@ -1,5 +1,5 @@
 # Created by: wen
-# $FreeBSD: ports/databases/pecl-mongo/Makefile,v 1.20 2013/02/01 07:50:17 svnexp Exp $
+# $FreeBSD: databases/pecl-mongo/Makefile 315296 2013-03-26 14:18:52Z miwi $
 
 PORTNAME=	mongo
 PORTVERSION=	1.3.6
