@@ -2,7 +2,7 @@
 # $FreeBSD: ports/databases/pecl-mongo/Makefile,v 1.20 2013/02/01 07:50:17 svnexp Exp $
 
 PORTNAME=	mongo
-PORTVERSION=	1.3.5
+PORTVERSION=	1.3.6
 CATEGORIES=	databases pear
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
