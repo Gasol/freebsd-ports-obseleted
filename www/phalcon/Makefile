@@ -1,5 +1,5 @@
 # Created by: Jin-Sih Lin <linpct@gmail.com>
-# $FreeBSD: ports/www/phalcon/Makefile,v 1.14 2013/02/18 08:00:34 svnexp Exp $
+# $FreeBSD: www/phalcon/Makefile 314959 2013-03-22 19:42:46Z rm $
 
 PORTNAME=	phalcon
 PORTVERSION=	1.0.1
@@ -21,7 +21,8 @@ FETCH_ARGS=	-pRr
 WRKSRC=		${WRKDIR}/${GH_ACCOUNT}-${GH_PROJECT}-${GH_COMMIT}/build/
 
 CFLAGS+=	-I${LOCALBASE}/include
-CONFIGURE_ARGS=	--enable-phalcon --prefix=${PREFIX} --with-php-config=${LOCALBASE}/bin/php-config
+CONFIGURE_ARGS=	--enable-phalcon --prefix=${PREFIX} \
+		--with-php-config=${LOCALBASE}/bin/php-config
 
 USE_PHP=	yes
 USE_PHPEXT=	yes
