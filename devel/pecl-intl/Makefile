@@ -2,7 +2,7 @@
 # $FreeBSD: devel/pecl-intl/Makefile 313823 2013-03-10 11:48:51Z miwi $
 
 PORTNAME=	intl
-PORTVERSION=	2.0.1
+PORTVERSION=	3.0.0
 CATEGORIES=	devel pear
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
