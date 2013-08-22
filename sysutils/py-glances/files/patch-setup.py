@@ -1,10 +1,16 @@
 --- ./setup.py.orig	2013-08-20 19:49:41.000000000 +0800
-+++ ./setup.py	2013-08-22 17:04:39.000000000 +0800
-@@ -14,7 +14,6 @@
-     ('share/glances/css', glob.glob('glances/data/css/*.css')),
-     ('share/glances/html', glob.glob('glances/data/html/*.html')),
-     ('share/glances/img', glob.glob('glances/data/img/*.png')),
++++ ./setup.py	2013-08-22 18:39:18.000000000 +0800
+@@ -11,10 +11,9 @@
+                            'docs/glances-doc.html',
+                            'glances/conf/glances.conf']),
+     ('share/doc/glances/images', glob.glob('docs/images/*.png')),
+-    ('share/glances/css', glob.glob('glances/data/css/*.css')),
+-    ('share/glances/html', glob.glob('glances/data/html/*.html')),
+-    ('share/glances/img', glob.glob('glances/data/img/*.png')),
 -    ('share/man/man1', ['docs/man/glances.1'])
++    ('glances/data/css', glob.glob('glances/data/css/*.css')),
++    ('glances/data/html', glob.glob('glances/data/html/*.html')),
++    ('glances/data/img', glob.glob('glances/data/img/*.png')),
  ]
  
  if hasattr(sys, 'real_prefix') or 'bsd' in sys.platform:

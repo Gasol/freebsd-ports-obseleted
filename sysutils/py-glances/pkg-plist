@@ -12,6 +12,10 @@ etc/glances/glances.conf
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/glances/__init__.pyo
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/glances/conf/glances-with-monitored.conf
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/glances/conf/glances.conf
+%%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/glances/data/css/default.css
+%%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/glances/data/html/base.html
+%%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/glances/data/html/default.html
+%%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/glances/data/img/bg.png
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/glances/glances.py
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/glances/glances.pyc
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/glances/glances.pyo
@@ -44,10 +48,6 @@ etc/glances/glances.conf
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/doc/glances/images/screenshot-wide.png
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/doc/glances/images/screenshot.png
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/doc/glances/images/sensors.png
-%%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/glances/css/default.css
-%%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/glances/html/base.html
-%%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/glances/html/default.html
-%%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/glances/img/bg.png
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/locale/es/LC_MESSAGES/glances.mo
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/locale/fr/LC_MESSAGES/glances.mo
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/locale/it/LC_MESSAGES/glances.mo
@@ -65,14 +65,14 @@ etc/glances/glances.conf
 @dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/locale/es/LC_MESSAGES
 @dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/locale/es
 @dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/locale
-@dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/glances/css
-@dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/glances/html
-@dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/glances/img
-@dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/glances
 @dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/doc/glances/images
 @dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/doc/glances
 @dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/doc
 @dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share
+@dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/glances/data/css
+@dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/glances/data/html
+@dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/glances/data/img
+@dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/glances/data
 @dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/glances/conf
 @dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/glances
 @dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/EGG-INFO
