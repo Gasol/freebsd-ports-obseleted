@@ -48,11 +48,11 @@ etc/glances/glances.conf
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/doc/glances/images/screenshot-wide.png
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/doc/glances/images/screenshot.png
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/doc/glances/images/sensors.png
-%%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/i18n/es/LC_MESSAGES/glances.mo
-%%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/i18n/fr/LC_MESSAGES/glances.mo
-%%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/i18n/it/LC_MESSAGES/glances.mo
-%%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/i18n/pt_BR/LC_MESSAGES/glances.mo
-%%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/i18n/zh_CN/LC_MESSAGES/glances.mo
+%%NLS%%share/locale/es/LC_MESSAGES/glances.mo
+%%NLS%%share/locale/fr/LC_MESSAGES/glances.mo
+%%NLS%%share/locale/it/LC_MESSAGES/glances.mo
+%%NLS%%share/locale/pt_BR/LC_MESSAGES/glances.mo
+%%NLS%%share/locale/zh_CN/LC_MESSAGES/glances.mo
 @dirrm etc/glances
 @dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/doc/glances/images
 @dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/doc/glances
@@ -64,16 +64,15 @@ etc/glances/glances.conf
 @dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/glances/data
 @dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/glances/conf
 @dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/glances
-@dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/i18n/zh_CN/LC_MESSAGES
-@dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/i18n/zh_CN
-@dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/i18n/pt_BR/LC_MESSAGES
-@dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/i18n/pt_BR
-@dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/i18n/it/LC_MESSAGES
-@dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/i18n/it
-@dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/i18n/fr/LC_MESSAGES
-@dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/i18n/fr
-@dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/i18n/es/LC_MESSAGES
-@dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/i18n/es
-@dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/i18n
 @dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/EGG-INFO
 @dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%
+%%NLS%%@dirrmtry share/locale/zh_CN/LC_MESSAGES
+%%NLS%%@dirrmtry share/locale/zh_CN
+%%NLS%%@dirrmtry share/locale/pt_BR/LC_MESSAGES
+%%NLS%%@dirrmtry share/locale/pt_BR
+%%NLS%%@dirrmtry share/locale/it/LC_MESSAGES
+%%NLS%%@dirrmtry share/locale/it
+%%NLS%%@dirrmtry share/locale/fr/LC_MESSAGES
+%%NLS%%@dirrmtry share/locale/fr
+%%NLS%%@dirrmtry share/locale/es/LC_MESSAGES
+%%NLS%%@dirrmtry share/locale/es

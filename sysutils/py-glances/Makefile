@@ -13,8 +13,7 @@ COMMENT=	CLI curses based monitoring tool for GNU/Linux and BSD OS
 
 LICENSE=	LGPL3
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gettext>=0:${PORTSDIR}/textproc/py-gettext \
-		${PYTHON_PKGNAMEPREFIX}Jinja2>=2.0.0:${PORTSDIR}/devel/py-Jinja2 \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Jinja2>=2.0.0:${PORTSDIR}/devel/py-Jinja2 \
 		${PYTHON_PKGNAMEPREFIX}psutil>=0.4.1:${PORTSDIR}/sysutils/py-psutil
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
@@ -23,17 +22,34 @@ USE_PYTHON=	2.6+
 USE_PYDISTUTILS=easy_install
 PYDISTUTILS_PKGNAME=	Glances
 
+OPTIONS_DEFINE=	NLS
+OPTIONS_DEFAULT=	${OPTIONS_DEFINE}
+
 .if !defined(NO_INSTALL_MANPAGES)
 MAN1=		glances.1
 .endif
 
 .include <bsd.port.pre.mk>
 
+.if ${PORT_OPTIONS:MNLS}
+USES+=		gettext
+PLIST_SUB+=	NLS=""
+TRANSLATIONS=	es fr it pt_BR zh_CN
+.else
+PLIST_SUB+=	NLS="@comment "
+.endif
+
 post-install:
 	${MKDIR} ${PREFIX}/etc/glances
 	${INSTALL_DATA} ${WRKSRC}/glances/conf/glances.conf ${PREFIX}/etc/glances/
 .if !defined(NO_INSTALL_MANPAGES)
 	${INSTALL_MAN} ${WRKSRC}/docs/man/glances.1 ${MANPREFIX}/man/man1/
+.endif
+.if ${PORT_OPTIONS:MNLS}
+.for lang in ${TRANSLATIONS}
+	${INSTALL_DATA} ${WRKSRC}/i18n/${lang}/LC_MESSAGES/glances.mo \
+		${PREFIX}/share/locale/${lang}/LC_MESSAGES/
+.endfor
 .endif
 
 .include <bsd.port.post.mk>
