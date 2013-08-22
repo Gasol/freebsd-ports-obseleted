@@ -13,7 +13,8 @@ COMMENT=	CLI curses based monitoring tool for GNU/Linux and BSD OS
 
 LICENSE=	LGPL3
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Jinja2>=2.0.0:${PORTSDIR}/devel/py-Jinja2 \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gettext>=0:${PORTSDIR}/textproc/py-gettext \
+		${PYTHON_PKGNAMEPREFIX}Jinja2>=2.0.0:${PORTSDIR}/devel/py-Jinja2 \
 		${PYTHON_PKGNAMEPREFIX}psutil>=0.4.1:${PORTSDIR}/sysutils/py-psutil
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
