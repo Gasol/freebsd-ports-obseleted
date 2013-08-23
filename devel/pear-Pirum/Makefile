@@ -1,9 +1,5 @@
-# New ports collection makefile for:	pear-Pirum
-# Date created:		2012-09-19
-# Whom:			Gasol Wu <gasol.wu@gmail.com>
-#
-# $FreeBSD$
-#
+# Created by: Gasol Wu <gasol.wu@gmail.com>
+# $FreeBSD: ports/devel/pear-Pirum/Makefile,v 1.1 2012/12/17 16:39:58 svnexp Exp $
 
 PORTNAME=	Pirum
 PORTVERSION=	1.1.4
@@ -12,7 +8,7 @@ MASTER_SITES=	http://pear.pirum-project.org/get/
 PKGNAMEPREFIX=	pear-
 
 MAINTAINER=	gasol.wu@gmail.com
-COMMENT=	A simple PEAR channel server manager
+COMMENT=	Simple PEAR channel server manager
 
 BUILD_DEPENDS=	${PEARDIR}/PEAR.php:${PORTSDIR}/devel/pear \
 		${PEARDIR}/.channels/pear.pirum-project.org.reg:${PORTSDIR}/devel/pear-channel-pirum
