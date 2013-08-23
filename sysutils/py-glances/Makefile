@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: ports/sysutils/py-glances/Makefile,v 1.3 2012/11/28 20:20:09 svnexp Exp $
+# $FreeBSD: sysutils/py-glances/Makefile 325231 2013-08-22 20:42:45Z wg $
 
 PORTNAME=	glances
 PORTVERSION=	1.7.1
@@ -18,18 +18,17 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Jinja2>=2.0.0:${PORTSDIR}/devel/py-Jinja2 \
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 FETCH_ARGS=	-pRr
-USE_PYTHON=	2.6+
+USE_PYTHON=	yes
 USE_PYDISTUTILS=easy_install
 PYDISTUTILS_PKGNAME=	Glances
 
 OPTIONS_DEFINE=	NLS
-OPTIONS_DEFAULT=	${OPTIONS_DEFINE}
 
 .if !defined(NO_INSTALL_MANPAGES)
 MAN1=		glances.1
 .endif
 
-.include <bsd.port.pre.mk>
+.include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MNLS}
 USES+=		gettext
@@ -40,8 +39,8 @@ PLIST_SUB+=	NLS="@comment "
 .endif
 
 post-install:
-	${MKDIR} ${PREFIX}/etc/glances
-	${INSTALL_DATA} ${WRKSRC}/glances/conf/glances.conf ${PREFIX}/etc/glances/
+	@${MKDIR} ${PREFIX}/etc/glances
+	${INSTALL_DATA} ${WRKSRC}/glances/conf/glances.conf ${PREFIX}/etc/glances/glances.conf.sample
 .if !defined(NO_INSTALL_MANPAGES)
 	${INSTALL_MAN} ${WRKSRC}/docs/man/glances.1 ${MANPREFIX}/man/man1/
 .endif
@@ -52,4 +51,4 @@ post-install:
 .endfor
 .endif
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
