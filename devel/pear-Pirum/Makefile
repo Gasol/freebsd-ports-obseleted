@@ -2,7 +2,7 @@
 # $FreeBSD: ports/devel/pear-Pirum/Makefile,v 1.1 2012/12/17 16:39:58 svnexp Exp $
 
 PORTNAME=	Pirum
-PORTVERSION=	1.1.4
+PORTVERSION=	1.1.5
 CATEGORIES=	devel www pear
 MASTER_SITES=	http://pear.pirum-project.org/get/
 PKGNAMEPREFIX=	pear-
