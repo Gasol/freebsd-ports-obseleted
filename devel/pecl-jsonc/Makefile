@@ -14,6 +14,8 @@ COMMENT=	PECL extension for JSON manipulation
 
 LICENSE=	PHP301
 
+CONFLICTS_INSTALL=	php54-json-5* php55-json-5* php5-json-5*
+
 CONFIGURE_ARGS+=	--with-jsonc
 USE_PHP=	yes
 USE_PHP_BUILD=	yes
