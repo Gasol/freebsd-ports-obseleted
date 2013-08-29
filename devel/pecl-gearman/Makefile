@@ -2,7 +2,7 @@
 # $FreeBSD: devel/pecl-gearman/Makefile 320357 2013-06-09 17:32:47Z miwi $
 
 PORTNAME=	gearman
-PORTVERSION=	1.1.1
+PORTVERSION=	1.1.2
 CATEGORIES=	devel
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
