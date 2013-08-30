@@ -3,7 +3,7 @@
 
 PORTNAME=	pear
 PORTVERSION=	1.9.4
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	http://miwibox.org/distfiles/
 

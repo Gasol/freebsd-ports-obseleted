@@ -193,9 +193,9 @@ do-autogenerate-plist: patch
 	@cd ${WRKDIR}/inst/${PREFIX} && ${FIND} . -type f | ${SORT} \
 	| ${CUT} -c 3- >> ${PLIST}
 	@DIRS=`cd ${WRKDIR}/inst/${PREFIX} && ${FIND} . -type d | ${SORT} -r | \
-	${CUT} -c 3- | ${SED} -e 's,\\$$,\\\\$$,g'`; \
+	${CUT} -c 3- | ${SED} -e 's,\\$$,\\\\$$,g'`; IFS=$$'\n'; \
 	for d in $${DIRS}; do \
-		if [ ! -d ${LOCALBASE}/$${d} ]; then \
+		if [ ! -d "${LOCALBASE}/$${d}" ]; then \
 			${ECHO_CMD} "@dirrmtry $${d}" >> ${PLIST}; \
 		fi; \
 	done
