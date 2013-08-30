@@ -2,7 +2,7 @@
 # $FreeBSD: ports/devel/pear-Symfony_Component_Finder/Makefile,v 1.1 2013/01/02 18:56:17 svnexp Exp $
 
 PORTNAME=	Finder
-PORTVERSION=	2.3.4
+PORTVERSION=	${SYMFONY2_PORTVERSION}
 CATEGORIES=	devel pear
 PKGNAMEPREFIX=	pear-Symfony_Component_
 

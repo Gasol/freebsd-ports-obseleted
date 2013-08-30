@@ -2,7 +2,7 @@
 # $FreeBSD: devel/pear-Symfony_Component_Console/Makefile 325537 2013-08-28 14:44:55Z wg $
 
 PORTNAME=	Console
-PORTVERSION=	2.3.4
+PORTVERSION=	${SYMFONY2_PORTVERSION}
 CATEGORIES=	devel pear
 PKGNAMEPREFIX=	pear-Symfony_Component_
 

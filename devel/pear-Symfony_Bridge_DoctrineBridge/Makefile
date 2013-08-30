@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	DoctrineBridge
-PORTVERSION=	2.3.4
+PORTVERSION=	${SYMFONY2_PORTVERSION}
 CATEGORIES=	devel pear
 PKGNAMEPREFIX=	pear-Symfony_Bridge_
 
