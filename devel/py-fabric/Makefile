@@ -2,7 +2,7 @@
 # $FreeBSD: devel/py-fabric/Makefile 319569 2013-06-01 14:15:57Z koobs $
 
 PORTNAME=	fabric
-PORTVERSION=	1.6.1
+PORTVERSION=	1.7.0
 PORTEPOCH=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
