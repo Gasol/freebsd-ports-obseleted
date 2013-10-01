@@ -2,8 +2,7 @@
 # $FreeBSD: devel/pecl-xhprof/Makefile 327724 2013-09-20 17:13:42Z bapt $
 
 PORTNAME=	xhprof
-PORTVERSION=	0.9.2
-PORTREVISION=	1
+PORTVERSION=	0.9.3
 CATEGORIES=	devel pear
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
