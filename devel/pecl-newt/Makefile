@@ -1,7 +1,7 @@
 # $FreeBSD: devel/pecl-newt/Makefile 328166 2013-09-24 16:47:23Z garga $
 
 PORTNAME=	newt
-PORTVERSION=	1.2.6
+PORTVERSION=	1.2.8
 CATEGORIES=	devel www
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
