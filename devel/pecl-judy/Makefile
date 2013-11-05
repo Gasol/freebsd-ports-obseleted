@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: devel/pecl-judy/Makefile 318645 2013-05-21 06:12:41Z miwi $
+# $FreeBSD: devel/pecl-judy/Makefile 332708 2013-11-04 13:15:55Z wg $
 
 PORTNAME=	judy
 PORTVERSION=	1.0.0
@@ -22,4 +22,5 @@ CONFIGURE_ARGS=	--with-judy=${LOCALBASE}
 USE_PHP=	yes
 USE_PHPEXT=	yes
 
+NO_STAGE=	yes
 .include <bsd.port.mk>
