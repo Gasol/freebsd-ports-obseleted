@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: sysutils/py-glances/Makefile 325231 2013-08-22 20:42:45Z wg $
+# $FreeBSD: sysutils/py-glances/Makefile 327772 2013-09-20 23:05:58Z bapt $
 
 PORTNAME=	glances
 PORTVERSION=	1.7.1
@@ -28,6 +28,7 @@ OPTIONS_DEFINE=	NLS
 MAN1=		glances.1
 .endif
 
+NO_STAGE=	yes
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MNLS}
