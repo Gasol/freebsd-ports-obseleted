@@ -12,8 +12,7 @@ DISTNAME=	${GITHUB_USER}-php-${PORTNAME}-${GITTAG}-14-g${GITREVISION}
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	PDO driver for Apache Cassandra
 
-LIB_DEPENDS=	boost_iostreams:${PORTSDIR}/devel/boost-libs \
-		thrift:${PORTSDIR}/devel/thrift
+LIB_DEPENDS=	boost_iostreams:${PORTSDIR}/devel/boost-libs
 
 GITREVISION=	7debd5b
 GITTAG=		0.8-support
@@ -27,14 +26,25 @@ USE_PHP=	pdo
 USE_PHPEXT=	yes
 DEFAULT_PHP_VER=5
 IGNORE_WITH_PHP=52
-THRIFT_CMD=	${LOCALBASE}/bin/thrift
 
 NO_STAGE=	yes
-post-configure:
-	thrift_version=`${THRIFT_CMD} -version | ${AWK} '{print $$3}'`; \
-	if [ "$$thrift_version" = "0.8.0" ]; then \
-		${REINPLACE_CMD} 's/\([^:]\)apache::thrift/\1 ::apache::thrift/g' ${WRKSRC}/gen-cpp/Cassandra.h; \
-		${REINPLACE_CMD} 's/\([^:]\)apache::thrift/\1 ::apache::thrift/g' ${WRKSRC}/gen-cpp/Cassandra.cpp; \
-	fi
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+.include "${PORTSDIR}/devel/thrift/bsd.thrift.mk"
+THRIFT_MAJOR_VER!= ${ECHO} '${THRIFT_PORTVERSION}' | ${CUT} -d . -f 1
+THRIFT_MINOR_VER!= ${ECHO} "${THRIFT_PORTVERSION}" | ${CUT} -d . -f 2
+THRIFT_PATCH_VER!= ${ECHO} "${THRIFT_PORTVERSION}" | ${CUT} -d . -f 3
+
+.if ${THRIFT_MAJOR_VER} >= 0 || ${THRIFT_MINOR_VER} >= 9 || ${THRIFT_PATCH_VER} >= 1
+LIB_DEPENDS+=	thrift:${PORTSDIR}/devel/thrift-cpp
+.else
+LIB_DEPENDS+=	thrift:${PORTSDIR}/devel/thrift
+.endif
+
+post-configure:
+.if ${THRIFT_PORTVERSION} == "0.8.0"
+	${REINPLACE_CMD} 's/\([^:]\)apache::thrift/\1 ::apache::thrift/g' ${WRKSRC}/gen-cpp/Cassandra.h
+	${REINPLACE_CMD} 's/\([^:]\)apache::thrift/\1 ::apache::thrift/g' ${WRKSRC}/gen-cpp/Cassandra.cpp
+.endif
+
+.include <bsd.port.post.mk>
