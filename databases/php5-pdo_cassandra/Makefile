@@ -29,8 +29,6 @@ USE_PHPEXT=	yes
 DEFAULT_PHP_VER=5
 IGNORE_WITH_PHP=52
 
-NO_STAGE=	yes
-
 .include <bsd.port.pre.mk>
 .include "${PORTSDIR}/devel/thrift/bsd.thrift.mk"
 THRIFT_MAJOR_VER!= ${ECHO} '${THRIFT_PORTVERSION}' | ${CUT} -d . -f 1
