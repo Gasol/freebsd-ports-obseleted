@@ -12,6 +12,8 @@ DISTNAME=	${GITHUB_USER}-php-${PORTNAME}-${GITTAG}-14-g${GITREVISION}
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	PDO driver for Apache Cassandra
 
+LICENSE=	AL2
+
 LIB_DEPENDS=	boost_iostreams:${PORTSDIR}/devel/boost-libs
 
 GITREVISION=	7debd5b
