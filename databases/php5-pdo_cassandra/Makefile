@@ -37,6 +37,7 @@ THRIFT_PATCH_VER!= ${ECHO} "${THRIFT_PORTVERSION}" | ${CUT} -d . -f 3
 
 .if ${THRIFT_MAJOR_VER} >= 0 || ${THRIFT_MINOR_VER} >= 9 || ${THRIFT_PATCH_VER} >= 1
 LIB_DEPENDS+=	thrift:${PORTSDIR}/devel/thrift-cpp
+BUILD_DEPENDS+=	${LOCALBASE}/bin/thrift:${PORTSDIR}/devel/thrift
 .else
 LIB_DEPENDS+=	thrift:${PORTSDIR}/devel/thrift
 .endif
