@@ -31,9 +31,9 @@ IGNORE_WITH_PHP=52
 
 .include <bsd.port.pre.mk>
 .include "${PORTSDIR}/devel/thrift/bsd.thrift.mk"
-THRIFT_MAJOR_VER!= ${ECHO} '${THRIFT_PORTVERSION}' | ${CUT} -d . -f 1
-THRIFT_MINOR_VER!= ${ECHO} "${THRIFT_PORTVERSION}" | ${CUT} -d . -f 2
-THRIFT_PATCH_VER!= ${ECHO} "${THRIFT_PORTVERSION}" | ${CUT} -d . -f 3
+THRIFT_MAJOR_VER!=	${ECHO} '${THRIFT_PORTVERSION}' | ${CUT} -d . -f 1
+THRIFT_MINOR_VER!=	${ECHO} "${THRIFT_PORTVERSION}" | ${CUT} -d . -f 2
+THRIFT_PATCH_VER!=	${ECHO} "${THRIFT_PORTVERSION}" | ${CUT} -d . -f 3
 
 .if ${THRIFT_MAJOR_VER} >= 0 || ${THRIFT_MINOR_VER} >= 9 || ${THRIFT_PATCH_VER} >= 1
 LIB_DEPENDS+=	thrift:${PORTSDIR}/devel/thrift-cpp
