@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: databases/php5-pdo_cassandra/Makefile 327717 2013-09-20 16:13:47Z bapt $
+# $FreeBSD: databases/php5-pdo_cassandra/Makefile 333899 2013-11-15 17:55:27Z sunpoet $
 
 PORTNAME=	pdo_cassandra
 PORTVERSION=	0.2.1
@@ -14,7 +14,7 @@ COMMENT=	PDO driver for Apache Cassandra
 
 LICENSE=	AL2
 
-LIB_DEPENDS=	boost_iostreams:${PORTSDIR}/devel/boost-libs
+LIB_DEPENDS=	libboost_iostreams.so:${PORTSDIR}/devel/boost-libs
 
 GITREVISION=	7debd5b
 GITTAG=		0.8-support
@@ -31,15 +31,16 @@ IGNORE_WITH_PHP=52
 
 .include <bsd.port.pre.mk>
 .include "${PORTSDIR}/devel/thrift/bsd.thrift.mk"
-THRIFT_MAJOR_VER!=	${ECHO} '${THRIFT_PORTVERSION}' | ${CUT} -d . -f 1
-THRIFT_MINOR_VER!=	${ECHO} "${THRIFT_PORTVERSION}" | ${CUT} -d . -f 2
-THRIFT_PATCH_VER!=	${ECHO} "${THRIFT_PORTVERSION}" | ${CUT} -d . -f 3
+
+THRIFT_MAJOR_VER=	${THRIFT_PORTVERSION:R:R}
+THRIFT_MINOR_VER=	${THRIFT_PORTVERSION:R:E}
+THRIFT_PATCH_VER=	${THRIFT_PORTVERSION:E}
 
 .if ${THRIFT_MAJOR_VER} >= 0 || ${THRIFT_MINOR_VER} >= 9 || ${THRIFT_PATCH_VER} >= 1
-LIB_DEPENDS+=	thrift:${PORTSDIR}/devel/thrift-cpp
+LIB_DEPENDS+=	libthrift.so:${PORTSDIR}/devel/thrift-cpp
 BUILD_DEPENDS+=	${LOCALBASE}/bin/thrift:${PORTSDIR}/devel/thrift
 .else
-LIB_DEPENDS+=	thrift:${PORTSDIR}/devel/thrift
+LIB_DEPENDS+=	libthrift.so:${PORTSDIR}/devel/thrift
 .endif
 
 post-configure:
