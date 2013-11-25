@@ -2,7 +2,7 @@
 # $FreeBSD: ports/devel/pear-SebastianBergmann_PHPLOC/Makefile,v 1.1 2013/01/02 18:43:17 svnexp Exp $
 
 PORTNAME=	PHPLOC
-PORTVERSION=	2.0.0
+PORTVERSION=	2.0.3
 CATEGORIES=	devel pear
 MASTER_SITES=	http://pear.phpunit.de/get/
 PKGNAMEPREFIX=	pear-SebastianBergmann_
