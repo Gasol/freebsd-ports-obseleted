@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: ports/devel/pear-TheSeer_DirectoryScanner/Makefile,v 1.1 2012/12/19 20:08:11 svnexp Exp $
+# $FreeBSD: devel/pear-TheSeer_DirectoryScanner/Makefile 333263 2013-11-08 21:41:53Z antoine $
 
 PORTNAME=	DirectoryScanner
 PORTVERSION=	1.1.0
