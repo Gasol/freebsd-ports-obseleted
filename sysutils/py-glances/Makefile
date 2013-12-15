@@ -2,7 +2,7 @@
 # $FreeBSD: sysutils/py-glances/Makefile 327772 2013-09-20 23:05:58Z bapt $
 
 PORTNAME=	glances
-PORTVERSION=	1.7.2
+PORTVERSION=	1.7.3
 CATEGORIES=	sysutils python
 MASTER_SITES=	https://github.com/nicolargo/glances/archive/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,7 +14,7 @@ COMMENT=	CLI curses based monitoring tool for GNU/Linux and BSD OS
 LICENSE=	LGPL3
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Jinja2>=2.0.0:${PORTSDIR}/devel/py-Jinja2 \
-		${PYTHON_PKGNAMEPREFIX}psutil>=0.4.1:${PORTSDIR}/sysutils/py-psutil
+		${PYTHON_PKGNAMEPREFIX}psutil>=1.2.1:${PORTSDIR}/sysutils/py-psutil
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 FETCH_ARGS=	-pRr
@@ -41,9 +41,9 @@ PLIST_SUB+=	NLS="@comment "
 
 post-install:
 	@${MKDIR} ${PREFIX}/etc/glances
-	${INSTALL_DATA} ${WRKSRC}/glances/conf/glances.conf ${PREFIX}/etc/glances/glances.conf.sample
+	${INSTALL_DATA} ${WRKSRC}/conf/glances.conf ${PREFIX}/etc/glances/glances.conf.sample
 .if !defined(NO_INSTALL_MANPAGES)
-	${INSTALL_MAN} ${WRKSRC}/docs/man/glances.1 ${MANPREFIX}/man/man1/
+	${INSTALL_MAN} ${WRKSRC}/man/glances.1 ${MANPREFIX}/man/man1/
 .endif
 .if ${PORT_OPTIONS:MNLS}
 .for lang in ${TRANSLATIONS}
