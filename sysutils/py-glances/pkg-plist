@@ -46,15 +46,12 @@ etc/glances/glances.conf.sample
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/doc/glances/images/screenshot-wide.png
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/doc/glances/images/screenshot.png
 %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/doc/glances/images/sensors.png
-%%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/man/man1/glances.1
 %%NLS%%share/locale/es/LC_MESSAGES/glances.mo
 %%NLS%%share/locale/fr/LC_MESSAGES/glances.mo
 %%NLS%%share/locale/it/LC_MESSAGES/glances.mo
 %%NLS%%share/locale/pt_BR/LC_MESSAGES/glances.mo
 %%NLS%%share/locale/zh_CN/LC_MESSAGES/glances.mo
 @dirrm etc/glances
-@dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/man/man1
-@dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/man
 @dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/doc/glances/images
 @dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/doc/glances
 @dirrm %%PYTHON_SITELIBDIR%%/%%PYEASYINSTALL_EGG%%/share/doc
