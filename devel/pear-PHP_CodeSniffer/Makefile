@@ -2,7 +2,7 @@
 # $FreeBSD: devel/pear-PHP_CodeSniffer/Makefile 333263 2013-11-08 21:41:53Z antoine $
 
 PORTNAME=	PHP_CodeSniffer
-PORTVERSION=	1.4.5
+PORTVERSION=	1.5.1
 CATEGORIES=	devel www pear
 
 MAINTAINER=	miwi@FreeBSD.org
