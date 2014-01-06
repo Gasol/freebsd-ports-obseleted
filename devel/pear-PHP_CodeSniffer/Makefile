@@ -1,8 +1,8 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: ports/devel/pear-PHP_CodeSniffer/Makefile,v 1.9 2012/12/03 12:34:29 svnexp Exp $
+# $FreeBSD: devel/pear-PHP_CodeSniffer/Makefile 333263 2013-11-08 21:41:53Z antoine $
 
 PORTNAME=	PHP_CodeSniffer
-PORTVERSION=	1.4.0
+PORTVERSION=	1.4.5
 CATEGORIES=	devel www pear
 
 MAINTAINER=	miwi@FreeBSD.org
