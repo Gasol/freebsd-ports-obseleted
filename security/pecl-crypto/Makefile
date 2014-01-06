@@ -14,9 +14,8 @@ COMMENT=	Objective wrapper for OpenSSL Crypto Library
 
 LICENSE=	PHP301
 
-BUILD_DEPENDS=	openssl>=0:${PORTSDIR}/security/openssl
-
 CONFIGURE_ARGS=	--with-crypto
+USE_OPENSSL=	yes
 USE_PHP=	yes
 USE_PHPEXT=	yes
 USE_PHPIZE=	yes
