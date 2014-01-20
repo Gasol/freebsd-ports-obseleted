@@ -2,7 +2,7 @@
 # $FreeBSD: sysutils/py-glances/Makefile 338631 2014-01-04 08:26:00Z sunpoet $
 
 PORTNAME=	glances
-PORTVERSION=	1.7.3
+PORTVERSION=	1.7.4
 CATEGORIES=	sysutils python
 MASTER_SITES=	https://github.com/nicolargo/glances/archive/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -23,18 +23,23 @@ WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 USE_PYTHON=	yes
 USE_PYDISTUTILS=easy_install
 PYDISTUTILS_PKGNAME=	Glances
+NLS_USES=	gettext
 
-MANPAGES_MAN1=		glances.1
+.include <bsd.port.options.mk>
+
 NLS_TRANSLATIONS=	es fr it pt_BR zh_CN
-NLS_USES=		gettext
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/etc/glances
 	${INSTALL_DATA} ${WRKSRC}/conf/glances.conf ${STAGEDIR}${PREFIX}/etc/glances/glances.conf.sample
-	${INSTALL_MAN} ${WRKSRC}/man/glances.1 ${STAGEDIR}${MANPREFIX}/man/man1/
+.if ${PORT_OPTIONS:MMANPAGES}
+	${INSTALL_MAN} ${WRKSRC}/man/glances.1 ${STAGEDIR}${MAN1PREFIX}/man/man1/
+.endif
+.if ${PORT_OPTIONS:MNLS}
 .for lang in ${NLS_TRANSLATIONS}
 	${INSTALL_DATA} ${WRKSRC}/i18n/${lang}/LC_MESSAGES/glances.mo \
 		${STAGEDIR}${PREFIX}/share/locale/${lang}/LC_MESSAGES/
 .endfor
+.endif
 
 .include <bsd.port.mk>
