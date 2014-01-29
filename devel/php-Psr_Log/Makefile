@@ -39,9 +39,9 @@ IGNORE_WITH_PHP=52
 .include <bsd.port.pre.mk>
 
 do-install:
-	${MKDIR} ${PREFIX}/share/pear/Psr/Log/Test
+	${MKDIR} ${STAGEDIR}${PREFIX}/share/pear/Psr/Log/Test
 .for file in ${PLIST_FILES}
-	${INSTALL_DATA} ${WRKSRC}/${file:S/share\/pear\///} ${PREFIX}/${file}
+	${INSTALL_DATA} ${WRKSRC}/${file:S/share\/pear\///} ${STAGEDIR}${PREFIX}/${file}
 .endfor
 
 .include <bsd.port.post.mk>
