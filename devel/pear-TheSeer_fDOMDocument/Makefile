@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	pear-TheSeer_
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	Extension to PHP\'s standard DOM
 
-LICENSE=	BSD
+LICENSE=	BSD3CLAUSE
 
 BUILD_DEPENDS=	${PEARDIR}/PEAR.php:${PORTSDIR}/devel/pear \
 		${PEARDIR}/.channels/pear.netpirates.net.reg:${PORTSDIR}/devel/pear-channel-theseer
