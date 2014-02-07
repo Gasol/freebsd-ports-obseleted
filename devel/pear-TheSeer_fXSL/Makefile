@@ -11,7 +11,7 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	XSL wrapper / extension to the PHP 5.x XSLTProcessor
 
-LICENSE=	BSD
+LICENSE=	BSD3CLAUSE
 
 BUILD_DEPENDS=	pear>=1.9.1:${PORTSDIR}/devel/pear \
 		${PEARDIR}/.channels/pear.netpirates.net.reg:${PORTSDIR}/devel/pear-channel-theseer
