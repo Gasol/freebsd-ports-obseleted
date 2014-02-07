@@ -2,7 +2,7 @@
 # $FreeBSD: devel/pear-TheSeer_fDOMDocument/Makefile 336319 2013-12-13 07:27:24Z sunpoet $
 
 PORTNAME=	fDOMDocument
-PORTVERSION=	1.4.2
+PORTVERSION=	1.4.3
 CATEGORIES=	devel www pear
 MASTER_SITES=	http://pear.netpirates.net/get/
 PKGNAMEPREFIX=	pear-TheSeer_
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	pear-TheSeer_
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	Extension to PHP\'s standard DOM
 
-LICENSE=	BSD3CLAUSE
+LICENSE=	BSD
 
 BUILD_DEPENDS=	${PEARDIR}/PEAR.php:${PORTSDIR}/devel/pear \
 		${PEARDIR}/.channels/pear.netpirates.net.reg:${PORTSDIR}/devel/pear-channel-theseer
