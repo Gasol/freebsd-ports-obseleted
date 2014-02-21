@@ -2,7 +2,7 @@
 # $FreeBSD: head/www/phalcon/Makefile 341701 2014-01-29 09:02:29Z miwi $
 
 PORTNAME=	phalcon
-PORTVERSION=	1.2.4
+PORTVERSION=	1.2.6
 CATEGORIES=	www
 MASTER_SITES=	https://github.com/phalcon/cphalcon/archive/v${PORTVERSION}/
 DISTNAME=	${PORTNAME}-v${PORTVERSION}
