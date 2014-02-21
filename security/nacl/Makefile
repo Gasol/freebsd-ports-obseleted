@@ -1,6 +1,5 @@
 # Created by: David Thiel <lx@FreeBSD.org>
-# $FreeBSD: security/nacl/Makefile 313014 2013-02-26 23:59:25Z lx $
-#
+# $FreeBSD: head/security/nacl/Makefile 341796 2014-01-30 00:41:27Z lx $
 
 PORTNAME=	nacl
 PORTVERSION=	20110221
@@ -16,6 +15,7 @@ USE_BZIP2=	yes
 USE_BINUTILS=	yes
 MAKE_JOBS_UNSAFE=	yes
 
+NO_STAGE=	yes
 .include <bsd.port.pre.mk>
 
 .if ${ARCH} == "ia64" || ${ARCH} == "powerpc" || ${ARCH} == "sparc64"
@@ -26,6 +26,8 @@ HOSTNAME_CMD?=	/bin/hostname -s
 
 post-patch:
 	@${REINPLACE_CMD} -i -e "s/$$/ -fPIC/" ${WRKSRC}/okcompilers/c
+	@${REINPLACE_CMD} -i -e "s/gcc/${CC}/" ${WRKSRC}/okcompilers/c
+	@${REINPLACE_CMD} -i -e "s/c++/${CXX}/" ${WRKSRC}/okcompilers/cpp
 
 pre-build:
 	${RM} -rf ${WRKSRC}/crypto_onetimeauth/poly1305/amd64
