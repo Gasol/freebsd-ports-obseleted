@@ -1,40 +1,35 @@
---- ./Makefile.orig	2012-06-06 01:55:53.000000000 +0800
-+++ ./Makefile	2013-03-04 15:19:26.000000000 +0800
-@@ -1,60 +1,39 @@
+--- Makefile.orig	2012-06-06 01:55:53.000000000 +0800
++++ Makefile	2013-02-24 13:23:52.068205829 +0800
+@@ -1,14 +1,17 @@
 -BINS=isutf8 ifdata ifne pee sponge mispipe lckdo parallel errno
 +BINS=isutf8 ifne pee sponge mispipe lckdo errno
  PERLSCRIPTS=vidir vipe ts combine zrun chronic
 -MANS=sponge.1 vidir.1 vipe.1 isutf8.1 ts.1 combine.1 ifdata.1 ifne.1 pee.1 zrun.1 chronic.1 mispipe.1 lckdo.1 parallel.1 errno.1
--CFLAGS=-O2 -g -Wall
+-CFLAGS?=-O2 -g -Wall
 +MANS=sponge.1 isutf8.1 ifne.1 pee.1 mispipe.1 lckdo.1 errno.1
-+CFLAGS=-Wall
++CFLAGS+=-Wall
  INSTALL_BIN?=install -s
--PREFIX=/usr
-+DOCBOOK2XMAN= ${LOCALBASE}/bin/xsltproc ${LOCALBASE}/share/xsl/docbook/manpages/docbook.xsl
+-PREFIX?=/usr
  
 -DOCBOOK2XMAN=docbook2x-man
 +.SUFFIXES: .1 .docbook
++
++DOCBOOK2XMAN=${LOCALBASE}/bin/docbook2man
  
  all: $(BINS) $(MANS)
  
 +bins: errnos.h ${BINS}
 +
-+mans: ${MANS}
-+
  clean:
  	rm -f $(BINS) $(MANS) dump.c errnos.h errno.o
  
- install:
--	mkdir -p $(DESTDIR)$(PREFIX)/bin
--	$(INSTALL_BIN) $(BINS) $(DESTDIR)$(PREFIX)/bin
--	install $(PERLSCRIPTS) $(DESTDIR)$(PREFIX)/bin
--	
+@@ -17,44 +20,19 @@
+ 	$(INSTALL_BIN) $(BINS) $(DESTDIR)$(PREFIX)/bin
+ 	install $(PERLSCRIPTS) $(DESTDIR)$(PREFIX)/bin
+ 	
 -	mkdir -p $(DESTDIR)$(PREFIX)/share/man/man1
 -	install $(MANS) $(DESTDIR)$(PREFIX)/share/man/man1
-+	mkdir -p $(PREFIX)/bin
-+	$(INSTALL_BIN) $(BINS) $(PREFIX)/bin
-+	install $(PERLSCRIPTS) $(PREFIX)/bin
- 
+-
  check: isutf8
  	./check-isutf8
  
@@ -49,7 +44,9 @@
 -
 -pee.1: pee.docbook
 -	$(DOCBOOK2XMAN) $<
--
++.docbook.1:
++	$(DOCBOOK2XMAN) ${.IMPSRC}
+ 
 -sponge.1: sponge.docbook
 -	$(DOCBOOK2XMAN) $<
 -
@@ -58,9 +55,7 @@
 -
 -lckdo.1: lckdo.docbook
 -	$(DOCBOOK2XMAN) $<
-+.docbook.1:
-+	$(DOCBOOK2XMAN) ${.IMPSRC}
- 
+-
 -parallel.1: parallel.docbook
 -	$(DOCBOOK2XMAN) $<
 -	
@@ -69,13 +64,13 @@
  	echo '#include <errno.h>' > dump.c
  	$(CC) -E -dD dump.c | awk '/^#define E/ { printf "{\"%s\",%s},\n", $$2, $$2 }' > errnos.h
  	rm -f dump.c
--	
+ 	
 -errno.1: errno.docbook
 -	$(DOCBOOK2XMAN) $<
- 
+-
 -%.1: %
 -	pod2man --center=" " --release="moreutils" $< > $@;
-+extraman: ${PERLSCRIPTS}
++mans: ${PERLSCRIPTS}
 +.for i in ${PERLSCRIPTS}
-+	pod2man --center=" " --release="moreutils" ${i} > ${i:S@$@.1$@};
++	pod2man --center=" " --release="moreutils" ${i} > ${i}.1
 +.endfor
