@@ -12,13 +12,13 @@ LICENSE=	MIT
 
 LIB_DEPENDS=	libjansson.so:${PORTSDIR}/devel/jansson
 
-CMAKE_ARGS+=	-DOS_FREEBSD=yes
-
 USE_GITHUB=	yes
 GH_ACCOUNT=	adobkin
 GH_TAGNAME=	1.0.0beta3
 GH_COMMIT=	050dfd8
 
 USES=		cmake
+USE_LDCONFIG=	yes
+CMAKE_ARGS+=	-DOS_FREEBSD=yes
 
 .include <bsd.port.mk>
