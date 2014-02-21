@@ -1,0 +1,11 @@
+@comment $FreeBSD$
+include/capn/apn.h
+include/capn/platform.h
+include/capn/version.h
+lib/libcapn.so
+lib/libcapn.so.1
+lib/libcapn.so.1.0.0
+libdata/pkgconfig/libcapn.pc
+@dirrmtry lib/capn
+@dirrmtry lib/pkgconfig
+@dirrmtry include/capn
