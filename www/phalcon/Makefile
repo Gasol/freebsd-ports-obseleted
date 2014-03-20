@@ -1,5 +1,5 @@
 # Created by: Jin-Sih Lin <linpct@gmail.com>
-# $FreeBSD: head/www/phalcon/Makefile 341701 2014-01-29 09:02:29Z miwi $
+# $FreeBSD: head/www/phalcon/Makefile 346714 2014-03-01 18:52:55Z marino $
 
 PORTNAME=	phalcon
 PORTVERSION=	1.2.6
@@ -10,27 +10,19 @@ DISTNAME=	${PORTNAME}-v${PORTVERSION}
 MAINTAINER=	linpct@gmail.com
 COMMENT=	Phalcon PHP Framework written in C-language
 
-LICENSE=	BSD
+LICENSE=	BSD3CLAUSE
 
-WRKSRC=		${WRKDIR}/c${PORTNAME}-${PORTVERSION}/build/
+PBITS=		${ARCH:S/amd64/64/:S/i386/32/:S/x86_64/64/}
+WRKSRC=		${WRKDIR}/c${PORTNAME}-${PORTVERSION}/build/${PBITS}bits
 
 CFLAGS+=	-I${LOCALBASE}/include
 CONFIGURE_ARGS=	--enable-phalcon --prefix=${PREFIX} \
 		--with-php-config=${LOCALBASE}/bin/php-config
+ONLY_FOR_ARCHS=	amd64 i386
 
 USE_PHP=	pdo
 USE_PHPEXT=	yes
 USE_PHPIZE=	yes
 USE_PHP_BUILD=	yes
 
-.include <bsd.port.pre.mk>
-
-.if ${ARCH} == "amd64"
-WRKSRC:=	${WRKSRC}/64bits
-.elif ${ARCH} == "i386"
-WRKSRC:=	${WRKSRC}/32bits
-.else
-BROKEN=		Only support on amd64 or i386
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
