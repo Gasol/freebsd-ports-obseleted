@@ -20,7 +20,7 @@ CONFIGURE_ARGS=	--enable-phalcon --prefix=${PREFIX} \
 		--with-php-config=${LOCALBASE}/bin/php-config
 ONLY_FOR_ARCHS=	amd64 i386
 
-USE_PHP=	pdo
+USE_PHP=	hash pdo
 USE_PHPEXT=	yes
 USE_PHPIZE=	yes
 USE_PHP_BUILD=	yes
