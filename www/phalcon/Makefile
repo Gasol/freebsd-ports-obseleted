@@ -2,9 +2,9 @@
 # $FreeBSD: head/www/phalcon/Makefile 346714 2014-03-01 18:52:55Z marino $
 
 PORTNAME=	phalcon
-PORTVERSION=	1.2.6
+PORTVERSION=	1.3.0
 CATEGORIES=	www
-MASTER_SITES=	https://github.com/phalcon/cphalcon/archive/v${PORTVERSION}/
+MASTER_SITES=	https://github.com/phalcon/cphalcon/archive/${PORTVERSION}/
 DISTNAME=	${PORTNAME}-v${PORTVERSION}
 
 MAINTAINER=	linpct@gmail.com
