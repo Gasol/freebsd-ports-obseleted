@@ -1,12 +1,11 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: head/devel/pecl-qb/Makefile 348972 2014-03-24 12:32:08Z sunpoet $
 
 PORTNAME=	qb
 PORTVERSION=	2.1.1
 CATEGORIES=	devel
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
-EXTRACT_SUFX=	.tgz
 DIST_SUBDIR=	PECL
 
 MAINTAINER=	gasol.wu@gmail.com
@@ -18,5 +17,6 @@ CONFIGURE_ARGS=	--with-cpu=native
 NO_WRKSUBDIR=	yes
 USE_PHP=	yes
 USE_PHPEXT=	yes
+USES=		tar:tgz
 
 .include <bsd.port.mk>
