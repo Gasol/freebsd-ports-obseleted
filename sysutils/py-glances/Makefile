@@ -2,7 +2,7 @@
 # $FreeBSD: head/sysutils/py-glances/Makefile 348625 2014-03-19 15:03:35Z swills $
 
 PORTNAME=	glances
-PORTVERSION=	1.7.5
+PORTVERSION=	1.7.6
 CATEGORIES=	sysutils python
 MASTER_SITES=	https://github.com/nicolargo/glances/archive/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
