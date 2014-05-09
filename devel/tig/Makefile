@@ -2,7 +2,7 @@
 # $FreeBSD: head/devel/tig/Makefile 339427 2014-01-11 15:04:03Z amdmi3 $
 
 PORTNAME=	tig
-PORTVERSION=	2.0.1
+PORTVERSION=	2.0.2
 CATEGORIES=	devel
 MASTER_SITES=	http://jonas.nitro.dk/tig/releases/
 
@@ -16,7 +16,7 @@ RUN_DEPENDS=	git:${PORTSDIR}/devel/git
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	${ICONV_CONFIGURE_BASE}
-USES=		iconv gmake
+USES=		iconv gmake ncurses
 
 PLIST_FILES=	bin/tig etc/tigrc
 
