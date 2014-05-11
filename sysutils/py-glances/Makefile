@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/sysutils/py-glances/Makefile 348625 2014-03-19 15:03:35Z swills $
+# $FreeBSD: head/sysutils/py-glances/Makefile 352316 2014-04-26 18:12:55Z sunpoet $
 
 PORTNAME=	glances
 PORTVERSION=	1.7.6
@@ -32,6 +32,7 @@ PLIST_FILES=	bin/glances \
 		%%NLS%%share/locale/it/LC_MESSAGES/glances.mo \
 		%%NLS%%share/locale/pt_BR/LC_MESSAGES/glances.mo \
 		%%NLS%%share/locale/zh_CN/LC_MESSAGES/glances.mo
+PLIST_DIRS=	etc/glances
 PORTDOCS=	*
 
 NLS_USES=		gettext
