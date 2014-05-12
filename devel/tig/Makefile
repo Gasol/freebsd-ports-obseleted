@@ -11,12 +11,12 @@ COMMENT=	Text-mode interface for git
 
 LICENSE=	GPLv2
 
-LIB_DEPENDS=	libreadline.so:${PORTSDIR}/devel/readline
 RUN_DEPENDS=	git:${PORTSDIR}/devel/git
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	${ICONV_CONFIGURE_BASE}
-USES=		iconv gmake ncurses
+USES=		iconv gmake ncurses readline
+readline_ARGS=	port
 
 PLIST_FILES=	bin/tig etc/tigrc
 
