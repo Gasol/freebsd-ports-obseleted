@@ -15,8 +15,7 @@ RUN_DEPENDS=	git:${PORTSDIR}/devel/git
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	${ICONV_CONFIGURE_BASE}
-USES=		iconv gmake ncurses readline
-readline_ARGS=	port
+USES=		iconv gmake ncurses readline:port
 
 PLIST_FILES=	bin/tig etc/tigrc
 
