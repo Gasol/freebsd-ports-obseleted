@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/sysutils/py-glances/Makefile 352316 2014-04-26 18:12:55Z sunpoet $
+# $FreeBSD: head/sysutils/py-glances/Makefile 353700 2014-05-11 14:26:57Z sunpoet $
 
 PORTNAME=	glances
 PORTVERSION=	1.7.6
@@ -25,8 +25,8 @@ USE_PYTHON=	yes
 USE_PYDISTUTILS=yes
 PYDISTUTILS_AUTOPLIST=	yes
 
-PLIST_FILES=	man/man1/glances.1.gz \
-		%%ETCDIR%%/glances.conf.sample \
+PLIST_FILES=	%%ETCDIR%%/glances.conf.sample \
+		man/man1/glances.1.gz \
 		%%NLS%%share/locale/es/LC_MESSAGES/glances.mo \
 		%%NLS%%share/locale/fr/LC_MESSAGES/glances.mo \
 		%%NLS%%share/locale/it/LC_MESSAGES/glances.mo \
