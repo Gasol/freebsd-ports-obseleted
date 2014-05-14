@@ -2,7 +2,7 @@
 # $FreeBSD: head/misc/pecl-timezonedb/Makefile 348369 2014-03-15 18:40:26Z sunpoet $
 
 PORTNAME=	timezonedb
-DISTVERSION=	2013.9
+DISTVERSION=	2014.3
 CATEGORIES=	misc
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
