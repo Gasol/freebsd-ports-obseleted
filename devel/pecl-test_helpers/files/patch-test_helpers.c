@@ -1,5 +1,5 @@
 --- ./test_helpers.c.orig	2010-10-25 15:05:08.000000000 +0800
-+++ ./test_helpers.c	2012-10-08 17:41:40.355030000 +0800
++++ ./test_helpers.c	2014-05-16 23:29:12.000000000 +0800
 @@ -102,14 +102,30 @@
  	case IS_CONST:
  		return &(node->u.constant);
