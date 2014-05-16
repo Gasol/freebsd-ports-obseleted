@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: ports/devel/pecl-test_helpers/Makefile,v 1.1 2012/12/29 12:37:19 svnexp Exp $
+# $FreeBSD: head/devel/pecl-test_helpers/Makefile 340830 2014-01-23 15:12:50Z miwi $
 
 PORTNAME=	test_helpers
 PORTVERSION=	1.1.0
