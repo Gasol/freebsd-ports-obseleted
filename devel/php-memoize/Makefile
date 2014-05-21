@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: devel/php-memoize/Makefile 331622 2013-10-25 18:33:35Z wg $
+# $FreeBSD: head/devel/php-memoize/Makefile 344672 2014-02-17 06:55:05Z miwi $
 
 PORTNAME=	memoize
 PORTVERSION=	0.2.0b1
@@ -26,8 +26,6 @@ OPTIONS_DEFAULT=	MEMORY
 APC_DESC=	Enable memoize APC module
 MEMCACHED_DESC=	Enable memcached storage module
 MEMORY_DESC=	Enable the memoize memory storage module
-
-NO_STAGE=	yes
 
 .include <bsd.port.pre.mk>
 
