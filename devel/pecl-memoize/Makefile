@@ -2,23 +2,21 @@
 # $FreeBSD: head/devel/php-memoize/Makefile 344672 2014-02-17 06:55:05Z miwi $
 
 PORTNAME=	memoize
-PORTVERSION=	0.2.0b1
+PORTVERSION=	0.2.0
+PORTEPOCH=	1
 CATEGORIES=	devel
-PKGNAMEPREFIX=	php-
+MASTER_SITES=	http://pecl.php.net/get/
+PKGNAMEPREFIX=	pecl-
+DIST_SUBDIR=	PECL
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	PHP extension which transparently caches PHP functions
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	arraypad
-GH_PROJECT=	${UNIQUENAME}
-GH_TAGNAME=	v${PORTVERSION}
-GH_COMMIT=	cff0a58
+LICENSE=	PHP301
 
+USES=		tar:tgz
 USE_PHP=	yes
 USE_PHPEXT=	yes
-USE_PHPIZE=	yes
-USE_PHPBUILD=	yes
 CONFIGURE_ARGS=	--enable-memoize
 
 OPTIONS_DEFINE=	APC MEMCACHED MEMORY
