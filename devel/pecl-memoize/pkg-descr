@@ -10,4 +10,4 @@ time:
 - memcached: Uses libmemcached or the memcached PHP extension
 - apc: Uses the APC PHP extension
 
-WWW: https://github.com/arraypad/php-memoize
+WWW: http://pecl.php.net/package/memoize
