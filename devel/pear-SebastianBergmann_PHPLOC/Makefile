@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: ports/devel/pear-SebastianBergmann_PHPLOC/Makefile,v 1.1 2013/01/02 18:43:17 svnexp Exp $
+# $FreeBSD: head/devel/pear-SebastianBergmann_PHPLOC/Makefile 335049 2013-11-27 19:40:30Z sunpoet $
 
 PORTNAME=	PHPLOC
 PORTVERSION=	2.0.3
@@ -19,12 +19,7 @@ BUILD_DEPENDS=	pear>=1.9.4:${PORTSDIR}/devel/pear \
 		pear-SebastianBergmann_Git>=1.0.0:${PORTSDIR}/devel/pear-SebastianBergmann_Git \
 		pear-SebastianBergmann_Version>=1.0.0:${PORTSDIR}/devel/pear-SebastianBergmann_Version \
 		${PEARDIR}/.channels/pear.phpunit.de.reg:${PORTSDIR}/devel/pear-channel-phpunit
-RUN_DEPENDS=	pear>=1.9.4:${PORTSDIR}/devel/pear \
-		pear-Symfony_Component_Console>=1.1.0:${PORTSDIR}/devel/pear-Symfony_Component_Console \
-		pear-SebastianBergmann_FinderFacade>=1.1.0:${PORTSDIR}/devel/pear-SebastianBergmann_FinderFacade \
-		pear-SebastianBergmann_Git>=1.0.0:${PORTSDIR}/devel/pear-SebastianBergmann_Git \
-		pear-SebastianBergmann_Version>=1.0.0:${PORTSDIR}/devel/pear-SebastianBergmann_Version \
-		${PEARDIR}/.channels/pear.phpunit.de.reg:${PORTSDIR}/devel/pear-channel-phpunit
+RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USE_PHP=	tokenizer
 PEAR_CHANNEL=	phpunit

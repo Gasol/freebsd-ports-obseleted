@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: ports/devel/pear-SebastianBergmann_FinderFacade/Makefile,v 1.1 2013/01/02 19:07:45 svnexp Exp $
+# $FreeBSD: head/devel/pear-SebastianBergmann_FinderFacade/Makefile 333598 2013-11-12 18:22:08Z antoine $
 
 PORTNAME=	FinderFacade
 PORTVERSION=	1.1.0

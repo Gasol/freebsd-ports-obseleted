@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: head/devel/pear-SebastianBergmann_Git/Makefile 334061 2013-11-17 08:30:23Z antoine $
 
 PORTNAME=	Git
 PORTVERSION=	1.2.0
@@ -9,6 +9,8 @@ PKGNAMEPREFIX=	pear-SebastianBergmann_
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	Simple wrapper for Git
+
+LICENSE=	BSD
 
 BUILD_DEPENDS=	pear>=1.9.4:${PORTSDIR}/devel/pear \
 		${PEARDIR}/.channels/pear.phpunit.de.reg:${PORTSDIR}/devel/pear-channel-phpunit

@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: ports/devel/pear-ezc_ConsoleTools/Makefile,v 1.1 2012/12/03 18:38:51 svnexp Exp $
+# $FreeBSD: head/devel/pear-ezc_ConsoleTools/Makefile 333263 2013-11-08 21:41:53Z antoine $
 
 PORTNAME=	ConsoleTools
 PORTVERSION=	1.6.1

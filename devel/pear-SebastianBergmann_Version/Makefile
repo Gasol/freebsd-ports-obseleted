@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: head/devel/pear-SebastianBergmann_Version/Makefile 333599 2013-11-12 18:52:03Z antoine $
 
 PORTNAME=	Version
 PORTVERSION=	1.0.1
@@ -9,6 +9,8 @@ PKGNAMEPREFIX=	pear-SebastianBergmann_
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	Managing the version number of Git-hosted PHP projects
+
+LICENSE=	BSD
 
 BUILD_DEPENDS=	pear>=1.9.4:${PORTSDIR}/devel/pear \
 		${PEARDIR}/.channels/pear.phpunit.de.reg:${PORTSDIR}/devel/pear-channel-phpunit

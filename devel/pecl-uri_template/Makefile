@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: head/devel/pecl-uri_template/Makefile 332883 2013-11-05 17:58:34Z antoine $
 
 PORTNAME=	uri_template
 PORTVERSION=	1.0
@@ -17,5 +17,4 @@ LICENSE=	PHP301
 USE_PHP=	yes
 USE_PHPEXT=	yes
 
-NO_STAGE=	yes
 .include <bsd.port.mk>

@@ -1,6 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: ports/devel/pear-Net_Gearman/Makefile,v 1.8 2012/11/17 05:56:39 svnexp Exp $
-#
+# $FreeBSD: head/devel/pear-Net_Gearman/Makefile 333263 2013-11-08 21:41:53Z antoine $
 
 PORTNAME=	Net_Gearman
 PORTVERSION=	0.2.3
@@ -11,18 +10,11 @@ MAINTAINER=	gslin@gslin.org
 COMMENT=	Gearman client libraray for PHP
 
 BUILD_DEPENDS=	${LOCALBASE}/share/pear/PEAR.php:${PORTSDIR}/devel/pear
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+RUN_DEPENDS=	${LOCALBASE}/share/pear/PEAR.php:${PORTSDIR}/devel/pear
 
 USE_PHP=	json mbstring
-
-FILES=		Net/Gearman/Client.php Net/Gearman/Connection.php Net/Gearman/Exception.php \
-		Net/Gearman/Job.php Net/Gearman/Manager.php Net/Gearman/Set.php \
-		Net/Gearman/Task.php Net/Gearman/Worker.php \
-		Net/Gearman/Job/Common.php Net/Gearman/Job/Exception.php
-EXAMPLES=	SQL.php Sum.php tasks.php worker.php
+PEAR_AUTOINSTALL=	yes
 
 .include <bsd.port.pre.mk>
-
 .include "${PORTSDIR}/devel/pear/bsd.pear.mk"
-
 .include <bsd.port.post.mk>

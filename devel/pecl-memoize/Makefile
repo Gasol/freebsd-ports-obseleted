@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/php-memoize/Makefile 344672 2014-02-17 06:55:05Z miwi $
+# $FreeBSD: head/devel/pecl-memoize/Makefile 355087 2014-05-24 20:55:16Z sunpoet $
 
 PORTNAME=	memoize
 PORTVERSION=	0.2.0
@@ -19,26 +19,16 @@ USE_PHPEXT=	yes
 CONFIGURE_ARGS=	--enable-memoize
 
 OPTIONS_DEFINE=	APC MEMCACHED MEMORY
-OPTIONS_DEFAULT=	MEMORY
+OPTIONS_DEFAULT=MEMORY
 APC_DESC=	Enable memoize APC module
 MEMCACHED_DESC=	Enable memcached storage module
 MEMORY_DESC=	Enable the memoize memory storage module
 
-.include <bsd.port.pre.mk>
+APC_CONFIGURE_ON=	--enable-memoize-apc
+APC_USE=		PHP=apc
+MEMCACHED_CONFIGURE_ON=	--with-memoize-memcached
+MEMCACHED_BUILD_DEPENDS=libmemcached>=0:${PORTSDIR}/databases/libmemcached
+MEMCACHED_RUN_DEPENDS=	libmemcached>=0:${PORTSDIR}/databases/libmemcached
+MEMORY_CONFIGURE_OFF=	--disable-memoize-memory
 
-.if ${PORT_OPTIONS:MAPC}
-CONFIGURE_ARGS+=	--enable-memoize-apc
-BUILD_DEPENDS+=	${LOCALBASE}/lib/php/${PHP_EXT_DIR}/apc.so:${PORTSDIR}/www/pecl-APC
-.endif
-
-.if ${PORT_OPTIONS:MMEMCACHED}
-CONFIGURE_ARGS+=	--with-memoize-memcached
-BUILD_DEPENDS+=		libmemcached>0:${PORTSDIR}/databases/libmemcached
-RUN_DEPENDS+=		libmemcached>0:${PORTSDIR}/databases/libmemcached
-.endif
-
-.if empty(PORT_OPTIONS:MMEMORY)
-CONFIGURE_ARGS+=	--disable-memoize-memory
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

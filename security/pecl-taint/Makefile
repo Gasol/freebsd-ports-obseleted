@@ -1,5 +1,5 @@
 # Created by: johnpupu <johnpupu@gmail.com>
-# $FreeBSD: security/pecl-taint/Makefile 313280 2013-03-02 16:52:32Z miwi $
+# $FreeBSD: head/security/pecl-taint/Makefile 340835 2014-01-23 16:00:14Z miwi $
 
 PORTNAME=	taint
 PORTVERSION=	1.2.2

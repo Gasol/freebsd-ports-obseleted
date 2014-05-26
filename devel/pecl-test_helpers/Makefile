@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-test_helpers/Makefile 340830 2014-01-23 15:12:50Z miwi $
+# $FreeBSD: head/devel/pecl-test_helpers/Makefile 355028 2014-05-24 14:12:03Z sunpoet $
 
 PORTNAME=	test_helpers
 PORTVERSION=	1.1.0
@@ -11,18 +11,15 @@ PKGNAMEPREFIX=	pecl-
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	Extension to ease testing of PHP code
 
-LICENSE=	BSD
+LICENSE=	BSD3CLAUSE
 
-USES=		tar:tgz
 CONFIGURE_ARGS=	--enable-test-helpers
 USE_PHP=	yes
 USE_PHPEXT=	yes
 USE_PHPIZE=	yes
+USES=		tar:tgz
 SUB_FILES=	pkg-message
 
 PKGMESSAGE=	${WRKDIR}/pkg-message
-
-post-install:
-	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: head/devel/pecl-jsmin/Makefile 333407 2013-11-10 15:42:50Z antoine $
 
 PORTNAME=	jsmin
 PORTVERSION=	0.1.1
@@ -15,9 +15,7 @@ COMMENT=	PHP extension for minifying JavaScript
 LICENSE=	PHP301
 
 USE_PHP=	yes
-USE_PHP_BUILD=	yes
-USE_PHPIZE=	yes
 USE_PHPEXT=	yes
-IGNORE_WITH_PHP=4 52
+IGNORE_WITH_PHP=52
 
 .include <bsd.port.mk>

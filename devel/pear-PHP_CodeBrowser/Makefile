@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: ports/devel/pear-PHP_CodeBrowser/Makefile,v 1.1 2012/11/18 08:05:41 svnexp Exp $
+# $FreeBSD: head/devel/pear-PHP_CodeBrowser/Makefile 333263 2013-11-08 21:41:53Z antoine $
 
 PORTNAME=	PHP_CodeBrowser
 PORTVERSION=	1.0.2

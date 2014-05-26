@@ -1,9 +1,9 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: databases/php5-pdo_cassandra/Makefile 333899 2013-11-15 17:55:27Z sunpoet $
+# $FreeBSD: head/databases/php5-pdo_cassandra/Makefile 343214 2014-02-07 11:44:08Z bapt $
 
 PORTNAME=	pdo_cassandra
 PORTVERSION=	0.2.1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	databases
 MASTER_SITES=	https://github.com/${GITHUB_USER}/php-${PORTNAME}/tarball/${GITREVISION}/
 PKGNAMEPREFIX=	php5-
@@ -12,14 +12,13 @@ DISTNAME=	${GITHUB_USER}-php-${PORTNAME}-${GITTAG}-14-g${GITREVISION}
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	PDO driver for Apache Cassandra
 
-LICENSE=	AL2
+LICENSE=	APACHE20
 
 LIB_DEPENDS=	libboost_iostreams.so:${PORTSDIR}/devel/boost-libs
 
 GITREVISION=	7debd5b
 GITTAG=		0.8-support
 GITHUB_USER=	mkoppanen
-FETCH_ARGS=	-pRr
 WRKSRC=		${WRKDIR}/${GITHUB_USER}-php-${PORTNAME}-${GITREVISION}
 
 USES=		pkgconfig

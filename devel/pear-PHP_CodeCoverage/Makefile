@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: ports/devel/pear-PHP_CodeCoverage/Makefile,v 1.1 2012/11/18 07:56:44 svnexp Exp $
+# $FreeBSD: head/devel/pear-PHP_CodeCoverage/Makefile 333263 2013-11-08 21:41:53Z antoine $
 
 PORTNAME=	PHP_CodeCoverage
 PORTVERSION=	1.2.7
@@ -29,9 +29,6 @@ PEAR_AUTOINSTALL=	yes
 OPTIONS_DEFINE=	DOM XDEBUG
 DOM_DESC=	Enable DOM support
 XDEBUG_DESC=	Enable Xdebug support
-
-DEFAULT_PHP_VER=5
-IGNORE_WITH_PHP=4
 
 .include <bsd.port.options.mk>
 

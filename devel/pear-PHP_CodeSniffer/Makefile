@@ -1,14 +1,12 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: devel/pear-PHP_CodeSniffer/Makefile 333263 2013-11-08 21:41:53Z antoine $
+# $FreeBSD: head/devel/pear-PHP_CodeSniffer/Makefile 354399 2014-05-18 07:25:34Z miwi $
 
 PORTNAME=	PHP_CodeSniffer
-PORTVERSION=	1.5.1
+PORTVERSION=	1.5.3
 CATEGORIES=	devel www pear
 
 MAINTAINER=	miwi@FreeBSD.org
 COMMENT=	PHP Script Tokenises and Sniffs PHP and JavaScript code
-
-LICENSE=	BSD3CLAUSE
 
 BUILD_DEPENDS=	${PEARDIR}/PEAR.php:${PORTSDIR}/devel/pear
 RUN_DEPENDS=	${PEARDIR}/PEAR.php:${PORTSDIR}/devel/pear

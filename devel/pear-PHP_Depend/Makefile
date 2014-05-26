@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: ports/devel/pear-PHP_Depend/Makefile,v 1.1 2012/12/03 16:02:43 svnexp Exp $
+# $FreeBSD: head/devel/pear-PHP_Depend/Makefile 333263 2013-11-08 21:41:53Z antoine $
 
 PORTNAME=	PHP_Depend
 PORTVERSION=	1.1.0

@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: devel/pear-TheSeer_fXSL/Makefile 333263 2013-11-08 21:41:53Z antoine $
+# $FreeBSD: head/devel/pear-TheSeer_fXSL/Makefile 343770 2014-02-11 16:51:32Z sunpoet $
 
 PORTNAME=	fXSL
 PORTVERSION=	1.1.0

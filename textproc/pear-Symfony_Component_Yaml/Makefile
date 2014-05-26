@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: head/textproc/pear-Symfony_Component_Yaml/Makefile 334871 2013-11-25 17:59:58Z antoine $
 
 PORTNAME=	Yaml
 PORTVERSION=	2.1.2
@@ -11,7 +11,7 @@ COMMENT=	Symfony2 Yaml Component
 
 LICENSE=	MIT
 
-IGNORE_WITH_PHP=4 52
+IGNORE_WITH_PHP=52
 
 .include <bsd.port.pre.mk>
 .include "${PORTSDIR}/devel/pear-channel-symfony2/bsd.symfony2.mk"

@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-qb/Makefile 348972 2014-03-24 12:32:08Z sunpoet $
+# $FreeBSD: head/devel/pecl-qb/Makefile 353953 2014-05-13 14:34:47Z sunpoet $
 
 PORTNAME=	qb
 PORTVERSION=	2.2.0

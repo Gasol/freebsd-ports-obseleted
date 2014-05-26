@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: ports/devel/pear-PHP_PMD/Makefile,v 1.2 2012/12/17 19:02:23 svnexp Exp $
+# $FreeBSD: head/devel/pear-PHP_PMD/Makefile 333263 2013-11-08 21:41:53Z antoine $
 
 PORTNAME=	PHP_PMD
 PORTVERSION=	1.4.1

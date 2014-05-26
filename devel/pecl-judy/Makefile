@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: devel/pecl-judy/Makefile 332708 2013-11-04 13:15:55Z wg $
+# $FreeBSD: head/devel/pecl-judy/Makefile 340722 2014-01-22 17:00:46Z mat $
 
 PORTNAME=	judy
 PORTVERSION=	1.0.2

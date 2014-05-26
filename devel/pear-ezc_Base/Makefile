@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: ports/devel/pear-ezc_Base/Makefile,v 1.1 2012/12/03 16:00:06 svnexp Exp $
+# $FreeBSD: head/devel/pear-ezc_Base/Makefile 333263 2013-11-08 21:41:53Z antoine $
 
 PORTNAME=	Base
 PORTVERSION=	1.8

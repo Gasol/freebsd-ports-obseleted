@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: head/devel/gradle/Makefile 355086 2014-05-24 20:54:16Z sunpoet $
 
 PORTNAME=	gradle
 PORTVERSION=	1.12

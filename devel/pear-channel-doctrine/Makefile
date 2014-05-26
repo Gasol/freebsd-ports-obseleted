@@ -1,11 +1,11 @@
-# Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# Created by: William Grzybowski <wg@FreeBSD.org>
+# $FreeBSD: head/devel/pear-channel-doctrine/Makefile 333263 2013-11-08 21:41:53Z antoine $
 
 PORTNAME=	doctrine
-PORTVERSION=	20100525
+PORTVERSION=	20130618
 CATEGORIES=	devel www pear
 
-MAINTAINER=	gasol.wu@gmail.com
+MAINTAINER=	wg@FreeBSD.org
 COMMENT=	PEAR channel ${PEAR_CHANNEL_HOST}
 
 PEAR_CHANNEL_HOST=	pear.doctrine-project.org

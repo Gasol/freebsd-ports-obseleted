@@ -1,4 +1,4 @@
-# $FreeBSD: devel/pear/bsd.pear.channel.mk 300896 2012-07-14 13:54:48Z beat $
+# $FreeBSD: head/devel/pear/bsd.pear.channel.mk 340722 2014-01-22 17:00:46Z mat $
 #
 # Common code for PEAR channels
 
@@ -29,8 +29,9 @@ IGNORE=		Cannot find registry file: ${PEAR_CHANNEL_REG}
 .endif
 
 do-install:
-	@${MKDIR} ${PREFIX}/${LPEARDIR}/.registry/.channel.${PEAR_CHANNEL_HOST}
+	@${MKDIR} ${STAGEDIR}${PREFIX}/${LPEARDIR}/.channels/.alias
+	@${MKDIR} ${STAGEDIR}${PREFIX}/${LPEARDIR}/.registry/.channel.${PEAR_CHANNEL_HOST}
 	@${INSTALL_DATA} ${PEAR_CHANNEL_REG} \
-		${PREFIX}/${LPEARDIR}/.channels/
+		${STAGEDIR}${PREFIX}/${LPEARDIR}/.channels
 	@${ECHO_CMD} -n ${PEAR_CHANNEL_HOST} > \
-		${PREFIX}/${LPEARDIR}/.channels/.alias/${PEAR_CHANNEL_ALIAS}.txt
+		${STAGEDIR}${PREFIX}/${LPEARDIR}/.channels/.alias/${PEAR_CHANNEL_ALIAS}.txt

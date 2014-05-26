@@ -1,9 +1,5 @@
-# New ports collection makefile for:	pear-channel-pirum
-# Date created:		2012-09-18
-# Whom:			Gasol Wu <gasol.wu@gmail.com>
-#
-# $FreeBSD$
-#
+# Created by: Gasol Wu <gasol.wu@gmail.com>
+# $FreeBSD: head/devel/pear-channel-phpdoc/Makefile 340722 2014-01-22 17:00:46Z mat $
 
 PORTNAME=	phpdoc
 PORTVERSION=	20120214

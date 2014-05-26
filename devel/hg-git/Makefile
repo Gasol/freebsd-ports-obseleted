@@ -1,5 +1,5 @@
 # Created by: Marco Broeder <marco.broeder@posteo.eu>
-# $FreeBSD: head/devel/hg-git/Makefile 346955 2014-03-03 19:02:30Z pawel $
+# $FreeBSD: head/devel/hg-git/Makefile 355031 2014-05-24 14:12:15Z sunpoet $
 
 PORTNAME=	hg-git
 PORTVERSION=	0.6.0

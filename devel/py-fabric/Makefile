@@ -1,18 +1,17 @@
 # Created by: Yi-Jheng Lin <yzlin@cs.nctu.edu.tw>
-# $FreeBSD: devel/py-fabric/Makefile 326482 2013-09-06 09:31:00Z koobs $
+# $FreeBSD: head/devel/py-fabric/Makefile 344544 2014-02-16 12:05:59Z koobs $
 
 PORTNAME=	fabric
-PORTVERSION=	1.7.0
+PORTVERSION=	1.8.2
 PORTEPOCH=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
-DISTNAME=	${PYDISTUTILS_PKGNAME}-${DISTVERSIONPREFIX}${DISTVERSION}${DISTVERSIONSUFFIX}
-
+DISTNAME=	${PORTNAME:C/f/F/}-${DISTVERSION}
 MAINTAINER=	koobs@FreeBSD.org
 COMMENT=	Simple pythonic remote deployment tool
 
-LICENSE=	BSD
+LICENSE=	BSD2CLAUSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}paramiko>=1.10.0:${PORTSDIR}/security/py-paramiko
 TEST_DEPENDS:=	${RUN_DEPENDS} \
@@ -22,19 +21,14 @@ TEST_DEPENDS:=	${RUN_DEPENDS} \
 
 OPTIONS_DEFINE=	TESTS
 TESTS_DESC=	Install nose for test suite
-OPTIONSFILE?=	${PORT_DBDIR}/py-${PORTNAME}/options
 
-.include <bsd.port.options.mk>
-
-.if ${PORT_OPTIONS:MTESTS}
-BUILD_DEPENDS:=	${TEST_DEPENDS}
-.endif
+TESTS_BUILD_DEPENDS=	${TEST_DEPENDS}
 
 USE_PYTHON=		yes
-USE_PYDISTUTILS=	easy_install
-PYDISTUTILS_PKGNAME=	${PORTNAME:C/f/F/}
+USE_PYDISTUTILS=	yes
+PYDISTUTILS_AUTOPLIST=	yes
 
 regression-test: build
-	@cd ${WRKSRC} && nosetests -v
+	@cd ${WRKSRC} && ${PYTHON_CMD} ${PYSETUP} test
 
 .include <bsd.port.mk>

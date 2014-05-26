@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: head/devel/php-scalar_objects/Makefile 342832 2014-02-05 20:03:02Z sunpoet $
 
 PORTNAME=	scalar_objects
 PORTVERSION=	0.0.20140124

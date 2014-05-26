@@ -1,15 +1,17 @@
 # Created by: Conor McDermottroe <ports@mcdermottroe.com>
-# $FreeBSD: devel/pecl-xhprof/Makefile 327724 2013-09-20 17:13:42Z bapt $
+# $FreeBSD: head/devel/pecl-xhprof/Makefile 338168 2013-12-30 20:55:18Z ohauer $
 
 PORTNAME=	xhprof
-PORTVERSION=	0.9.3
+PORTVERSION=	0.9.4
 CATEGORIES=	devel pear
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@mcdermottroe.com
-COMMENT=	A Hierarchical Profiler for PHP
+COMMENT=	Hierarchical Profiler for PHP
+
+LICENSE=	APACHE20
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/extension
 
@@ -18,5 +20,4 @@ USE_PHPIZE=	yes
 USE_PHPEXT=	yes
 ONLY_FOR_ARCHS=	i386 amd64
 
-NO_STAGE=	yes
 .include <bsd.port.mk>

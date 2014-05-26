@@ -1,8 +1,9 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: head/net/libcapn/Makefile 352709 2014-05-01 01:31:06Z vanilla $
 
 PORTNAME=	libcapn
 PORTVERSION=	1.0.0.b3
+PORTREVISION=	1
 CATEGORIES=	net
 
 MAINTAINER=	gasol.wu@gmail.com
@@ -19,6 +20,6 @@ GH_COMMIT=	050dfd8
 
 USES=		cmake
 USE_LDCONFIG=	yes
-CMAKE_ARGS+=	-DOS_FREEBSD=yes
+CMAKE_ARGS=	-DOS_FREEBSD=yes
 
 .include <bsd.port.mk>

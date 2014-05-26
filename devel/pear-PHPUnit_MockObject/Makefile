@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: ports/devel/pear-PHPUnit_MockObject/Makefile,v 1.1 2012/11/18 07:28:47 svnexp Exp $
+# $FreeBSD: head/devel/pear-PHPUnit_MockObject/Makefile 333263 2013-11-08 21:41:53Z antoine $
 
 PORTNAME=	PHPUnit_MockObject
 PORTVERSION=	1.2.2
@@ -21,9 +21,6 @@ RUN_DEPENDS=	pear>=1.9.4:${PORTSDIR}/devel/pear \
 
 PEAR_CHANNEL=	phpunit
 PEAR_AUTOINSTALL=	yes
-
-DEFAULT_PHP_VER=5
-IGNORE_WITH_PHP=4
 
 .include <bsd.port.pre.mk>
 .include "${PORTSDIR}/devel/pear/bsd.pear.mk"

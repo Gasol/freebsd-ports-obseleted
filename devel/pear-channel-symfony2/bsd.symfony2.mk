@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/pear-channel-symfony2/bsd.symfony2.mk,v 1.1 2012/11/18 08:03:23 svnexp Exp $
+# $FreeBSD: head/devel/pear-channel-symfony2/bsd.symfony2.mk 338892 2014-01-06 15:11:43Z sunpoet $
 
 SYMFONY2_PORTVERSION=	2.3.4
 MASTER_SITES?=	http://pear.symfony.com/get/

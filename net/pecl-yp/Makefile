@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/net/pecl-yp/Makefile 353952 2014-05-13 14:34:41Z sunpoet $
+# $FreeBSD: head/net/pecl-yp/Makefile 354577 2014-05-19 18:38:54Z sunpoet $
 
 PORTNAME=	yp
 PORTVERSION=	1.0.1

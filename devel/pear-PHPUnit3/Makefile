@@ -1,12 +1,12 @@
 # Created by: Gerrit Beine (<gerrit.beine@gmx.de>)
-# $FreeBSD: ports/devel/pear-PHPUnit3/Makefile,v 1.43 2013/01/02 20:49:36 svnexp Exp $
+# $FreeBSD: head/devel/pear-PHPUnit3/Makefile 340722 2014-01-22 17:00:46Z mat $
 
 PORTNAME=	PHPUnit
 PORTVERSION=	3.7.6
 CATEGORIES=	devel www pear
 MASTER_SITES=	http://pear.phpunit.de/get/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	PEAR regression testing framework for unit tests
 
 LICENSE=	BSD

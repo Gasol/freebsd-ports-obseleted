@@ -1,5 +1,5 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: ports/devel/pear-File_Iterator/Makefile,v 1.6 2012/11/17 19:14:53 svnexp Exp $
+# $FreeBSD: head/devel/pear-File_Iterator/Makefile 340722 2014-01-22 17:00:46Z mat $
 
 PORTNAME=	File_Iterator
 PORTVERSION=	1.3.3
@@ -7,7 +7,7 @@ CATEGORIES=	devel www pear
 MASTER_SITES=	http://pear.phpunit.de/get/
 PKGNAMEPREFIX=	pear-
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	PEAR FileIterator implementation
 
 BUILD_DEPENDS=	${PEARDIR}/PEAR.php:${PORTSDIR}/devel/pear \

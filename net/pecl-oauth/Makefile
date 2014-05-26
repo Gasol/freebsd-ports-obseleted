@@ -1,6 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: ports/net/pecl-oauth/Makefile,v 1.9 2012/11/17 06:00:15 svnexp Exp $
-#
+# $FreeBSD: head/net/pecl-oauth/Makefile 340828 2014-01-23 14:32:34Z miwi $
 
 PORTNAME=	oauth
 PORTVERSION=	1.2.3
