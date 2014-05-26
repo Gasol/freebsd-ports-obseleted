@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+PORTSDIR=/usr/ports
+
+for d in `echo */*`; do
+	if [ -d $PORTSDIR/$d ]; then
+		cp -r $PORTSDIR/$d/ $d/
+	else
+		echo "$d not exists"
+	fi
+done
