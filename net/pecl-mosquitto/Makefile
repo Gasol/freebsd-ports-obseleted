@@ -1,9 +1,9 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: head/net/pecl-mosquitto/Makefile 355407 2014-05-26 16:15:33Z sunpoet $
 
 PORTNAME=	mosquitto
 PORTVERSION=	0.2.2
-CATEGORIES=	pear
+CATEGORIES=	net pear
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
 DISTNAME=	Mosquitto-${PORTVERSION}
@@ -14,7 +14,7 @@ COMMENT=	Extension for libmosquitto
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	mosquitto>=*:${PORTSDIR}/net/mosquitto
+BUILD_DEPENDS=	mosquitto>=0:${PORTSDIR}/net/mosquitto
 
 USE_PHP=	yes
 USE_PHPEXT=	yes
