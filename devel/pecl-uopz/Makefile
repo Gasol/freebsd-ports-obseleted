@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-uopz/Makefile 352321 2014-04-26 18:13:18Z sunpoet $
+# $FreeBSD: head/devel/pecl-uopz/Makefile 356739 2014-06-06 03:48:57Z miwi $
 
 PORTNAME=	uopz
 PORTVERSION=	2.0.5
