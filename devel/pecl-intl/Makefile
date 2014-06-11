@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/pecl-intl/Makefile 343214 2014-02-07 11:44:08Z bapt $
+# $FreeBSD: head/devel/pecl-intl/Makefile 357277 2014-06-10 07:39:01Z olgeni $
 
 PORTNAME=	intl
 PORTVERSION=	3.0.0
@@ -11,7 +11,7 @@ EXTRACT_SUFX=	.tgz
 DIST_SUBDIR=	PECL
 
 MAINTAINER=	miwi@FreeBSD.org
-COMMENT=	A PECL extension to support Internationalization(ICU)
+COMMENT=	PECL extension to support Internationalization(ICU)
 
 LICENSE=	PHP301
 
