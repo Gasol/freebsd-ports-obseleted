@@ -1,13 +1,14 @@
 # Created by: Yi-Jheng Lin <yzlin@cs.nctu.edu.tw>
-# $FreeBSD: head/devel/py-fabric/Makefile 344544 2014-02-16 12:05:59Z koobs $
+# $FreeBSD: head/devel/py-fabric/Makefile 357007 2014-06-08 12:17:08Z koobs $
 
 PORTNAME=	fabric
-PORTVERSION=	1.8.2
+PORTVERSION=	1.8.3
 PORTEPOCH=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	${PORTNAME:C/f/F/}-${DISTVERSION}
+
 MAINTAINER=	koobs@FreeBSD.org
 COMMENT=	Simple pythonic remote deployment tool
 
