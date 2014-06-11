@@ -1,5 +1,5 @@
 # Created by: Jens Rehsack <rehsack@liwing.de>
-# $FreeBSD: head/devel/php-xdebug/Makefile 347221 2014-03-06 14:15:42Z miwi $
+# $FreeBSD: head/devel/php-xdebug/Makefile 356935 2014-06-07 18:11:53Z sunpoet $
 
 PORTNAME=	xdebug
 PORTVERSION=	2.2.5
@@ -13,10 +13,11 @@ COMMENT=	Xdebug extension for PHP
 LICENSE=	BSD
 
 CONFIGURE_ARGS=	--enable-xdebug
-USES=		tar:tgz
 USE_PHP=	yes
 USE_PHPIZE=	yes
 USE_ZENDEXT=	yes
+USES=		tar:tgz
+
 SUB_FILES=	pkg-message
 
 .include <bsd.port.mk>
