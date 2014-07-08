@@ -12,6 +12,8 @@ MASTER_SITE_SUBDIR=	ashish
 MAINTAINER=	ashish@FreeBSD.org
 COMMENT=	Interactive shell for PHP
 
+LICENSE=	BSD3CLAUSE
+
 USE_BZIP2=	yes
 USE_PYTHON=	yes
 USE_PYDISTUTILS=	yes
