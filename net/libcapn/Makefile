@@ -1,9 +1,9 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/net/libcapn/Makefile 352709 2014-05-01 01:31:06Z vanilla $
+# $FreeBSD: head/net/libcapn/Makefile 358938 2014-06-23 13:20:54Z amdmi3 $
 
 PORTNAME=	libcapn
 PORTVERSION=	1.0.0.b3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net
 
 MAINTAINER=	gasol.wu@gmail.com

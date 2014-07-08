@@ -1,8 +1,8 @@
 # Created by: Yi-Jheng Lin <yzlin@cs.nctu.edu.tw>
-# $FreeBSD: head/devel/py-fabric/Makefile 357007 2014-06-08 12:17:08Z koobs $
+# $FreeBSD: head/devel/py-fabric/Makefile 357658 2014-06-13 08:58:18Z koobs $
 
 PORTNAME=	fabric
-PORTVERSION=	1.8.3
+PORTVERSION=	1.8.4
 PORTEPOCH=	1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
@@ -14,7 +14,7 @@ COMMENT=	Simple pythonic remote deployment tool
 
 LICENSE=	BSD2CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}paramiko>=1.10.0:${PORTSDIR}/security/py-paramiko
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}paramiko>=1.10:${PORTSDIR}/security/py-paramiko
 TEST_DEPENDS:=	${RUN_DEPENDS} \
 		${PYTHON_PKGNAMEPREFIX}Jinja2>=0.6:${PORTSDIR}/devel/py-Jinja2 \
 		${PYTHON_PKGNAMEPREFIX}fudge>0:${PORTSDIR}/devel/py-fudge \
