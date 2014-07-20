@@ -3,9 +3,10 @@
 
 PORTNAME=	scribe
 DISTVERSION=	2.2.2013.04.15
+PORTREVISION=	1
 CATEGORIES=	net
-MASTER_SITES=	https://github.com/facebook/scribe/tarball/${GITVERSION}/
-DISTNAME=	facebook-scribe-${GITVERSION}
+MASTER_SITES=	https://github.com/facebookarchive/scribe/tarball/${GITVERSION}/
+DISTNAME=	facebookarchive-scribe-${GITVERSION}
 
 MAINTAINER=	jnlin@csie.nctu.edu.tw
 COMMENT=	Aggregating log data streamed in real time
