@@ -1,7 +1,8 @@
-# $FreeBSD: head/databases/pecl-rrd/Makefile 340266 2014-01-19 11:40:17Z flo $
+# $FreeBSD: head/databases/pecl-rrd/Makefile 362726 2014-07-23 20:11:10Z zeising $
 
 PORTNAME=	rrd
 DISTVERSION=	1.1.3
+PORTREVISION=	1
 CATEGORIES=	databases pear
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-

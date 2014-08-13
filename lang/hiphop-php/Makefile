@@ -1,9 +1,9 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/lang/hiphop-php/Makefile 351646 2014-04-20 20:44:48Z antoine $
+# $FreeBSD: head/lang/hiphop-php/Makefile 362835 2014-07-24 18:34:16Z tijl $
 
 PORTNAME=	hiphop-php
 PORTVERSION=	2.1
-PORTREVISION=	9
+PORTREVISION=	10
 CATEGORIES=	lang devel www
 MASTER_SITES=	https://github.com/facebook/hiphop-php/archive/:main \
 		http://unicode.org/Public/UNIDATA/:unidata \

@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-TheSeer_fDOMDocument/Makefile 343771 2014-02-11 16:51:36Z sunpoet $
+# $FreeBSD: head/devel/pear-TheSeer_fDOMDocument/Makefile 362615 2014-07-23 01:45:47Z adamw $
 
 PORTNAME=	fDOMDocument
 PORTVERSION=	1.4.3
@@ -8,7 +8,7 @@ MASTER_SITES=	http://pear.netpirates.net/get/
 PKGNAMEPREFIX=	pear-TheSeer_
 
 MAINTAINER=	gasol.wu@gmail.com
-COMMENT=	Extension to PHP\'s standard DOM
+COMMENT=	Extension to PHP's standard DOM
 
 LICENSE=	BSD3CLAUSE
 

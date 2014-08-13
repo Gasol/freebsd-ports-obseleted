@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/net/pecl-oauth/Makefile 340828 2014-01-23 14:32:34Z miwi $
+# $FreeBSD: head/net/pecl-oauth/Makefile 361440 2014-07-10 12:13:11Z olgeni $
 
 PORTNAME=	oauth
 PORTVERSION=	1.2.3
@@ -10,7 +10,7 @@ EXTRACT_SUFX=	.tgz
 DIST_SUBDIR=	PECL
 
 MAINTAINER=	miwi@FreeBSD.org
-COMMENT=	A Php Interface to the OAuth Protocol
+COMMENT=	Php Interface to the OAuth Protocol
 
 BUILD_DEPENDS=	${LOCALBASE}/include/curl/curl.h:${PORTSDIR}/ftp/curl
 

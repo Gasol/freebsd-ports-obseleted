@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-SebastianBergmann_FinderFacade/Makefile 333598 2013-11-12 18:22:08Z antoine $
+# $FreeBSD: head/devel/pear-SebastianBergmann_FinderFacade/Makefile 362615 2014-07-23 01:45:47Z adamw $
 
 PORTNAME=	FinderFacade
 PORTVERSION=	1.1.0
@@ -8,7 +8,7 @@ MASTER_SITES=	http://pear.phpunit.de/get/
 PKGNAMEPREFIX=	pear-SebastianBergmann_
 
 MAINTAINER=	gasol.wu@gmail.com
-COMMENT=	Convenience wrapper for Symfony\'s Finder component
+COMMENT=	Convenience wrapper for Symfony's Finder component
 
 LICENSE=	BSD
 

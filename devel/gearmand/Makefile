@@ -1,9 +1,9 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/gearmand/Makefile 359586 2014-06-27 17:21:06Z miwi $
+# $FreeBSD: head/devel/gearmand/Makefile 364077 2014-08-05 06:40:46Z bapt $
 
 PORTNAME=	gearmand
 PORTVERSION=	1.0.6
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	http://launchpad.net/gearmand/1.0/${PORTVERSION}/+download/
 
@@ -11,11 +11,9 @@ MAINTAINER=	bdrewery@FreeBSD.org
 COMMENT=	Gearman C Server and Library
 
 BUILD_DEPENDS=	boost-libs>=0:${PORTSDIR}/devel/boost-libs \
-		libexecinfo>=0:${PORTSDIR}/devel/libexecinfo \
 		${PYTHON_PKGNAMEPREFIX}sphinx>=0:${PORTSDIR}/textproc/py-sphinx
-LIB_DEPENDS=	libevent.so:${PORTSDIR}/devel/libevent \
-		libuuid.so:${PORTSDIR}/misc/e2fsprogs-libuuid \
-		libexecinfo.so:${PORTSDIR}/devel/libexecinfo
+LIB_DEPENDS=	libevent.so:${PORTSDIR}/devel/libevent2 \
+		libuuid.so:${PORTSDIR}/misc/e2fsprogs-libuuid
 
 CONFLICTS=	p5-Gearman-Server-1.* gearmand-1.1.*
 
@@ -24,7 +22,7 @@ GROUPS=		gearmand
 
 USE_PERL5=	build
 GNU_CONFIGURE=	yes
-USES=		pathfix gmake perl5 libtool
+USES=		pathfix gmake perl5 libtool execinfo
 USE_LDCONFIG=	yes
 USE_PYTHON_BUILD=yes
 USE_RC_SUBR=	gearmand

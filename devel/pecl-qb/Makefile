@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-qb/Makefile 353953 2014-05-13 14:34:47Z sunpoet $
+# $FreeBSD: head/devel/pecl-qb/Makefile 364182 2014-08-06 14:25:31Z adamw $
 
 PORTNAME=	qb
 PORTVERSION=	2.2.0
@@ -17,5 +17,6 @@ CONFIGURE_ARGS=	--with-cpu=native
 USE_PHP=	yes
 USE_PHPEXT=	yes
 USES=		tar:tgz
+USE_GCC=	any
 
 .include <bsd.port.mk>
