@@ -1,9 +1,9 @@
 # $FreeBSD: head/devel/capstone/Makefile 348504 2014-03-17 20:44:45Z pawel $
 
 PORTNAME=	capstone
-PORTVERSION=	2.1.1
+PORTVERSION=	2.1.2
 CATEGORIES=	devel
-MASTER_SITES=	http://capstone-engine.org/download/2.1/
+MASTER_SITES=	http://capstone-engine.org/download/${PORTVERSION}/
 
 MAINTAINER=	oliver.pntr@gmail.com
 COMMENT=	Multi-platform, multi-architecture disassembly framework
