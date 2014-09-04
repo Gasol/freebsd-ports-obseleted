@@ -1,0 +1,23 @@
+# $FreeBSD: head/devel/capstone/Makefile 348504 2014-03-17 20:44:45Z pawel $
+
+PORTNAME=	capstone
+PORTVERSION=	2.1.1
+CATEGORIES=	devel
+MASTER_SITES=	http://capstone-engine.org/download/2.1/
+
+MAINTAINER=	oliver.pntr@gmail.com
+COMMENT=	Multi-platform, multi-architecture disassembly framework
+
+LICENSE=	BSD3CLAUSE
+
+USES=		gmake
+USE_LDCONFIG=	yes
+
+MAKE_ENV+=	INSTALL_LIB="${INSTALL_LIB}" \
+		INSTALL_DATA="${INSTALL_DATA}"
+
+post-build:
+	# The pkgconfig file is generated and points to stagedir
+	${REINPLACE_CMD} -e '/libdir/s|\(libdir=\)\(.*\)\(devel/capstone/work/stage\)|\1|g' ${WRKSRC}/capstone.pc
+
+.include <bsd.port.mk>
