@@ -2,7 +2,7 @@
 # $FreeBSD: head/devel/pecl-jsonc/Makefile 333990 2013-11-16 12:50:57Z antoine $
 
 PORTNAME=	jsonc
-PORTVERSION=	1.3.1
+PORTVERSION=	1.3.6
 CATEGORIES=	devel
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
