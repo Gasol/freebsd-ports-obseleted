@@ -1,5 +1,5 @@
 # Created by: Ju Pengfei <jupengfei@gmail.com>
-# $FreeBSD: head/sysutils/py-psutil/Makefile 352782 2014-05-02 09:41:10Z sunpoet $
+# $FreeBSD: head/sysutils/py-psutil/Makefile 364929 2014-08-15 03:43:54Z sunpoet $
 
 PORTNAME=	psutil
 PORTVERSION=	2.1.1
@@ -12,9 +12,8 @@ COMMENT=	Process utilities module for Python
 
 LICENSE=	BSD3CLAUSE
 
-PYDISTUTILS_AUTOPLIST=	yes
-USE_PYDISTUTILS=yes
-USE_PYTHON=	yes
+USE_PYTHON=	autoplist distutils
+USES=		python
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/_psutil_bsd.so ${STAGEDIR}${PYTHON_SITELIBDIR}/_psutil_posix.so
