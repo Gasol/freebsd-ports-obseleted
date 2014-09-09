@@ -2,13 +2,15 @@
 # $FreeBSD: head/sysutils/shmcat/Makefile 343779 2014-02-11 16:58:57Z miwi $
 
 PORTNAME=	shmcat
-PORTVERSION=	1.6
+PORTVERSION=	1.7
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	Simple tool that dumps System V shared memory segments
+
+LICENSE=	GPLv2
 
 USE_BZIP2=	yes
 USES=		iconv
