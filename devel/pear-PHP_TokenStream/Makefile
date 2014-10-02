@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-PHP_TokenStream/Makefile 333263 2013-11-08 21:41:53Z antoine $
+# $FreeBSD: head/devel/pear-PHP_TokenStream/Makefile 369068 2014-09-23 15:15:04Z bapt $
 
 PORTNAME=	PHP_TokenStream
 PORTVERSION=	1.1.5
@@ -12,14 +12,10 @@ COMMENT=	Wrapper around PHP tokenizer extension
 
 LICENSE=	BSD
 
-BUILD_DEPENDS=	pear>=1.9.4:${PORTSDIR}/devel/pear \
-		${PEARDIR}/.channels/pear.phpunit.de.reg:${PORTSDIR}/devel/pear-channel-phpunit
-RUN_DEPENDS=	pear>=1.9.4:${PORTSDIR}/devel/pear \
-		${PEARDIR}/.channels/pear.phpunit.de.reg:${PORTSDIR}/devel/pear-channel-phpunit
+BUILD_DEPENDS=	${PEARDIR}/.channels/pear.phpunit.de.reg:${PORTSDIR}/devel/pear-channel-phpunit
+RUN_DEPENDS=	${PEARDIR}/.channels/pear.phpunit.de.reg:${PORTSDIR}/devel/pear-channel-phpunit
 
+USES=	pear
 PEAR_CHANNEL=	phpunit
-PEAR_AUTOINSTALL=	yes
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/devel/pear/bsd.pear.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

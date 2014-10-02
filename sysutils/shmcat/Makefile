@@ -1,32 +1,23 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/sysutils/shmcat/Makefile 343779 2014-02-11 16:58:57Z miwi $
+# $FreeBSD: head/sysutils/shmcat/Makefile 367727 2014-09-09 12:24:58Z jhale $
 
 PORTNAME=	shmcat
 PORTVERSION=	1.7
 CATEGORIES=	sysutils
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
-MASTER_SITE_SUBDIR=	${PORTNAME}
+MASTER_SITES=	SF/${PORTNAME}
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	Simple tool that dumps System V shared memory segments
 
 LICENSE=	GPLv2
 
-USE_BZIP2=	yes
-USES=		iconv
+USES=		tar:bzip2 iconv
 GNU_CONFIGURE=	yes
 
 OPTIONS_DEFINE=	NLS
+OPTIONS_SUB=	yes
 
-.include <bsd.port.options.mk>
-
-.if ${PORT_OPTIONS:MNLS}
-MANLANG=	"" de
-USES+=		gettext
-PLIST_SUB+=	NLS=""
-.else
-CONFIGURE_ARGS+=--disable-nls
-PLIST_SUB+=	NLS="@comment "
-.endif
+NLS_USES=		gettext
+NLS_CONFIGURE_ENABLE=	nls
 
 .include <bsd.port.mk>

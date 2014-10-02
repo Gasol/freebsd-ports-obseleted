@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-PHP_PMD/Makefile 333263 2013-11-08 21:41:53Z antoine $
+# $FreeBSD: head/devel/pear-PHP_PMD/Makefile 369068 2014-09-23 15:15:04Z bapt $
 
 PORTNAME=	PHP_PMD
 PORTVERSION=	1.4.1
@@ -12,15 +12,11 @@ COMMENT=	PHP Mess Detector
 
 LICENSE=	BSD
 
-BUILD_DEPENDS=	pear>=1.6.0:${PORTSDIR}/devel/pear \
-		${PEARDIR}/.channels/pear.phpmd.org.reg:${PORTSDIR}/devel/pear-channel-phpmd
-RUN_DEPENDS=	pear>=1.6.0:${PORTSDIR}/devel/pear \
-		${PEARDIR}/.channels/pear.phpmd.org.reg:${PORTSDIR}/devel/pear-channel-phpmd
+BUILD_DEPENDS=	${PEARDIR}/.channels/pear.phpmd.org.reg:${PORTSDIR}/devel/pear-channel-phpmd
+RUN_DEPENDS=	${PEARDIR}/.channels/pear.phpmd.org.reg:${PORTSDIR}/devel/pear-channel-phpmd
 
+USES=	pear
 PEAR_CHANNEL=	phpmd
-PEAR_AUTOINSTALL=	yes
 USE_PHP=	dom simplexml
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/devel/pear/bsd.pear.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

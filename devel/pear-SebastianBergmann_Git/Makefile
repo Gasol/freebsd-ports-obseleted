@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-SebastianBergmann_Git/Makefile 334061 2013-11-17 08:30:23Z antoine $
+# $FreeBSD: head/devel/pear-SebastianBergmann_Git/Makefile 369068 2014-09-23 15:15:04Z bapt $
 
 PORTNAME=	Git
 PORTVERSION=	1.2.0
@@ -17,11 +17,7 @@ BUILD_DEPENDS=	pear>=1.9.4:${PORTSDIR}/devel/pear \
 RUN_DEPENDS=	pear>=1.9.4:${PORTSDIR}/devel/pear \
 		${PEARDIR}/.channels/pear.phpunit.de.reg:${PORTSDIR}/devel/pear-channel-phpunit
 
+USES=	pear
 PEAR_CHANNEL=	phpunit
-PEAR_AUTOINSTALL=	yes
 
-IGNORE_WITH_PHP=52
-
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/devel/pear/bsd.pear.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

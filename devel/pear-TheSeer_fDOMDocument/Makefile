@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-TheSeer_fDOMDocument/Makefile 362615 2014-07-23 01:45:47Z adamw $
+# $FreeBSD: head/devel/pear-TheSeer_fDOMDocument/Makefile 369068 2014-09-23 15:15:04Z bapt $
 
 PORTNAME=	fDOMDocument
 PORTVERSION=	1.4.3
@@ -12,17 +12,11 @@ COMMENT=	Extension to PHP's standard DOM
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	${PEARDIR}/PEAR.php:${PORTSDIR}/devel/pear \
-		${PEARDIR}/.channels/pear.netpirates.net.reg:${PORTSDIR}/devel/pear-channel-theseer
-RUN_DEPENDS=	${PEARDIR}/PEAR.php:${PORTSDIR}/devel/pear \
-		${PEARDIR}/.channels/pear.netpirates.net.reg:${PORTSDIR}/devel/pear-channel-theseer
+BUILD_DEPENDS=	${PEARDIR}/.channels/pear.netpirates.net.reg:${PORTSDIR}/devel/pear-channel-theseer
+RUN_DEPENDS=	${PEARDIR}/.channels/pear.netpirates.net.reg:${PORTSDIR}/devel/pear-channel-theseer
 
 USE_PHP=	dom xml
 PEAR_CHANNEL=	theseer
-PEAR_AUTOINSTALL=	yes
+USES=	pear
 
-IGNORE_WITH_PHP=	52
-
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/devel/pear/bsd.pear.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

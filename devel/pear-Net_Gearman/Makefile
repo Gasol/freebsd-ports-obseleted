@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/pear-Net_Gearman/Makefile 360392 2014-07-03 16:03:50Z sunpoet $
+# $FreeBSD: head/devel/pear-Net_Gearman/Makefile 369068 2014-09-23 15:15:04Z bapt $
 
 PORTNAME=	Net_Gearman
 PORTVERSION=	0.2.3
@@ -15,8 +15,6 @@ BUILD_DEPENDS=	${LOCALBASE}/share/pear/PEAR.php:${PORTSDIR}/devel/pear
 RUN_DEPENDS=	${LOCALBASE}/share/pear/PEAR.php:${PORTSDIR}/devel/pear
 
 USE_PHP=	json mbstring
-PEAR_AUTOINSTALL=	yes
+USES=	pear
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/devel/pear/bsd.pear.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

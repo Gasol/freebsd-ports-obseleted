@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-SebastianBergmann_Version/Makefile 333599 2013-11-12 18:52:03Z antoine $
+# $FreeBSD: head/devel/pear-SebastianBergmann_Version/Makefile 369068 2014-09-23 15:15:04Z bapt $
 
 PORTNAME=	Version
 PORTVERSION=	1.0.1
@@ -12,16 +12,10 @@ COMMENT=	Managing the version number of Git-hosted PHP projects
 
 LICENSE=	BSD
 
-BUILD_DEPENDS=	pear>=1.9.4:${PORTSDIR}/devel/pear \
-		${PEARDIR}/.channels/pear.phpunit.de.reg:${PORTSDIR}/devel/pear-channel-phpunit
-RUN_DEPENDS=	pear>=1.9.4:${PORTSDIR}/devel/pear \
-		${PEARDIR}/.channels/pear.phpunit.de.reg:${PORTSDIR}/devel/pear-channel-phpunit
+BUILD_DEPENDS=	${PEARDIR}/.channels/pear.phpunit.de.reg:${PORTSDIR}/devel/pear-channel-phpunit
+RUN_DEPENDS=	${PEARDIR}/.channels/pear.phpunit.de.reg:${PORTSDIR}/devel/pear-channel-phpunit
 
 PEAR_CHANNEL=	phpunit
-PEAR_AUTOINSTALL=	yes
+USES=	pear
 
-IGNORE_WITH_PHP=52
-
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/devel/pear/bsd.pear.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

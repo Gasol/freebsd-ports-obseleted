@@ -1,9 +1,9 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/databases/php5-pdo_cassandra/Makefile 366256 2014-08-26 19:34:01Z amdmi3 $
+# $FreeBSD: head/databases/php5-pdo_cassandra/Makefile 367888 2014-09-10 20:50:31Z gerald $
 
 PORTNAME=	pdo_cassandra
 PORTVERSION=	0.2.1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	databases
 MASTER_SITES=	https://github.com/${GITHUB_USER}/php-${PORTNAME}/tarball/${GITREVISION}/
 PKGNAMEPREFIX=	php5-

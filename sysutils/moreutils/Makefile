@@ -1,9 +1,8 @@
 # Created by: Charlie Kester <corky1951@comcast.net>
-# $FreeBSD: head/sysutils/moreutils/Makefile 365295 2014-08-18 12:45:46Z sunpoet $
+# $FreeBSD: head/sysutils/moreutils/Makefile 367951 2014-09-11 15:52:00Z sunpoet $
 
 PORTNAME=	moreutils
-PORTVERSION=	0.51
-PORTREVISION=	3
+PORTVERSION=	0.52
 CATEGORIES=	sysutils
 MASTER_SITES=	DEBIAN_POOL
 DISTNAME=	${PORTNAME}_${PORTVERSION}
@@ -62,6 +61,7 @@ do-install:
 # require: docbook-xsl, libxml2, libxslt
 
 updateman: do-clean extract
+	${MV} ${WRKSRC}/parallel.docbook ${WRKSRC}/moreutils-parallel.docbook
 .for man in ${CANNED_MANPAGES:R}
 	${LOCALBASE}/bin/xmllint --noout --valid ${WRKSRC}/${man}.docbook && \
 	${LOCALBASE}/bin/xsltproc --output ${FILESDIR}/${man}.1 --param man.authors.section.enabled 0 ${LOCALBASE}/share/xsl/docbook/manpages/docbook.xsl ${WRKSRC}/${man}.docbook

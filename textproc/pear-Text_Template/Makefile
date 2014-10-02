@@ -1,5 +1,5 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/textproc/pear-Text_Template/Makefile 348312 2014-03-15 10:47:03Z miwi $
+# $FreeBSD: head/textproc/pear-Text_Template/Makefile 369312 2014-09-26 09:17:25Z bapt $
 
 PORTNAME=	Text_Template
 PORTVERSION=	1.2.0
@@ -10,14 +10,10 @@ PKGNAMEPREFIX=	pear-
 MAINTAINER=	miwi@FreeBSD.org
 COMMENT=	Simple template engine
 
-BUILD_DEPENDS=	${PEARDIR}/PEAR.php:${PORTSDIR}/devel/pear \
-		${PEARDIR}/.channels/pear.phpunit.de.reg:${PORTSDIR}/devel/pear-channel-phpunit
-RUN_DEPENDS=	${PEARDIR}/PEAR.php:${PORTSDIR}/devel/pear \
-		${PEARDIR}/.channels/pear.phpunit.de.reg:${PORTSDIR}/devel/pear-channel-phpunit
+BUILD_DEPENDS=	${PEARDIR}/.channels/pear.phpunit.de.reg:${PORTSDIR}/devel/pear-channel-phpunit
+RUN_DEPENDS=	${PEARDIR}/.channels/pear.phpunit.de.reg:${PORTSDIR}/devel/pear-channel-phpunit
 
+USES=	pear
 PEAR_CHANNEL=	phpunit
-PEAR_AUTOINSTALL=	yes
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/devel/pear/bsd.pear.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

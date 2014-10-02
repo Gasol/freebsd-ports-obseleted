@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-pdepend-staticReflection/Makefile 333263 2013-11-08 21:41:53Z antoine $
+# $FreeBSD: head/devel/pear-pdepend-staticReflection/Makefile 369068 2014-09-23 15:15:04Z bapt $
 
 PORTNAME=	staticReflection
 PORTVERSION=	1.0.0
@@ -12,16 +12,11 @@ COMMENT=	staticReflection package for PHP
 
 LICENSE=	BSD
 
-BUILD_DEPENDS=	pear>=1.6.0:${PORTSDIR}/devel/pear \
-		${PEARDIR}/.channels/pear.pdepend.org.reg:${PORTSDIR}/devel/pear-channel-pdepend
-RUN_DEPENDS=	pear>=1.6.0:${PORTSDIR}/devel/pear \
-		${PEARDIR}/.channels/pear.pdepend.org.reg:${PORTSDIR}/devel/pear-channel-pdepend
+BUILD_DEPENDS=	${PEARDIR}/.channels/pear.pdepend.org.reg:${PORTSDIR}/devel/pear-channel-pdepend
+RUN_DEPENDS=	${PEARDIR}/.channels/pear.pdepend.org.reg:${PORTSDIR}/devel/pear-channel-pdepend
 
 USE_PHP=	tokenizer
 PEAR_CHANNEL=	pdepend
-PEAR_AUTOINSTALL=	yes
-IGNORE_WITH_PHP=52
+USES=	pear
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/devel/pear/bsd.pear.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

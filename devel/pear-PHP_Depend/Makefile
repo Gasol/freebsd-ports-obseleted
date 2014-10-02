@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-PHP_Depend/Makefile 333263 2013-11-08 21:41:53Z antoine $
+# $FreeBSD: head/devel/pear-PHP_Depend/Makefile 369068 2014-09-23 15:15:04Z bapt $
 
 PORTNAME=	PHP_Depend
 PORTVERSION=	1.1.0
@@ -12,15 +12,11 @@ COMMENT=	PHP_Depend design quality metrics for PHP packages
 
 LICENSE=	BSD
 
-BUILD_DEPENDS=	pear>=1.6.0:${PORTSDIR}/devel/pear \
-		${PEARDIR}/.channels/pear.pdepend.org.reg:${PORTSDIR}/devel/pear-channel-pdepend
-RUN_DEPENDS=	pear>=1.6.0:${PORTSDIR}/devel/pear \
-		${PEARDIR}/.channels/pear.pdepend.org.reg:${PORTSDIR}/devel/pear-channel-pdepend
+BUILD_DEPENDS=	${PEARDIR}/.channels/pear.pdepend.org.reg:${PORTSDIR}/devel/pear-channel-pdepend
+RUN_DEPENDS=	${PEARDIR}/.channels/pear.pdepend.org.reg:${PORTSDIR}/devel/pear-channel-pdepend
 
+USES=	pear
 PEAR_CHANNEL=	pdepend
-PEAR_AUTOINSTALL=	yes
 USE_PHP=	dom tokenizer simplexml
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/devel/pear/bsd.pear.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

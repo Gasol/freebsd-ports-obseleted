@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/capstone/Makefile 348504 2014-03-17 20:44:45Z pawel $
+# $FreeBSD: head/devel/capstone/Makefile 367692 2014-09-08 20:18:47Z arved $
 
 PORTNAME=	capstone
 PORTVERSION=	2.1.2
