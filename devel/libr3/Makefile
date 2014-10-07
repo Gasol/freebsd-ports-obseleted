@@ -10,8 +10,8 @@ COMMENT=	URL router library with high performance
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	libcheck.so:${PORTSDIR}/devel/libcheck
-LIB_DEPENDS=	libgvc.so:${PORTSDIR}/graphics/graphviz \
+LIB_DEPENDS=	libcheck.so:${PORTSDIR}/devel/libcheck \
+		libgvc.so:${PORTSDIR}/graphics/graphviz \
 		libpcre.so:${PORTSDIR}/devel/pcre
 
 GNU_CONFIGURE=	yes
