@@ -17,7 +17,8 @@ LIB_DEPENDS=	libcheck.so:${PORTSDIR}/devel/libcheck \
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-graphviz
 USES=		libtool
-USE_AUTOTOOLS=  aclocal autoconf autoheader automake libtoolize
+USE_AUTOTOOLS=  aclocal:env autoconf:env autoheader:env automake:env libtoolize:env
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	c9s
 GH_TAGNAME=	${PORTVERSION}
