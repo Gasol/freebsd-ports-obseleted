@@ -10,12 +10,13 @@ COMMENT=	URL router library with high performance
 
 LICENSE=	MIT
 
+BUILD_DEPENDS=	libcheck.so:${PORTSDIR}/devel/libcheck
 LIB_DEPENDS=	libgvc.so:${PORTSDIR}/graphics/graphviz \
 		libpcre.so:${PORTSDIR}/devel/pcre
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-graphviz
-USE_AUTOTOOLS=  automake
+USE_AUTOTOOLS=  aclocal autoconf autoheader automake libtoolize
 USE_GITHUB=	yes
 GH_ACCOUNT=	c9s
 GH_TAGNAME=	${PORTVERSION}
