@@ -5,6 +5,8 @@ PORTNAME=	PHPUnit
 PORTVERSION=	3.7.6
 CATEGORIES=	devel www pear
 MASTER_SITES=	http://pear.phpunit.de/get/
+PKGNAMEPREFIX=	pear-
+PKGNAMESUFFIX=	3
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	PEAR regression testing framework for unit tests
