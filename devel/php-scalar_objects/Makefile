@@ -1,8 +1,9 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/php-scalar_objects/Makefile 342832 2014-02-05 20:03:02Z sunpoet $
+# $FreeBSD: head/devel/php-scalar_objects/Makefile 370983 2014-10-16 08:55:30Z ak $
 
 PORTNAME=	scalar_objects
 PORTVERSION=	0.0.20140124
+PORTREVISION=	1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	php-
 
@@ -20,6 +21,6 @@ GH_COMMIT=	baf4985
 USE_PHP=	yes
 USE_PHPEXT=	yes
 USE_PHPIZE=	yes
-USE_PHPBUILD=	yes
+USE_PHP_BUILD=	yes
 
 .include <bsd.port.mk>

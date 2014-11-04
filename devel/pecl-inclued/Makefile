@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/devel/pecl-inclued/Makefile 340830 2014-01-23 15:12:50Z miwi $
+# $FreeBSD: head/devel/pecl-inclued/Makefile 370771 2014-10-13 13:09:27Z mat $
 
 PORTNAME=	inclued
 PORTVERSION=	0.1.3
@@ -16,6 +16,7 @@ LICENSE=	PHP301
 
 USE_PHP=	yes
 USE_PHPEXT=	yes
+IGNORE_WITH_PHP=	55 56
 
 CONFIGURE_ARGS=	--enable-inclued
 

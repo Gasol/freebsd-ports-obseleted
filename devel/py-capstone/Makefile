@@ -1,5 +1,5 @@
 # Created by: Kubilay Kocak <koobs@FreeBSD.org>
-# $FreeBSD: head/devel/py-capstone/Makefile 348681 2014-03-20 11:50:09Z koobs $
+# $FreeBSD: head/devel/py-capstone/Makefile 371280 2014-10-20 16:04:12Z mva $
 
 PORTNAME=	capstone
 PORTVERSION=	2.1
@@ -15,8 +15,7 @@ LICENSE=	BSD3CLAUSE
 
 LIB_DEPENDS=	libcapstone.so:${PORTSDIR}/devel/capstone
 
-USE_PYTHON=		2
-USE_PYDISTUTILS=	yes
-PYDISTUTILS_AUTOPLIST=	yes
+USES=		python:2
+USE_PYTHON=	distutils autoplist
 
 .include <bsd.port.mk>

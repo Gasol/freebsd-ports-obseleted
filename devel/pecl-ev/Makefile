@@ -1,8 +1,8 @@
 # Created by: John Chen <johnpupu@gmail.com>
-# $FreeBSD: head/devel/pecl-ev/Makefile 328043 2013-09-23 20:26:01Z sunpoet $
+# $FreeBSD: head/devel/pecl-ev/Makefile 370568 2014-10-10 10:10:52Z robak $
 
 PORTNAME=	ev
-PORTVERSION=	0.2.10
+PORTVERSION=	0.2.12
 CATEGORIES=	devel
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-

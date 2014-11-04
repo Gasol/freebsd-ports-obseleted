@@ -1,5 +1,5 @@
 # Created by: Marco Broeder <marco.broeder@posteo.eu>
-# $FreeBSD: head/devel/hg-git/Makefile 363875 2014-08-03 11:22:45Z wg $
+# $FreeBSD: head/devel/hg-git/Makefile 371280 2014-10-20 16:04:12Z mva $
 
 PORTNAME=	hg-git
 PORTVERSION=	0.6.1
@@ -17,9 +17,8 @@ RUN_DEPENDS=	${PKGNAMEPREFIX}dulwich>=*:${PORTSDIR}/devel/dulwich \
 
 PORTDOCS=	README.md
 
-USE_PYTHON=	2
-USE_PYDISTUTILS=yes
-PYDISTUTILS_AUTOPLIST=	yes
+USES=		python:2
+USE_PYTHON=	distutils autoplist
 
 OPTIONS_DEFINE=	DOCS
 

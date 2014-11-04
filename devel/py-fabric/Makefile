@@ -1,5 +1,5 @@
 # Created by: Yi-Jheng Lin <yzlin@cs.nctu.edu.tw>
-# $FreeBSD: head/devel/py-fabric/Makefile 363135 2014-07-28 12:29:24Z koobs $
+# $FreeBSD: head/devel/py-fabric/Makefile 371280 2014-10-20 16:04:12Z mva $
 
 PORTNAME=	fabric
 PORTVERSION=	1.9.0
@@ -26,9 +26,8 @@ TESTS_DESC=	Install nose for test suite
 
 TESTS_BUILD_DEPENDS=	${TEST_DEPENDS}
 
-USE_PYTHON=		-2.7
-USE_PYDISTUTILS=	yes
-PYDISTUTILS_AUTOPLIST=	yes
+USES=		python:2.7
+USE_PYTHON=	distutils autoplist
 
 regression-test: build
 	@cd ${WRKSRC} && ${PYTHON_CMD} ${PYDISTUTILS_SETUP} test

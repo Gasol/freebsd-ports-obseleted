@@ -1,5 +1,5 @@
 # Created by: Jui-Nan Lin <jnlin@csie.nctu.edu.tw>
-# $FreeBSD: head/net/scribe/Makefile 363923 2014-08-03 16:57:22Z ohauer $
+# $FreeBSD: head/net/scribe/Makefile 371449 2014-10-24 16:21:26Z mva $
 
 PORTNAME=	scribe
 DISTVERSION=	2.2.2013.04.15
@@ -31,9 +31,8 @@ CONFIGURE_ARGS=	--with-boost-filesystem=boost_filesystem \
 		--with-boost-system=boost_system \
 		PY_PREFIX="${PREFIX}"
 USE_AUTOTOOLS=	aclocal automake autoconf
-USE_PYTHON=	yes
 USE_RC_SUBR=	${PORTNAME}
-USES=		gmake perl5
+USES=		gmake perl5 python
 
 post-patch:
 	${REINPLACE_CMD} -e 's/^AM_INIT_AUTOMAKE/#/' ${WRKSRC}/configure.ac

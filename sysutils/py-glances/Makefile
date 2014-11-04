@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/sysutils/py-glances/Makefile 358223 2014-06-18 07:39:35Z miwi $
+# $FreeBSD: head/sysutils/py-glances/Makefile 370881 2014-10-14 19:18:47Z pawel $
 
 PORTNAME=	glances
 PORTVERSION=	2.1
@@ -21,14 +21,12 @@ GH_ACCOUNT=	nicolargo
 GH_TAGNAME=	v${PORTVERSION}
 GH_COMMIT=	5e2dadb
 
-USE_PYTHON=	yes
-USE_PYDISTUTILS=yes
-PYDISTUTILS_AUTOPLIST=	yes
+USES=		python
+USE_PYTHON=	autoplist distutils
 
 PLIST_FILES=	%%ETCDIR%%/glances.conf.sample \
 		man/man1/glances.1.gz \
 		%%NLS%%share/locale/de/LC_MESSAGES/glances.mo
-PLIST_DIRS=	etc/glances
 
 NLS_USES=		gettext
 
