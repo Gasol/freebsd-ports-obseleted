@@ -4,6 +4,3 @@
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Router/R3/.packlist
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Router/R3/R3.so
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Router/R3/autosplit.ix
-@dirrm %%SITE_PERL%%/%%PERL_ARCH%%/Router
-@dirrm %%SITE_PERL%%/%%PERL_ARCH%%/auto/Router/R3
-@dirrm %%SITE_PERL%%/%%PERL_ARCH%%/auto/Router
