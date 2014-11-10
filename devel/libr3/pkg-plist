@@ -7,4 +7,3 @@ lib/libr3.so
 lib/libr3.so.0
 lib/libr3.so.0.0.0
 libdata/pkgconfig/r3.pc
-@dirrm include/r3
