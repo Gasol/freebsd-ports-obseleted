@@ -1,4 +1,3 @@
-@comment $FreeBSD$
 %%PERL5_MAN3%%/Router::R3.3.gz
 %%SITE_PERL%%/%%PERL_ARCH%%/Router/R3.pm
 %%SITE_PERL%%/%%PERL_ARCH%%/auto/Router/R3/.packlist

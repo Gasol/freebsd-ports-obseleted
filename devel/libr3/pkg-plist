@@ -1,4 +1,3 @@
-@comment $FreeBSD$
 include/r3/r3.h
 include/r3/r3_str.h
 include/r3/str_array.h
