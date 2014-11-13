@@ -22,6 +22,6 @@ USE_PERL5=	configure
 CFLAGS+=	-std=c99
 
 post-install:
-	@${STRIP_CMD} ${STAGEDIR}${SITE_PERL}/${PERL_ARCH}/auto/Router/R3/R3.so
+	${STRIP_CMD} ${STAGEDIR}${SITE_PERL}/${PERL_ARCH}/auto/Router/R3/R3.so
 
 .include <bsd.port.mk>
