@@ -30,6 +30,6 @@ post-patch:
 	        @${REINPLACE_CMD} 's,^pkgconfigdir = .*,pkgconfigdir=$${prefix}/libdata/pkgconfig,' ${WRKSRC}/Makefile.am
 
 pre-configure:
-	cd ${WRKSRC} && ./autogen.sh
+	(cd ${WRKSRC} && ./autogen.sh)
 
 .include <bsd.port.mk>
