@@ -17,6 +17,7 @@ LIB_DEPENDS=	libcheck.so:${PORTSDIR}/devel/libcheck \
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-graphviz
 USES=		libtool pkgconfig
+INSTALL_TARGET=	install-strip
 USE_AUTOTOOLS=  aclocal:env autoconf:env autoheader:env automake:env libtoolize:env
 
 USE_GITHUB=	yes
