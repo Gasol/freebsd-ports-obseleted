@@ -14,6 +14,7 @@ LICENSE=	LGPL3
 
 USES=		libtool:keepla perl5
 HAS_CONFIGURE=	yes
+INSTALL_TARGET=	install-strip
 
 post-configure:
 	(cd $(WRKSRC)/data && $(MAKE) convert)
