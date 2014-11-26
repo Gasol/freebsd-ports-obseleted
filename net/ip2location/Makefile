@@ -13,7 +13,6 @@ COMMENT=	C library to find user\'s location
 LICENSE=	LGPL3
 
 USES=		libtool:keepla perl5
-USE_PERL5=	run
 HAS_CONFIGURE=	yes
 
 post-configure:
