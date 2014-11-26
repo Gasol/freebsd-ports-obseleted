@@ -16,6 +16,6 @@ USES=		libtool:keepla perl5
 HAS_CONFIGURE=	yes
 
 post-configure:
-	cd $(WRKSRC)/data && $(MAKE) convert
+	(cd $(WRKSRC)/data && $(MAKE) convert)
 
 .include <bsd.port.mk>
