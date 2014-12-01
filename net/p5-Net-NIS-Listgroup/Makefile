@@ -1,9 +1,9 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/net/p5-Net-NIS-Listgroup/Makefile 345470 2014-02-21 14:35:12Z jadawin $
+# $FreeBSD: head/net/p5-Net-NIS-Listgroup/Makefile 373448 2014-11-26 13:08:24Z mat $
 
 PORTNAME=	Net-NIS-Listgroup
 PORTVERSION=	1.0.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

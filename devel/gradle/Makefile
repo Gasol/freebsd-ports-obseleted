@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/gradle/Makefile 355086 2014-05-24 20:54:16Z sunpoet $
+# $FreeBSD: head/devel/gradle/Makefile 372284 2014-11-07 17:49:29Z pawel $
 
 PORTNAME=	gradle
 PORTVERSION=	2.1
@@ -22,11 +22,11 @@ SUB_FILES=	gradle
 
 do-install:
 	@${ECHO_MSG} -n ">> Installing scripts..."
-	@${INSTALL_SCRIPT} ${WRKDIR}/gradle ${STAGEDIR}${PREFIX}/bin/gradle
+	${INSTALL_SCRIPT} ${WRKDIR}/gradle ${STAGEDIR}${PREFIX}/bin/gradle
 	@${ECHO_MSG} " [ DONE ]"
 
 	@${ECHO_MSG} -n ">> Installing data directory 'lib'..."
-	@cd ${WRKSRC} && ${COPYTREE_SHARE} lib ${STAGEDIR}${DATADIR}
+	(cd ${WRKSRC} && ${COPYTREE_SHARE} lib ${STAGEDIR}${DATADIR})
 	@${ECHO_MSG} " [ DONE ]"
 
 .include <bsd.port.mk>

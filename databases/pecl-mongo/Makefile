@@ -1,5 +1,5 @@
 # Created by: wen
-# $FreeBSD: head/databases/pecl-mongo/Makefile 354404 2014-05-18 07:33:15Z miwi $
+# $FreeBSD: head/databases/pecl-mongo/Makefile 372709 2014-11-18 09:37:31Z bapt $
 
 PORTNAME=	mongo
 PORTVERSION=	1.5.2
@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	pecl-
 EXTRACT_SUFX=	.tgz
 DIST_SUBDIR=	PECL
 
-MAINTAINER=	miwi@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	PECL classes for Mongo Database Driver
 
 LICENSE=	APACHE20

@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: head/devel/libr3/Makefile 373562 2014-11-28 12:02:35Z marino $
 
 PORTNAME=	libr3
 PORTVERSION=	1.0.0
@@ -27,7 +27,8 @@ GH_COMMIT=	ad8faeb
 GH_PROJECT=	r3
 
 post-patch:
-	        @${REINPLACE_CMD} 's,^pkgconfigdir = .*,pkgconfigdir=$${prefix}/libdata/pkgconfig,' ${WRKSRC}/Makefile.am
+	@${REINPLACE_CMD} 's,^pkgconfigdir = .*,pkgconfigdir=$${prefix}/libdata/pkgconfig,' \
+		${WRKSRC}/Makefile.am
 
 pre-configure:
 	(cd ${WRKSRC} && ./autogen.sh)

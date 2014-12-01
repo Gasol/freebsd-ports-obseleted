@@ -1,8 +1,9 @@
 # Created by: Gerrit Beine (<gerrit.beine@gmx.de>)
-# $FreeBSD: head/devel/pear-PHPUnit3/Makefile 369068 2014-09-23 15:15:04Z bapt $
+# $FreeBSD: head/devel/pear-PHPUnit3/Makefile 372339 2014-11-09 07:33:55Z koobs $
 
 PORTNAME=	PHPUnit
 PORTVERSION=	3.7.6
+PORTREVISION=	1
 CATEGORIES=	devel www pear
 MASTER_SITES=	http://pear.phpunit.de/get/
 PKGNAMEPREFIX=	pear-
@@ -11,7 +12,8 @@ PKGNAMESUFFIX=	3
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	PEAR regression testing framework for unit tests
 
-LICENSE=	BSD
+LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	pear-File_Iterator>=1.3.1:${PORTSDIR}/devel/pear-File_Iterator \
 		pear-Text_Template>=1.1.1:${PORTSDIR}/textproc/pear-Text_Template \
@@ -30,7 +32,7 @@ RUN_DEPENDS=	pear-File_Iterator>=1.3.1:${PORTSDIR}/devel/pear-File_Iterator \
 
 CONFLICTS=	pear-PHPUnit-[12]*
 
-USES=	pear
+USES=		pear
 PEAR_CHANNEL=	phpunit
 
 OPTIONS_DEFINE=	JSON SIMPLEXML TOKENIZER

@@ -1,9 +1,9 @@
 # Created by: Jui-Nan Lin <jnlin@csie.nctu.edu.tw>
-# $FreeBSD: head/net/scribe/Makefile 371449 2014-10-24 16:21:26Z mva $
+# $FreeBSD: head/net/scribe/Makefile 373448 2014-11-26 13:08:24Z mat $
 
 PORTNAME=	scribe
 DISTVERSION=	2.2.2013.04.15
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net
 MASTER_SITES=	https://github.com/facebookarchive/scribe/tarball/${GITVERSION}/
 DISTNAME=	facebook-scribe-${GITVERSION}

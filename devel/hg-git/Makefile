@@ -1,8 +1,8 @@
 # Created by: Marco Broeder <marco.broeder@posteo.eu>
-# $FreeBSD: head/devel/hg-git/Makefile 371280 2014-10-20 16:04:12Z mva $
+# $FreeBSD: head/devel/hg-git/Makefile 372717 2014-11-18 13:14:17Z robak $
 
 PORTNAME=	hg-git
-PORTVERSION=	0.6.1
+PORTVERSION=	0.7.0
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,7 +13,7 @@ COMMENT=	Mercurial extension to pull from or push to a Git repository
 LICENSE=	GPLv2
 
 RUN_DEPENDS=	${PKGNAMEPREFIX}dulwich>=*:${PORTSDIR}/devel/dulwich \
-		mercurial>=*:${PORTSDIR}/devel/mercurial \
+		mercurial>=*:${PORTSDIR}/devel/mercurial
 
 PORTDOCS=	README.md
 
