@@ -27,7 +27,6 @@ USE_PHP_BUILD=	yes
 USE_PHP=	pdo
 USE_PHPEXT=	yes
 IGNORE_WITH_PHP=52
-USE_GCC=	yes
 
 .include <bsd.port.pre.mk>
 .include "${PORTSDIR}/devel/thrift/bsd.thrift.mk"
