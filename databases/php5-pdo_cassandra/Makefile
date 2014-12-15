@@ -21,7 +21,6 @@ GITTAG=		0.8-support
 GITHUB_USER=	mkoppanen
 WRKSRC=		${WRKDIR}/${GITHUB_USER}-php-${PORTNAME}-${GITREVISION}
 
-DEFAULT_VERSIONS=php=5
 USES=		pkgconfig
 USE_PHP_BUILD=	yes
 USE_PHP=	pdo
