@@ -1,5 +1,5 @@
 # Created by: Jui-Nan Lin <jnlin@csie.nctu.edu.tw>
-# $FreeBSD: head/net/scribe/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/net/scribe/Makefile 373887 2014-12-04 13:01:35Z mat $
 
 PORTNAME=	scribe
 DISTVERSION=	2.2.2013.04.15
@@ -46,4 +46,10 @@ post-install:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	(cd ${WRKSRC}/examples && ${COPYTREE_SHARE} . ${STAGEDIR}${EXAMPLESDIR})
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1000000
+BROKEN=		Does not build on FreeBSD 10.0+
+.endif
+
+.include <bsd.port.post.mk>

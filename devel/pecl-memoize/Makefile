@@ -1,8 +1,9 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-memoize/Makefile 355087 2014-05-24 20:55:16Z sunpoet $
+# $FreeBSD: head/devel/pecl-memoize/Makefile 374511 2014-12-11 05:26:39Z koobs $
 
 PORTNAME=	memoize
 PORTVERSION=	0.2.0
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-

@@ -1,9 +1,9 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/gearmand/Makefile 370793 2014-10-13 17:02:47Z bdrewery $
+# $FreeBSD: head/devel/gearmand/Makefile 374511 2014-12-11 05:26:39Z koobs $
 
 PORTNAME=	gearmand
 PORTVERSION=	1.0.6
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	devel
 MASTER_SITES=	http://launchpad.net/gearmand/1.0/${PORTVERSION}/+download/
 
