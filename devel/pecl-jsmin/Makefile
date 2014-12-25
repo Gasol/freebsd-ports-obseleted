@@ -2,11 +2,10 @@
 # $FreeBSD: head/devel/pecl-jsmin/Makefile 333407 2013-11-10 15:42:50Z antoine $
 
 PORTNAME=	jsmin
-PORTVERSION=	0.1.1
+PORTVERSION=	1.0.0
 CATEGORIES=	devel
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
-EXTRACT_SUFX=	.tgz
 DIST_SUBDIR=	PECL
 
 MAINTAINER=	gasol.wu@gmail.com
@@ -14,6 +13,7 @@ COMMENT=	PHP extension for minifying JavaScript
 
 LICENSE=	PHP301
 
+USES=		tar:tgz
 USE_PHP=	yes
 USE_PHPEXT=	yes
 IGNORE_WITH_PHP=52
