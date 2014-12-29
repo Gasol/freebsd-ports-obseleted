@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-ezc_ConsoleTools/Makefile 369068 2014-09-23 15:15:04Z bapt $
+# $FreeBSD: head/devel/pear-ezc_ConsoleTools/Makefile 375249 2014-12-22 17:12:26Z feld $
 
 PORTNAME=	ConsoleTools
 PORTVERSION=	1.6.1
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	pear-${PEAR_CHANNEL}_
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	Set of classes to do different actions with the console
 
-LICENSE=	BSD
+LICENSE=	BSD3CLAUSE
 
 BUILD_DEPENDS=	pear-ezc_Base>=1.8:${PORTSDIR}/devel/pear-ezc_Base \
 		${PEARDIR}/.channels/components.ez.no.reg:${PORTSDIR}/devel/pear-channel-ezc

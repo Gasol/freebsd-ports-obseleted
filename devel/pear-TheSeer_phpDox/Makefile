@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-TheSeer_phpDox/Makefile 369068 2014-09-23 15:15:04Z bapt $
+# $FreeBSD: head/devel/pear-TheSeer_phpDox/Makefile 375249 2014-12-22 17:12:26Z feld $
 
 PORTNAME=	phpDox
 PORTVERSION=	0.5.0
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	pear-TheSeer_
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	PHP Documentation generation framework and tool
 
-LICENSE=	BSD
+LICENSE=	BSD3CLAUSE
 
 BUILD_DEPENDS=	pear-TheSeer_DirectoryScanner>=1.1.0:${PORTSDIR}/devel/pear-TheSeer_DirectoryScanner \
 		pear-TheSeer_fDOMDocument>=1.2.3:${PORTSDIR}/devel/pear-TheSeer_fDOMDocument \

@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-PHP_Depend/Makefile 369068 2014-09-23 15:15:04Z bapt $
+# $FreeBSD: head/devel/pear-PHP_Depend/Makefile 375249 2014-12-22 17:12:26Z feld $
 
 PORTNAME=	PHP_Depend
 PORTVERSION=	1.1.0
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	pear-
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	PHP_Depend design quality metrics for PHP packages
 
-LICENSE=	BSD
+LICENSE=	BSD3CLAUSE
 
 BUILD_DEPENDS=	${PEARDIR}/.channels/pear.pdepend.org.reg:${PORTSDIR}/devel/pear-channel-pdepend
 RUN_DEPENDS=	${PEARDIR}/.channels/pear.pdepend.org.reg:${PORTSDIR}/devel/pear-channel-pdepend

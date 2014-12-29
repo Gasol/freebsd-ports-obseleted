@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-SebastianBergmann_FinderFacade/Makefile 369068 2014-09-23 15:15:04Z bapt $
+# $FreeBSD: head/devel/pear-SebastianBergmann_FinderFacade/Makefile 375249 2014-12-22 17:12:26Z feld $
 
 PORTNAME=	FinderFacade
 PORTVERSION=	1.1.0
@@ -10,7 +10,7 @@ PKGNAMEPREFIX=	pear-SebastianBergmann_
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	Convenience wrapper for Symfony's Finder component
 
-LICENSE=	BSD
+LICENSE=	BSD3CLAUSE
 
 BUILD_DEPENDS=	pear-TheSeer_fDOMDocument>=1.3.1:${PORTSDIR}/devel/pear-TheSeer_fDOMDocument \
 		pear-Symfony_Component_Finder>=2.2.0:${PORTSDIR}/devel/pear-Symfony_Component_Finder \

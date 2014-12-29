@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/php-Psr_Log/Makefile 342833 2014-02-05 20:03:40Z sunpoet $
+# $FreeBSD: head/devel/php-Psr_Log/Makefile 375029 2014-12-20 18:06:21Z bapt $
 
 PORTNAME=	Psr_Log
 PORTVERSION=	1.0.0
@@ -19,11 +19,6 @@ GH_ACCOUNT=	php-fig
 GH_TAGNAME=	${PORTVERSION}
 GH_COMMIT=	fe0936e
 GH_PROJECT=	log
-
-PLIST_DIRSTRY=	share/pear/Psr/Log/Test \
-		share/pear/Psr/Log \
-		share/pear/Psr \
-		share/pear
 
 PLIST_FILES=	share/pear/Psr/Log/AbstractLogger.php \
 		share/pear/Psr/Log/InvalidArgumentException.php \

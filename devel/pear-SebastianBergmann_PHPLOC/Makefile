@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-SebastianBergmann_PHPLOC/Makefile 369068 2014-09-23 15:15:04Z bapt $
+# $FreeBSD: head/devel/pear-SebastianBergmann_PHPLOC/Makefile 375249 2014-12-22 17:12:26Z feld $
 
 PORTNAME=	PHPLOC
 PORTVERSION=	2.0.3
@@ -11,7 +11,7 @@ DISTNAME=	phploc-${PORTVERSION}
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	Tool for quickly measuring the size of a PHP project
 
-LICENSE=	BSD
+LICENSE=	BSD3CLAUSE
 
 BUILD_DEPENDS=	pear-Symfony_Component_Console>=1.1.0:${PORTSDIR}/devel/pear-Symfony_Component_Console \
 		pear-SebastianBergmann_FinderFacade>=1.1.0:${PORTSDIR}/devel/pear-SebastianBergmann_FinderFacade \
