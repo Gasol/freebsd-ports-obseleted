@@ -12,7 +12,8 @@ COMMENT=	Interface to Chrome language detection library
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	p5-Config-AutoConf>=0.16:${PORTSDIR}/devel/p5-Config-AutoConf \
+BUILD_DEPENDS=	libcld.so:${PORTSDIR}/devel/cld \
+		p5-Config-AutoConf>=0.16:${PORTSDIR}/devel/p5-Config-AutoConf \
 		p5-ExtUtils-CBuilder>0.27:${PORTSDIR}/devel/p5-ExtUtils-CBuilder \
 		p5-ExtUtils-ParseXS>=0:${PORTSDIR}/devel/p5-ExtUtils-ParseXS \
 		p5-ExtUtils-LibBuilder>=0.02:${PORTSDIR}/devel/p5-ExtUtils-LibBuilder
