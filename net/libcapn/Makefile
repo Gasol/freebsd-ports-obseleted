@@ -1,8 +1,8 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/net/libcapn/Makefile 358938 2014-06-23 13:20:54Z amdmi3 $
+# $FreeBSD: head/net/libcapn/Makefile 385640 2015-05-07 17:26:05Z mat $
 
 PORTNAME=	libcapn
-PORTVERSION=	1.0.0.b3
+DISTVERSION=	1.0.0beta3
 PORTREVISION=	2
 CATEGORIES=	net
 
@@ -15,8 +15,6 @@ LIB_DEPENDS=	libjansson.so:${PORTSDIR}/devel/jansson
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	adobkin
-GH_TAGNAME=	1.0.0beta3
-GH_COMMIT=	050dfd8
 
 USES=		cmake
 USE_LDCONFIG=	yes

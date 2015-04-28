@@ -1,5 +1,5 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/devel/pear/Makefile 372709 2014-11-18 09:37:31Z bapt $
+# $FreeBSD: head/devel/pear/Makefile 386282 2015-05-14 00:47:48Z amdmi3 $
 
 PORTNAME=	pear
 PORTVERSION=	1.9.4
@@ -10,7 +10,8 @@ MASTER_SITES=	http://miwibox.org/distfiles/
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	PEAR framework for PHP
 
-USES=		tar:bzip2
+USES=		cpe tar:bzip2
+CPE_VENDOR=	php
 NO_BUILD=	yes
 
 WANT_PHP_CLI=	yes

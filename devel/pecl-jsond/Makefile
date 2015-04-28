@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: head/devel/pecl-jsond/Makefile 385366 2015-05-04 02:25:03Z vanilla $
 
 PORTNAME=	jsond
 PORTVERSION=	1.3.0

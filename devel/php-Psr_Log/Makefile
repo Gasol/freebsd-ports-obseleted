@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/php-Psr_Log/Makefile 375029 2014-12-20 18:06:21Z bapt $
+# $FreeBSD: head/devel/php-Psr_Log/Makefile 385521 2015-05-06 15:16:53Z mat $
 
 PORTNAME=	Psr_Log
 PORTVERSION=	1.0.0
@@ -16,8 +16,6 @@ LICENSE=	MIT
 NO_BUILD=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	php-fig
-GH_TAGNAME=	${PORTVERSION}
-GH_COMMIT=	fe0936e
 GH_PROJECT=	log
 
 PLIST_FILES=	share/pear/Psr/Log/AbstractLogger.php \

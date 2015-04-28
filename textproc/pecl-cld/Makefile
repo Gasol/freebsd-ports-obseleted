@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/textproc/pecl-cld/Makefile 377774 2015-01-23 23:45:46Z antoine $
+# $FreeBSD: head/textproc/pecl-cld/Makefile 385931 2015-05-10 07:54:00Z demon $
 
 PORTNAME=	cld
 PORTVERSION=	0.5.0
@@ -12,8 +12,6 @@ MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	PHP Bindings for Chromium Compact Language Detector
 
 LICENSE=	BSD2CLAUSE
-
-BROKEN=		Missing headers with cld 20150113
 
 LIB_DEPENDS=	libcld.so:${PORTSDIR}/devel/cld
 

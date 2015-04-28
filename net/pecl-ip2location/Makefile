@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/net/pecl-ip2location/Makefile 374669 2014-12-13 18:20:21Z pawel $
+# $FreeBSD: head/net/pecl-ip2location/Makefile 385369 2015-05-04 02:35:01Z vanilla $
 
 PORTNAME=	ip2location
 PORTVERSION=	6.0.4

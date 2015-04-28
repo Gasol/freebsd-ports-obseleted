@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/net/p5-Net-NIS-Listgroup/Makefile 373448 2014-11-26 13:08:24Z mat $
+# $FreeBSD: head/net/p5-Net-NIS-Listgroup/Makefile 381221 2015-03-13 17:29:58Z adamw $
 
 PORTNAME=	Net-NIS-Listgroup
 PORTVERSION=	1.0.0
@@ -19,7 +19,7 @@ USES=		perl5
 USE_PERL5=	configure
 
 post-patch:
-	${MKDIR} ${WRKSRC}/lib
+	@${MKDIR} ${WRKSRC}/lib
 	${MV} ${WRKSRC}/Net ${WRKSRC}/lib
 
 .include <bsd.port.mk>

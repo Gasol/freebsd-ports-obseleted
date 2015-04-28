@@ -1,8 +1,8 @@
 # Created by: Denise H. G. <darcsis@gmail.com>
-# $FreeBSD: head/devel/tig/Makefile 353967 2014-05-13 15:56:15Z sunpoet $
+# $FreeBSD: head/devel/tig/Makefile 385393 2015-05-04 11:17:03Z jbeich $
 
 PORTNAME=	tig
-PORTVERSION=	2.0.2
+PORTVERSION=	2.1.1
 CATEGORIES=	devel
 MASTER_SITES=	http://jonas.nitro.dk/tig/releases/
 
@@ -10,12 +10,16 @@ MAINTAINER=	darcsis@gmail.com
 COMMENT=	Text-mode interface for git
 
 LICENSE=	GPLv2
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	git:${PORTSDIR}/devel/git
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	${ICONV_CONFIGURE_BASE}
 USES=		iconv gmake ncurses readline:port
+
+ALL_TARGET=	all strip
+INSTALL_TARGET=	install
 
 PLIST_FILES=	bin/tig etc/tigrc
 
@@ -24,8 +28,8 @@ OPTIONS_DEFAULT=MANPAGES
 
 MANPAGES_BUILD_DEPENDS=	asciidoc:${PORTSDIR}/textproc/asciidoc \
 			xmlto:${PORTSDIR}/textproc/xmlto
-MANPAGES_ALL_TARGET=	all doc-man
-MANPAGES_INSTALL_TARGET=install install-doc-man
+MANPAGES_ALL_TARGET=	doc-man
+MANPAGES_INSTALL_TARGET=	install-doc-man
 MANPAGES_PLIST_FILES=	man/man1/tig.1.gz \
 			man/man5/tigrc.5.gz \
 			man/man7/tigmanual.7.gz

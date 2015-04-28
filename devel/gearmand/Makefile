@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/gearmand/Makefile 374511 2014-12-11 05:26:39Z koobs $
+# $FreeBSD: head/devel/gearmand/Makefile 383107 2015-04-03 11:26:48Z mat $
 
 PORTNAME=	gearmand
 PORTVERSION=	1.0.6
@@ -44,12 +44,6 @@ HIREDIS_DESC=	Hiredis support for persistent queue
 TOKYOCAB_DESC=	Tokyo Cabinet support for persistent queue
 
 .include <bsd.port.options.mk>
-
-# Workaround for missing sigignore that wasn't introduced until
-# FreeBSD 8.0
-.if ${OSVERSION} < 800041
-BROKEN=	Does not compile without POSIX spawn() support
-.endif
 
 .if ${PORT_OPTIONS:MDRIZZLE}
 LIB_DEPENDS+=		libdrizzle.so:${PORTSDIR}/databases/libdrizzle

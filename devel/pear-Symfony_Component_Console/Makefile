@@ -1,18 +1,22 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: devel/pear-Symfony_Component_Console/Makefile 325537 2013-08-28 14:44:55Z wg $
+# $FreeBSD: head/devel/pear-Symfony_Component_Console/Makefile 369777 2014-10-01 22:20:44Z wg $
 
 PORTNAME=	Console
-PORTVERSION=	${SYMFONY2_PORTVERSION}
+PORTVERSION=	2.4.4
 CATEGORIES=	devel pear
+MASTER_SITES=	http://pear.symfony.com/get/
 PKGNAMEPREFIX=	pear-Symfony_Component_
+DIST_SUBDIR=	Symfony2
 
 MAINTAINER=	wg@FreeBSD.org
 COMMENT=	Symfony2 Console Component
 
 LICENSE=	MIT
 
-IGNORE_WITH_PHP=52
+BUILD_DEPENDS+= ${PEARDIR}/.channels/pear.symfony.com.reg:${PORTSDIR}/devel/pear-channel-symfony2
+RUN_DEPENDS+=	${PEARDIR}/.channels/pear.symfony.com.reg:${PORTSDIR}/devel/pear-channel-symfony2
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/devel/pear-channel-symfony2/bsd.symfony2.mk"
-.include <bsd.port.post.mk>
+USES=		pear
+PEAR_CHANNEL=	symfony2
+
+.include <bsd.port.mk>

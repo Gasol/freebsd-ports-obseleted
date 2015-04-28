@@ -1,12 +1,11 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/pecl-gearman/Makefile 372709 2014-11-18 09:37:31Z bapt $
+# $FreeBSD: head/devel/pecl-gearman/Makefile 379804 2015-02-24 15:23:01Z vanilla $
 
 PORTNAME=	gearman
 PORTVERSION=	1.1.2
 CATEGORIES=	devel
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
-EXTRACT_SUFX=	.tgz
 DIST_SUBDIR=	PECL
 
 MAINTAINER=	ports@FreeBSD.org
@@ -16,6 +15,7 @@ LICENSE=	PHP301
 
 LIB_DEPENDS=	libgearman.so:${PORTSDIR}/devel/gearmand
 
+USES=		tar:tgz
 CONFIGURE_ARGS=	--with-gearman
 PHP_MODNAME=	${PORTNAME}
 USE_PHP=	yes

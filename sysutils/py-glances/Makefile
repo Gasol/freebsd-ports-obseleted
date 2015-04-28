@@ -1,8 +1,9 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/sysutils/py-glances/Makefile 370881 2014-10-14 19:18:47Z pawel $
+# $FreeBSD: head/sysutils/py-glances/Makefile 385665 2015-05-07 20:24:15Z mat $
 
 PORTNAME=	glances
 PORTVERSION=	2.1
+DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -18,8 +19,6 @@ OPTIONS_SUB=	yes
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	nicolargo
-GH_TAGNAME=	v${PORTVERSION}
-GH_COMMIT=	5e2dadb
 
 USES=		python
 USE_PYTHON=	autoplist distutils

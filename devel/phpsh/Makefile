@@ -1,13 +1,12 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/devel/phpsh/Makefile 371280 2014-10-20 16:04:12Z mva $
+# $FreeBSD: head/devel/phpsh/Makefile 386312 2015-05-14 10:15:04Z mat $
 
 PORTNAME=	phpsh
 PORTVERSION=	20110513
 PORTREVISION=	2
 CATEGORIES=	devel
-MASTER_SITES=	http://distfiles.pirateparty.in/%SUBDIR%/ \
-		${MASTER_SITE_LOCAL}
-MASTER_SITE_SUBDIR=	ashish
+MASTER_SITES=	http://distfiles.pirateparty.in/ashish/ \
+		LOCAL/ashish
 
 MAINTAINER=	ashish@FreeBSD.org
 COMMENT=	Interactive shell for PHP

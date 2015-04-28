@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-uopz/Makefile 372116 2014-11-03 16:35:51Z pawel $
+# $FreeBSD: head/devel/pecl-uopz/Makefile 385363 2015-05-04 02:15:17Z vanilla $
 
 PORTNAME=	uopz
 PORTVERSION=	2.0.7

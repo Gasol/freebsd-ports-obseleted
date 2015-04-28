@@ -1,8 +1,8 @@
 # Created by: Eivind Eklund <eivind@FreeBSD.org>
-# $FreeBSD: head/devel/re2c/Makefile 341313 2014-01-26 23:53:59Z bapt $
+# $FreeBSD: head/devel/re2c/Makefile 383945 2015-04-13 18:08:34Z adamw $
 
 PORTNAME=	re2c
-PORTVERSION=	0.13.6
+PORTVERSION=	0.14.2
 CATEGORIES=	devel
 MASTER_SITES=	SF
 
@@ -20,8 +20,8 @@ PORTEXAMPLES=	*
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}/
-	cd ${WRKSRC}/doc/ && ${COPYTREE_SHARE} . ${STAGEDIR}${DOCSDIR}/
+	(cd ${WRKSRC}/doc/ && ${COPYTREE_SHARE} . ${STAGEDIR}${DOCSDIR}/)
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}/
-	cd ${WRKSRC}/examples/ && ${COPYTREE_SHARE} . ${STAGEDIR}${EXAMPLESDIR}/
+	(cd ${WRKSRC}/examples/ && ${COPYTREE_SHARE} . ${STAGEDIR}${EXAMPLESDIR}/)
 
 .include <bsd.port.mk>

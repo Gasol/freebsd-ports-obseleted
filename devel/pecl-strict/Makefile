@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-strict/Makefile 374671 2014-12-13 18:37:33Z pawel $
+# $FreeBSD: head/devel/pecl-strict/Makefile 385364 2015-05-04 02:17:00Z vanilla $
 
 PORTNAME=	strict
 PORTVERSION=	0.4.1

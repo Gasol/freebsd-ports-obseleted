@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: head/devel/pecl-uuid/Makefile 386175 2015-05-12 22:45:22Z vanilla $
 
 PORTNAME=	uuid
 PORTVERSION=	1.0.4

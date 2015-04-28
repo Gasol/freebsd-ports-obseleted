@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/libr3/Makefile 373562 2014-11-28 12:02:35Z marino $
+# $FreeBSD: head/devel/libr3/Makefile 385521 2015-05-06 15:16:53Z mat $
 
 PORTNAME=	libr3
 PORTVERSION=	1.0.0
@@ -16,21 +16,15 @@ LIB_DEPENDS=	libcheck.so:${PORTSDIR}/devel/libcheck \
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-graphviz
-USES=		libtool pkgconfig
+USES=		autoreconf libtool pkgconfig
 INSTALL_TARGET=	install-strip
-USE_AUTOTOOLS=  aclocal:env autoconf:env autoheader:env automake:env libtoolize:env
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	c9s
-GH_TAGNAME=	${PORTVERSION}
-GH_COMMIT=	ad8faeb
 GH_PROJECT=	r3
 
 post-patch:
 	@${REINPLACE_CMD} 's,^pkgconfigdir = .*,pkgconfigdir=$${prefix}/libdata/pkgconfig,' \
 		${WRKSRC}/Makefile.am
-
-pre-configure:
-	(cd ${WRKSRC} && ./autogen.sh)
 
 .include <bsd.port.mk>

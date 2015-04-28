@@ -1,8 +1,8 @@
 # Created by: Marco Broeder <marco.broeder@posteo.eu>
-# $FreeBSD: head/devel/hg-git/Makefile 372717 2014-11-18 13:14:17Z robak $
+# $FreeBSD: head/devel/hg-git/Makefile 386572 2015-05-16 19:44:53Z robak $
 
 PORTNAME=	hg-git
-PORTVERSION=	0.7.0
+PORTVERSION=	0.8.1
 CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-jsmin/Makefile 375588 2014-12-25 17:09:04Z sunpoet $
+# $FreeBSD: head/devel/pecl-jsmin/Makefile 385365 2015-05-04 02:18:32Z vanilla $
 
 PORTNAME=	jsmin
 PORTVERSION=	1.1.0

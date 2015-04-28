@@ -1,8 +1,8 @@
 # Created by: Marcus Alves Grando <mnag@FreeBSD.org>
-# $FreeBSD: head/misc/pecl-timezonedb/Makefile 373285 2014-11-24 18:28:38Z sunpoet $
+# $FreeBSD: head/misc/pecl-timezonedb/Makefile 384839 2015-04-27 14:57:40Z sunpoet $
 
 PORTNAME=	timezonedb
-DISTVERSION=	2014.10
+PORTVERSION=	2015.4
 CATEGORIES=	misc
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
@@ -17,10 +17,5 @@ CONFIGURE_ARGS=	--enable-timezonedb
 USE_PHP=	yes
 USE_PHPEXT=	yes
 USES=		tar:tgz
-
-post-install:
-	${CHMOD} u+w ${STAGEDIR}${PREFIX}/lib/php/${PHP_EXT_DIR}/${PHP_MODNAME}.so
-	${STRIP_CMD} ${STAGEDIR}${PREFIX}/lib/php/${PHP_EXT_DIR}/${PHP_MODNAME}.so
-	${CHMOD} u-w ${STAGEDIR}${PREFIX}/lib/php/${PHP_EXT_DIR}/${PHP_MODNAME}.so
 
 .include <bsd.port.mk>

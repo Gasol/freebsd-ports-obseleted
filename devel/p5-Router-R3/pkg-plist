@@ -1,5 +1,4 @@
 %%PERL5_MAN3%%/Router::R3.3.gz
-%%SITE_PERL%%/%%PERL_ARCH%%/Router/R3.pm
-%%SITE_PERL%%/%%PERL_ARCH%%/auto/Router/R3/.packlist
-%%SITE_PERL%%/%%PERL_ARCH%%/auto/Router/R3/R3.so
-%%SITE_PERL%%/%%PERL_ARCH%%/auto/Router/R3/autosplit.ix
+%%SITE_ARCH%%/Router/R3.pm
+%%SITE_ARCH%%/auto/Router/R3/R3.so
+%%SITE_ARCH%%/auto/Router/R3/autosplit.ix

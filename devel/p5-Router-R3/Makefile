@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: head/devel/p5-Router-R3/Makefile 378688 2015-02-08 21:30:27Z pi $
 
 PORTNAME=	Router-R3
 PORTVERSION=	0.011001
@@ -22,6 +22,6 @@ USE_PERL5=	configure
 CFLAGS+=	-std=c99
 
 post-install:
-	${STRIP_CMD} ${STAGEDIR}${SITE_PERL}/${PERL_ARCH}/auto/Router/R3/R3.so
+	${STRIP_CMD} ${STAGEDIR}${SITE_ARCH}/auto/Router/R3/R3.so
 
 .include <bsd.port.mk>

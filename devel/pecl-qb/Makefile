@@ -1,8 +1,8 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-qb/Makefile 364182 2014-08-06 14:25:31Z adamw $
+# $FreeBSD: head/devel/pecl-qb/Makefile 377169 2015-01-16 12:02:40Z ale $
 
 PORTNAME=	qb
-PORTVERSION=	2.2.0
+PORTVERSION=	2.4.0
 CATEGORIES=	devel
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
@@ -19,4 +19,12 @@ USE_PHPEXT=	yes
 USES=		tar:tgz
 USE_GCC=	any
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} < 1000034
+LIB_DEPENDS+=	libmissing.so:${PORTSDIR}/math/libmissing
+CONFIGURE_ARGS=	--with-libmissing=${LOCALBASE}
+EXTRA_PATCHES+=	${FILESDIR}/extra-patch-libmissing
+.endif
+
+.include <bsd.port.post.mk>

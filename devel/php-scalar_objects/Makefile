@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/php-scalar_objects/Makefile 370983 2014-10-16 08:55:30Z ak $
+# $FreeBSD: head/devel/php-scalar_objects/Makefile 385521 2015-05-06 15:16:53Z mat $
 
 PORTNAME=	scalar_objects
 PORTVERSION=	0.0.20140124
@@ -14,9 +14,7 @@ LICENSE=	PHP301
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	nikic
-GH_PROJECT=	scalar_objects
-GH_TAGNAME=	${GH_COMMIT}
-GH_COMMIT=	baf4985
+GH_TAGNAME=	baf4985
 
 USE_PHP=	yes
 USE_PHPEXT=	yes

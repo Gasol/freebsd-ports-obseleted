@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/net/ip2location/Makefile 374667 2014-12-13 18:00:10Z pawel $
+# $FreeBSD: head/net/ip2location/Makefile 385368 2015-05-04 02:34:26Z vanilla $
 
 PORTNAME=	ip2location
 PORTVERSION=	7.0.1
@@ -12,7 +12,7 @@ COMMENT=	C library to find user\'s location
 
 LICENSE=	LGPL3
 
-USES=		autoreconf libtool:keepla perl5
+USES=		autoreconf libtool perl5
 HAS_CONFIGURE=	yes
 USE_LDCONFIG=	yes
 INSTALL_TARGET=	install-strip

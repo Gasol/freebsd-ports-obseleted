@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/devel/pecl-inclued/Makefile 372709 2014-11-18 09:37:31Z bapt $
+# $FreeBSD: head/devel/pecl-inclued/Makefile 379880 2015-02-25 07:43:59Z vanilla $
 
 PORTNAME=	inclued
 PORTVERSION=	0.1.3
@@ -7,13 +7,13 @@ PORTEPOCH=	1
 CATEGORIES=	devel pear
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
-EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Inclued gives you a Clue for PHP inclusion check
 
 LICENSE=	PHP301
 
+USES=		tar:tgz
 USE_PHP=	yes
 USE_PHPEXT=	yes
 IGNORE_WITH_PHP=	55 56
