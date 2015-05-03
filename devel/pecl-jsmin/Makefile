@@ -2,7 +2,7 @@
 # $FreeBSD: head/devel/pecl-jsmin/Makefile 375588 2014-12-25 17:09:04Z sunpoet $
 
 PORTNAME=	jsmin
-PORTVERSION=	1.0.0
+PORTVERSION=	1.1.0
 CATEGORIES=	devel
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
