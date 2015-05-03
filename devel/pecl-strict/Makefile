@@ -2,7 +2,7 @@
 # $FreeBSD: head/devel/pecl-strict/Makefile 374671 2014-12-13 18:37:33Z pawel $
 
 PORTNAME=	strict
-PORTVERSION=	0.4.0
+PORTVERSION=	0.4.1
 CATEGORIES=	devel
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
