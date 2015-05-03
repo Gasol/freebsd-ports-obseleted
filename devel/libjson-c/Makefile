@@ -15,9 +15,10 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	json-c
 GH_TAGNAME=	5ec2601
 
+USE_LDCONFIG=	yes
 USES=		libtool
-INSTALL_TARGET=	install-strip
 HAS_CONFIGURE=	yes
+INSTALL_TARGET=	install-strip
 MAKE_ARGS=	pkgconfigdir="${PREFIX}/libdata/pkgconfig"
 
 .include <bsd.port.mk>
