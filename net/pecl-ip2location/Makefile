@@ -2,7 +2,7 @@
 # $FreeBSD: head/net/pecl-ip2location/Makefile 374669 2014-12-13 18:20:21Z pawel $
 
 PORTNAME=	ip2location
-PORTVERSION=	6.0.3
+PORTVERSION=	6.0.4
 CATEGORIES=	net pear
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
