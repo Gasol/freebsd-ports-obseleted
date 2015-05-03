@@ -2,7 +2,7 @@
 # $FreeBSD: head/devel/pecl-uopz/Makefile 372116 2014-11-03 16:35:51Z pawel $
 
 PORTNAME=	uopz
-PORTVERSION=	2.0.6
+PORTVERSION=	2.0.7
 CATEGORIES=	devel
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
