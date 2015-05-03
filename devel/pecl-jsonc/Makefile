@@ -13,7 +13,7 @@ COMMENT=	PECL extension for JSON manipulation
 
 LICENSE=	PHP301
 
-LIB_DEPENDS=	libjson-c.so:${PORTSDIR}/devel/libjson-c
+LIB_DEPENDS=	libjson-c.so:${PORTSDIR}/devel/json-c
 
 USES=		pkgconfig tar:tgz
 CONFIGURE_ARGS=	--with-jsonc --with-libjson
