@@ -16,6 +16,8 @@ GH_ACCOUNT=	json-c
 GH_COMMIT=	5ec2601
 GH_TAGNAME=	${GH_COMMIT}
 
+USES=		libtool
+INSTALL_TARGET=	install-strip
 HAS_CONFIGURE=	yes
 MAKE_ARGS=	pkgconfigdir="${PREFIX}/libdata/pkgconfig"
 
