@@ -17,7 +17,7 @@ WRKSRC=		${WRKDIR}/${DISTNAME}/extension
 CMDTOOLSRC=	${WRKSRC}/../cmdtool
 
 GNU_CONFIGURE=	yes
-USES=		tar:tgz shebangfix
+USES=		gmake tar:tgz shebangfix
 USE_PHP=	yes
 USE_PHP_BUILD=	yes
 USE_PHPEXT=	yes
