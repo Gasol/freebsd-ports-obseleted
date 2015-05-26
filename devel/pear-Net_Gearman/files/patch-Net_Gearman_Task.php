@@ -1,4 +1,4 @@
---- Net/Gearman/Task.php.orig	2015-05-25 20:13:57 UTC
+--- Net/Gearman/Task.php.orig	1970-01-01 09:13:08 UTC
 +++ Net/Gearman/Task.php
 @@ -144,7 +144,7 @@ class Net_Gearman_Task
       *
