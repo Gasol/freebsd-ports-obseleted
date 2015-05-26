@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/textproc/pecl-yaml/Makefile 379885 2015-02-25 07:57:28Z vanilla $
+# $FreeBSD: head/textproc/pecl-yaml/Makefile 386939 2015-05-21 16:04:32Z amdmi3 $
 
 PORTNAME=	yaml
 PORTVERSION=	1.2.0

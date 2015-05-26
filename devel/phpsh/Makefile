@@ -1,5 +1,5 @@
 # Created by: Ashish SHUKLA <ashish@FreeBSD.org>
-# $FreeBSD: head/devel/phpsh/Makefile 386312 2015-05-14 10:15:04Z mat $
+# $FreeBSD: head/devel/phpsh/Makefile 387528 2015-05-27 00:09:55Z amdmi3 $
 
 PORTNAME=	phpsh
 PORTVERSION=	20110513
@@ -36,8 +36,5 @@ USE_PHP+=	pcntl
 post-patch:
 	@${GREP} -Rl '%%ETCDIR%%' ${WRKSRC} |${XARGS} ${REINPLACE_CMD} \
 		-e 's,%%ETCDIR%%,${ETCDIR},g'
-
-post-install:
-	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
