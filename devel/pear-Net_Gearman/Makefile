@@ -6,7 +6,7 @@ PORTVERSION=	0.2.3
 PORTREVISION=	2
 CATEGORIES=	devel pear
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	Gearman client libraray for PHP
 
 LICENSE=	BSD2CLAUSE
