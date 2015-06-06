@@ -3,12 +3,14 @@
 
 PORTNAME=	jsonnet
 PORTVERSION=	0.7.6
+DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	JSON data templating language
 
 LICENSE=	APACHE20
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		gmake
 USE_LDCONFIG=	yes
@@ -20,8 +22,6 @@ PLIST_FILES=	bin/jsonnet include/libjsonnet.h lib/libjsonnet.so
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	google
-GH_PROJECT=	jsonnet
-GH_TAGNAME=	v${PORTVERSION}
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin
