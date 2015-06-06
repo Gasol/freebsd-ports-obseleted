@@ -13,6 +13,8 @@ COMMENT=	Google JsonNet for PHP
 
 LICENSE=	APACHE20
 
+LIB_DEPENDS=	libjsonnet.so:${PORTSDIR}/devel/jsonnet
+
 USES=		tar:tgz
 USE_PHP=	yes
 USE_PHPEXT=	yes
