@@ -11,10 +11,12 @@ COMMENT=	JSON data templating language
 LICENSE=	APACHE20
 
 USES=		gmake
+USE_LDCONFIG=	yes
 
 ALL_TARGET=	jsonnet libjsonnet.so
 CFLAGS+=	-std=c99 -fPIC
 CXXFLAGS+=	-std=c++0x
+PLIST_FILES=	bin/jsonnet include/libjsonnet.h lib/libjsonnet.so
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	google
