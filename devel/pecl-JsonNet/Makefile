@@ -16,7 +16,7 @@ LICENSE=	APACHE20
 LIB_DEPENDS=	libjsonnet.so:${PORTSDIR}/devel/jsonnet
 
 USES=		tar:tgz
-USE_PHP=	yes
+USE_PHP=	json
 USE_PHPEXT=	yes
 PHP_MODNAME=	${PORTNAME:tl}
 CONFIGURE_ARGS=	--with-jsonnet=${LOCALBASE}
