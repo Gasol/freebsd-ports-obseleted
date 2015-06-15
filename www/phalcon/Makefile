@@ -1,8 +1,9 @@
 # Created by: Jin-Sih Lin <linpct@gmail.com>
-# $FreeBSD: head/www/phalcon/Makefile 386673 2015-05-18 12:06:10Z koobs $
+# $FreeBSD: head/www/phalcon/Makefile 388360 2015-06-02 13:50:16Z amdmi3 $
 
 PORTNAME=	phalcon
-PORTVERSION=	2.0.1
+PORTVERSION=	2.0.2
+DISTVERSIONPREFIX=	${PORTNAME}-v
 CATEGORIES=	www
 
 MAINTAINER=	linpct@gmail.com
@@ -20,10 +21,9 @@ ONLY_FOR_ARCHS=	amd64 i386
 USE_GITHUB=	yes
 GH_ACCOUNT=	phalcon
 GH_PROJECT=	c${PORTNAME}
-GH_TAGNAME=	${PORTNAME}-v${PORTVERSION}
 
 PBITS=		${ARCH:S/amd64/64/:S/i386/32/:S/x86_64/64/}
-WRKSRC=		${WRKDIR}/c${PORTNAME}-${GH_TAGNAME}/build/${PBITS}bits
+WRKSRC_SUBDIR=		build/${PBITS}bits
 
 CFLAGS+=	-I${LOCALBASE}/include
 CONFIGURE_ARGS=	--enable-phalcon

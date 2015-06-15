@@ -1,5 +1,5 @@
 # Created by: Max Baryshnikov <mephius@gmail.com>
-# $FreeBSD: head/www/pecl-sphinx/Makefile 340828 2014-01-23 14:32:34Z miwi $
+# $FreeBSD: head/www/pecl-sphinx/Makefile 389178 2015-06-11 09:36:58Z amdmi3 $
 
 PORTNAME=	sphinx
 DISTVERSION=	1.3.3
