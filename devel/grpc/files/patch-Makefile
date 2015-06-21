@@ -1,0 +1,81 @@
+--- Makefile.orig	2015-06-02 23:45:02 UTC
++++ Makefile
+@@ -81,6 +81,15 @@ GENDIR = $(BUILDDIR)/gens
+ 
+ # Configurations
+ 
++VALID_CONFIG_freebsd = 1
++CC_freebsd = $(DEFAULT_CC)
++CXX_freebsd = $(DEFAULT_CXX)
++LD_freebsd = $(DEFAULT_CC)
++LDXX_freebsd = $(DEFAULT_CXX)
++CPPFLAGS_freebsd := ${CXXFLAGS}
++LDFLAGS_freebsd := ${LDFAGS}
++DEFINES_freebsd = NDEBUG
++
+ VALID_CONFIG_opt = 1
+ CC_opt = $(DEFAULT_CC)
+ CXX_opt = $(DEFAULT_CXX)
+@@ -205,7 +214,7 @@ AR = ar
+ ifeq ($(SYSTEM),Linux)
+ STRIP = strip --strip-unneeded
+ else
+-ifeq ($(SYSTEM),Darwin)
++ifeq ($(SYSTEM),$(filter $(SYSTEM),Darwin FreeBSD))
+ STRIP = strip -x
+ else
+ STRIP = strip
+@@ -218,7 +227,7 @@ ifndef VALID_CONFIG_$(CONFIG)
+ $(error Invalid CONFIG value '$(CONFIG)')
+ endif
+ 
+-ifeq ($(SYSTEM),Linux)
++ifeq ($(SYSTEM),$(filter $(SYSTEM),Linux FreeBSD))
+ TMPOUT = /dev/null
+ else
+ TMPOUT = `mktemp /tmp/test-out-XXXXXX`
+@@ -262,7 +271,7 @@ LDFLAGS += -fPIC
+ endif
+ 
+ INCLUDES = . include $(GENDIR)
+-ifeq ($(SYSTEM),Darwin)
++ifeq ($(SYSTEM),$(filter $(SYSTEM),Darwin FreeBSD))
+ ifneq ($(wildcard /usr/local/ssl/include),)
+ INCLUDES += /usr/local/ssl/include
+ endif
+@@ -2430,9 +2439,11 @@ endif
+ endif
+ ifneq ($(SYSTEM),MINGW32)
+ ifneq ($(SYSTEM),Darwin)
++ifneq ($(SYSTEM),FreeBSD)
+ 	$(Q) ldconfig || true
+ endif
+ endif
++endif
+ 
+ 
+ install-shared_cxx: shared_cxx strip-shared_cxx install-shared_c
+@@ -2466,9 +2477,11 @@ endif
+ endif
+ ifneq ($(SYSTEM),MINGW32)
+ ifneq ($(SYSTEM),Darwin)
++ifneq ($(SYSTEM),FreeBSD)
+ 	$(Q) ldconfig || true
+ endif
+ endif
++endif
+ 
+ 
+ install-shared_csharp: shared_csharp strip-shared_csharp
+@@ -2488,9 +2501,11 @@ endif
+ endif
+ ifneq ($(SYSTEM),MINGW32)
+ ifneq ($(SYSTEM),Darwin)
++ifneq ($(SYSTEM),FreeBSD)
+ 	$(Q) ldconfig || true
+ endif
+ endif
++endif
+ 
+ 
+ install-plugins: $(PROTOC_PLUGINS)
