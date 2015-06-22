@@ -1,0 +1,50 @@
+--- Makefile.orig	2015-06-02 23:45:02 UTC
++++ Makefile
+@@ -262,7 +262,7 @@ LDFLAGS += -fPIC
+ endif
+ 
+ INCLUDES = . include $(GENDIR)
+-ifeq ($(SYSTEM),Darwin)
++ifeq ($(SYSTEM),$(filter $(SYSTEM),Darwin FreeBSD))
+ ifneq ($(wildcard /usr/local/ssl/include),)
+ INCLUDES += /usr/local/ssl/include
+ endif
+@@ -2435,7 +2435,7 @@ endif
+ endif
+ 
+ 
+-install-shared_cxx: shared_cxx strip-shared_cxx install-shared_c
++install-shared_cxx: shared_cxx strip-shared_cxx
+ ifeq ($(SYSTEM),MINGW32)
+ 	$(E) "[INSTALL] Installing grpc++.$(SHARED_EXT)"
+ 	$(Q) $(INSTALL) -d $(prefix)/lib
+@@ -2466,9 +2466,11 @@ endif
+ endif
+ ifneq ($(SYSTEM),MINGW32)
+ ifneq ($(SYSTEM),Darwin)
++ifneq ($(SYSTEM),FreeBSD)
+ 	$(Q) ldconfig || true
+ endif
+ endif
++endif
+ 
+ 
+ install-shared_csharp: shared_csharp strip-shared_csharp
+@@ -3192,7 +3194,7 @@ $(LIBDIR)/$(CONFIG)/grpc++.$(SHARED_EXT)
+ 	$(Q) mkdir -p `dirname $@`
+ 	$(Q) $(LDXX) $(LDFLAGS) -L$(LIBDIR)/$(CONFIG) -shared -Wl,--output-def=$(LIBDIR)/$(CONFIG)/grpc++.def -Wl,--out-implib=$(LIBDIR)/$(CONFIG)/libgrpc++-imp.a -o $(LIBDIR)/$(CONFIG)/grpc++.$(SHARED_EXT) $(LIBGRPC++_OBJS) $(LDLIBS) $(LDLIBSXX) $(LDLIBS_PROTOBUF) -lgpr-imp -lgrpc-imp
+ else
+-$(LIBDIR)/$(CONFIG)/libgrpc++.$(SHARED_EXT): $(LIBGRPC++_OBJS)  $(ZLIB_DEP) $(PROTOBUF_DEP) $(LIBDIR)/$(CONFIG)/libgpr.$(SHARED_EXT) $(LIBDIR)/$(CONFIG)/libgrpc.$(SHARED_EXT) $(OPENSSL_DEP)
++$(LIBDIR)/$(CONFIG)/libgrpc++.$(SHARED_EXT): $(LIBGRPC++_OBJS)  $(ZLIB_DEP) $(PROTOBUF_DEP) $(OPENSSL_DEP)
+ 	$(E) "[LD]      Linking $@"
+ 	$(Q) mkdir -p `dirname $@`
+ ifeq ($(SYSTEM),Darwin)
+@@ -3414,7 +3416,7 @@ $(LIBDIR)/$(CONFIG)/grpc++_unsecure.$(SH
+ 	$(Q) mkdir -p `dirname $@`
+ 	$(Q) $(LDXX) $(LDFLAGS) -L$(LIBDIR)/$(CONFIG) -shared -Wl,--output-def=$(LIBDIR)/$(CONFIG)/grpc++_unsecure.def -Wl,--out-implib=$(LIBDIR)/$(CONFIG)/libgrpc++_unsecure-imp.a -o $(LIBDIR)/$(CONFIG)/grpc++_unsecure.$(SHARED_EXT) $(LIBGRPC++_UNSECURE_OBJS) $(LDLIBS) $(LDLIBSXX) $(LDLIBS_PROTOBUF) -lgpr-imp -lgrpc_unsecure-imp
+ else
+-$(LIBDIR)/$(CONFIG)/libgrpc++_unsecure.$(SHARED_EXT): $(LIBGRPC++_UNSECURE_OBJS)  $(ZLIB_DEP) $(PROTOBUF_DEP) $(LIBDIR)/$(CONFIG)/libgpr.$(SHARED_EXT) $(LIBDIR)/$(CONFIG)/libgrpc_unsecure.$(SHARED_EXT)
++$(LIBDIR)/$(CONFIG)/libgrpc++_unsecure.$(SHARED_EXT): $(LIBGRPC++_UNSECURE_OBJS)  $(ZLIB_DEP) $(PROTOBUF_DEP)
+ 	$(E) "[LD]      Linking $@"
+ 	$(Q) mkdir -p `dirname $@`
+ ifeq ($(SYSTEM),Darwin)
