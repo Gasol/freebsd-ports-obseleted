@@ -1,0 +1,23 @@
+--- Makefile.orig	2015-06-02 23:45:02 UTC
++++ Makefile
+@@ -262,7 +262,7 @@ LDFLAGS += -fPIC
+ endif
+ 
+ INCLUDES = . include $(GENDIR)
+-ifeq ($(SYSTEM),Darwin)
++ifeq ($(SYSTEM),$(filter $(SYSTEM),Darwin FreeBSD))
+ ifneq ($(wildcard /usr/local/ssl/include),)
+ INCLUDES += /usr/local/ssl/include
+ endif
+@@ -2430,9 +2430,11 @@ endif
+ endif
+ ifneq ($(SYSTEM),MINGW32)
+ ifneq ($(SYSTEM),Darwin)
++ifneq ($(SYSTEM),FreeBSD)
+ 	$(Q) ldconfig || true
+ endif
+ endif
++endif
+ 
+ 
+ install-shared_cxx: shared_cxx strip-shared_cxx install-shared_c

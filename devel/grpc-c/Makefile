@@ -6,10 +6,11 @@ PKGNAMESUFFIX=	-${GRPC_LANG}
 COMMENT=	RPC library for C
 
 MASTERDIR=	${.CURDIR}/../grpc
+PATCHDIR=	${.CURDIR}/files
 
 USES=		gmake
-USE_OPENSSL=	yes
 USE_LDCONFIG=	yes
+USE_OPENSSL=	yes
 WITH_OPENSSL_PORT=	yes
 ALL_TARGET=	strip-static_c strip-shared_c
 INSTALL_TARGET=	install_c

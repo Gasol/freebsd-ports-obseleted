@@ -5,7 +5,6 @@ PORTNAME=	grpc
 PORTVERSION=	0.9.1
 DISTVERSIONPREFIX=	release-
 CATEGORIES=	devel
-DISTFILES=	# none
 
 MAINTAINER?=	gasol.wu@gmail.com
 COMMENT?=	RPC library and framework
@@ -16,7 +15,11 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	grpc
 GH_TAGNAME=	${DISTVERSIONFULL:S/./_/g}
 
-.if !defined(GRPC_LANG)
+.if defined(GRPC_LANG)
+DISTINFO_FILE=	${.CURDIR}/distinfo
+.else
+DISTFILES=	# none
+
 NO_BUILD=	yes
 NO_INSTALL=	yes
 NO_PACKAGE=	yes
