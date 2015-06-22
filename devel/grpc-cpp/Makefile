@@ -9,10 +9,11 @@ BUILD_DEPENDS=	${LOCALBASE}/protobuf30/bin/protoc:${PORTSDIR}/devel/protobuf30
 LIB_DEPENDS=	libgrpc.so:${PORTSDIR}/devel/grpc-c
 
 MASTERDIR=	${.CURDIR}/../grpc
+PATCHDIR=	${.CURDIR}/files
 
 USES=		gmake
-USE_OPENSSL=	yes
 USE_LDCONFIG=	yes
+USE_OPENSSL=	yes
 WITH_OPENSSL_PORT=	yes
 ALL_TARGET=	strip-static_cxx strip-shared_cxx
 INSTALL_TARGET=	install_cxx
