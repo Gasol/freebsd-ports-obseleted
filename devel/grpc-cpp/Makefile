@@ -1,24 +1,14 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
 # $FreeBSD$
 
-PORTNAME=	grpc
-PORTVERSION=	0.9.1
-DISTVERSIONPREFIX=	release-
-CATEGORIES=	devel
-PKGNAMESUFFIX=	-cpp
+PKGNAMESUFFIX=	-${GRPC_LANG}
 
-MAINTAINER=	gasol.wu@gmail.com
-COMMENT=	RPC library and framework
-
-LICENSE=	BSD3CLAUSE
-LICENSE_FILE=	${WRKSRC}/LICENSE
+COMMENT=	RPC library for C++
 
 BUILD_DEPENDS=	${LOCALBASE}/protobuf30/bin/protoc:${PORTSDIR}/devel/protobuf30
 LIB_DEPENDS=	libgrpc.so:${PORTSDIR}/devel/grpc-c
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	grpc
-GH_TAGNAME=	${DISTVERSIONFULL:S/./_/g}
+MASTERDIR=	${.CURDIR}/../grpc
 
 USES=		gmake
 USE_OPENSSL=	yes
@@ -30,5 +20,8 @@ LDFLAGS+=	-L${LOCALBASE}/protobuf30/lib \
 		-Wl,-rpath,${LOCALBASE}/protobuf30/lib
 CPPFLAGS+=	-I${LOCALBASE}/protobuf30/include
 MAKE_ENV+=	prefix=${STAGEDIR}${PREFIX}
+PLIST=		${.CURDIR}/pkg-plist
 
-.include <bsd.port.mk>
+GRPC_LANG=	cpp
+
+.include "${MASTERDIR}/Makefile"

@@ -1,21 +1,11 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
 # $FreeBSD$
 
-PORTNAME=	grpc
-PORTVERSION=	0.9.1
-DISTVERSIONPREFIX=	release-
-CATEGORIES=	devel
-PKGNAMESUFFIX=	-c
+PKGNAMESUFFIX=	-${GRPC_LANG}
 
-MAINTAINER=	gasol.wu@gmail.com
-COMMENT=	RPC library and framework
+COMMENT=	RPC library for C
 
-LICENSE=	BSD3CLAUSE
-LICENSE_FILE=	${WRKSRC}/LICENSE
-
-USE_GITHUB=	yes
-GH_ACCOUNT=	grpc
-GH_TAGNAME=	${DISTVERSIONFULL:S/./_/g}
+MASTERDIR=	${.CURDIR}/../grpc
 
 USES=		gmake
 USE_OPENSSL=	yes
@@ -24,5 +14,8 @@ WITH_OPENSSL_PORT=	yes
 ALL_TARGET=	strip-static_c strip-shared_c
 INSTALL_TARGET=	install_c
 MAKE_ENV+=	prefix=${STAGEDIR}${PREFIX}
+PLIST=		${.CURDIR}/pkg-plist
 
-.include <bsd.port.mk>
+GRPC_LANG=	c
+
+.include "${MASTERDIR}/Makefile"

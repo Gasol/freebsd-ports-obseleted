@@ -1,27 +1,23 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
 # $FreeBSD$
 
-PORTNAME=	grpc
-PORTVERSION=	0.9.1
-DISTVERSIONPREFIX=	release-
-CATEGORIES=	devel python
+CATEGORIES+=	python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	RPC library for Python
 
-LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/../../../LICENSE
 
 LIB_DEPENDS=	libgrpc.so:${PORTSDIR}/devel/grpc-c
 
-USE_PYTHON=	autoplist distutils
+MASTERDIR=	${.CURDIR}/../grpc
+
 USES=		gmake python
+USE_PYTHON=	autoplist distutils
 WRKSRC=		${WRKDIR}/${PORTNAME}-${GH_TAGNAME}/src/python/src
 CFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 
-USE_GITHUB=	yes
-GH_ACCOUNT=	grpc
-GH_TAGNAME=	${DISTVERSIONFULL:S/./_/g}
+GRPC_LANG=	python
 
-.include <bsd.port.mk>
+.include "${MASTERDIR}/Makefile"
