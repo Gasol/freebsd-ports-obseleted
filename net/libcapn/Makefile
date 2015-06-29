@@ -2,8 +2,7 @@
 # $FreeBSD: head/net/libcapn/Makefile 385640 2015-05-07 17:26:05Z mat $
 
 PORTNAME=	libcapn
-DISTVERSION=	1.0.0beta3
-PORTREVISION=	2
+PORTVERSION=	1.0.0
 CATEGORIES=	net
 
 MAINTAINER=	gasol.wu@gmail.com
@@ -18,6 +17,7 @@ GH_ACCOUNT=	adobkin
 
 USES=		cmake
 USE_LDCONFIG=	yes
-CMAKE_ARGS=	-DOS_FREEBSD=yes
+CMAKE_ARGS=	-DOS_FREEBSD=yes \
+		-DCAPN_INSTALL_PATH_PKGCONFIG=${PREFIX}/libdata/pkgconfig
 
 .include <bsd.port.mk>
