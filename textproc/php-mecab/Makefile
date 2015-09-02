@@ -11,7 +11,7 @@ COMMENT=	PHP bindings of the MeCab
 
 LICENSE=	MIT
 
-BUILD_DEPNDS=	libmecab.so:${PORTSDIR}/japanese/mecab
+BUILD_DEPENDS=	libmecab.so:${PORTSDIR}/japanese/mecab
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	rsky
