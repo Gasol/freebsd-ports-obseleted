@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	php-
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	Lightweight profiler for PHP
 
-LICENSE=	APL-20
+LICENSE=	APACHE20
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	FriendsOfPHP
