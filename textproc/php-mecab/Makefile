@@ -3,7 +3,7 @@
 
 PORTNAME=	mecab
 PORTVERSION=	0.5.0.20121209
-CATEGORIES=	devel
+CATEGORIES=	textproc
 PKGNAMEPREFIX=	php-
 
 MAINTAINER=	gasol.wu@gmail.com
