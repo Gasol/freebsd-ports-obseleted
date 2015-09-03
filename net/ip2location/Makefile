@@ -2,7 +2,7 @@
 # $FreeBSD: head/net/ip2location/Makefile 385368 2015-05-04 02:34:26Z vanilla $
 
 PORTNAME=	ip2location
-PORTVERSION=	7.0.1
+PORTVERSION=	7.0.2
 CATEGORIES=	net
 MASTER_SITES=	http://www.ip2location.com/downloads/
 DISTNAME=	${PORTNAME}-c-${PORTVERSION}
