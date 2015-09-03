@@ -2,7 +2,7 @@
 # $FreeBSD: head/net/pecl-mosquitto/Makefile 355407 2014-05-26 16:15:33Z sunpoet $
 
 PORTNAME=	mosquitto
-PORTVERSION=	0.2.2
+PORTVERSION=	0.3.0
 CATEGORIES=	net pear
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
