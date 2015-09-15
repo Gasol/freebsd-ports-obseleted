@@ -1,0 +1,9 @@
+lib/mecab/dic/ipadic-neologd/char.bin
+lib/mecab/dic/ipadic-neologd/dicrc
+lib/mecab/dic/ipadic-neologd/left-id.def
+lib/mecab/dic/ipadic-neologd/matrix.bin
+lib/mecab/dic/ipadic-neologd/pos-id.def
+lib/mecab/dic/ipadic-neologd/rewrite.def
+lib/mecab/dic/ipadic-neologd/right-id.def
+lib/mecab/dic/ipadic-neologd/sys.dic
+lib/mecab/dic/ipadic-neologd/unk.dic

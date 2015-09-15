@@ -1,0 +1,5 @@
+mecab-ipadic-neologd is customized system dictionary for MeCab. This dictionary
+includes many neologisms (new word), which are extracted from many language
+resources on the Web.
+
+WWW: https://github.com/neologd/mecab-ipadic-neologd
