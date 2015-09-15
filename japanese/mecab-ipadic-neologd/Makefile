@@ -11,7 +11,8 @@ COMMENT=	Neologism dictionary for MeCab
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	ja-mecab>=0.94:${PORTSDIR}/japanese/mecab
+BUILD_DEPENDS=	bash>=0:${PORTSDIR}/shells/bash \
+		ja-mecab>=0.94:${PORTSDIR}/japanese/mecab
 
 USES=		perl5 shebangfix
 NO_BUILD=	yes
