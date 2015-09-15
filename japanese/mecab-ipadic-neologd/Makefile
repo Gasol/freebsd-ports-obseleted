@@ -4,6 +4,10 @@
 PORTNAME=	mecab-ipadic-neologd
 DISTVERSION=	0.0.2-20150623
 CATEGORIES=	japanese textproc
+MASTER_SITES=	GOOGLE_CODE:googlecode
+PROJECTHOST=	mecab
+DISTFILES=	neologd-mecab-ipadic-neologd-0.0.2-20150623-v0.0.2_GH0.tar.gz:github \
+		mecab-ipadic-2.7.0-20070801.tar.gz:googlecode
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	Neologism dictionary for MeCab
@@ -12,7 +16,6 @@ LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	bash:${PORTSDIR}/shells/bash \
-		curl:${PORTSDIR}/ftp/curl \
 		iconv:${PORTSDIR}/converters/libiconv \
 		mecab-config:${PORTSDIR}/japanese/mecab
 
