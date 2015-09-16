@@ -31,6 +31,6 @@ SHEBANG_FILES=	libexec/iconv_euc_to_utf8.sh \
 do-install:
 	(DICDIR=`mecab-config --dicdir` && \
 		${WRKSRC}/bin/install-mecab-ipadic-neologd \
-		-y -p ${STAGEDIR}$${DICDIR}/ipadic-neologd)
+		-u -y -p ${STAGEDIR}$${DICDIR}/ipadic-neologd)
 
 .include <bsd.port.mk>
