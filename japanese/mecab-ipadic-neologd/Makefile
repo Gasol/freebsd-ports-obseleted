@@ -4,7 +4,8 @@
 PORTNAME=	mecab-ipadic-neologd
 DISTVERSION=	0.0.2-20150623
 CATEGORIES=	japanese textproc
-MASTER_SITES=	GOOGLE_CODE:googlecode
+MASTER_SITES=	GOOGLE_CODE:googlecode \
+		GITHUB:github
 PROJECTHOST=	mecab
 DISTFILES=	neologd-mecab-ipadic-neologd-0.0.2-20150623-v0.0.2_GH0.tar.gz:github \
 		mecab-ipadic-2.7.0-20070801.tar.gz:googlecode
