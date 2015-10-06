@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/net/pecl-mosquitto/Makefile 355407 2014-05-26 16:15:33Z sunpoet $
+# $FreeBSD: head/net/pecl-mosquitto/Makefile 396020 2015-09-03 16:47:04Z sunpoet $
 
 PORTNAME=	mosquitto
 PORTVERSION=	0.3.0

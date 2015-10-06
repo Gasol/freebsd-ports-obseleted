@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: head/devel/pecl-trace/Makefile 391967 2015-07-14 03:11:40Z pi $
 
 PORTNAME=	trace
 PORTVERSION=	0.3.0
@@ -17,7 +17,7 @@ WRKSRC=		${WRKDIR}/${DISTNAME}/extension
 CMDTOOLSRC=	${WRKSRC}/../cmdtool
 
 GNU_CONFIGURE=	yes
-USES=		gmake tar:tgz shebangfix
+USES=		gmake shebangfix tar:tgz
 USE_PHP=	yes
 USE_PHP_BUILD=	yes
 USE_PHPEXT=	yes

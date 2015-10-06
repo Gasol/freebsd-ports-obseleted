@@ -1,8 +1,8 @@
 # Created by: wen
-# $FreeBSD: head/databases/pecl-mongo/Makefile 389032 2015-06-10 13:40:22Z bofh $
+# $FreeBSD: head/databases/pecl-mongo/Makefile 391300 2015-07-04 09:55:09Z bofh $
 
 PORTNAME=	mongo
-PORTVERSION=	1.6.9
+PORTVERSION=	1.6.10
 CATEGORIES=	databases pear
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-

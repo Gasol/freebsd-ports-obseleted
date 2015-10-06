@@ -1,5 +1,5 @@
 # Created by: Stanislav Svirid <count@211.ru>
-# $FreeBSD: head/net/py-netifaces/Makefile 366498 2014-08-29 10:44:09Z bapt $
+# $FreeBSD: head/net/py-netifaces/Makefile 391113 2015-07-01 17:57:08Z sunpoet $
 
 PORTNAME=	netifaces
 PORTVERSION=	0.10.4
@@ -13,6 +13,6 @@ COMMENT=	Getting network addresses from Python
 LICENSE=	MIT
 
 USES=		python
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	autoplist distutils
 
 .include <bsd.port.mk>

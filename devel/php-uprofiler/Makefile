@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: head/devel/php-uprofiler/Makefile 396252 2015-09-07 07:22:13Z vanilla $
 
 PORTNAME=	uprofiler
 PORTVERSION=	0.11.0.20150219

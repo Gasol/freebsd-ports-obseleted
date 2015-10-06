@@ -1,8 +1,8 @@
 # Created by: Eivind Eklund <eivind@FreeBSD.org>
-# $FreeBSD: head/devel/re2c/Makefile 383945 2015-04-13 18:08:34Z adamw $
+# $FreeBSD: head/devel/re2c/Makefile 392436 2015-07-18 17:06:33Z sunpoet $
 
 PORTNAME=	re2c
-PORTVERSION=	0.14.2
+PORTVERSION=	0.14.3
 CATEGORIES=	devel
 MASTER_SITES=	SF
 

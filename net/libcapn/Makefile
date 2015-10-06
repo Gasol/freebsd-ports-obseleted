@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/net/libcapn/Makefile 385640 2015-05-07 17:26:05Z mat $
+# $FreeBSD: head/net/libcapn/Makefile 391078 2015-07-01 16:20:20Z amdmi3 $
 
 PORTNAME=	libcapn
 PORTVERSION=	1.0.0
@@ -9,6 +9,7 @@ MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	C Library to interact with Apple Push Notification Service
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libjansson.so:${PORTSDIR}/devel/jansson
 

@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/net/ip2location/Makefile 385368 2015-05-04 02:34:26Z vanilla $
+# $FreeBSD: head/net/ip2location/Makefile 396021 2015-09-03 16:47:09Z sunpoet $
 
 PORTNAME=	ip2location
 PORTVERSION=	7.0.2

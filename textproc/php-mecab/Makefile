@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: head/textproc/php-mecab/Makefile 396253 2015-09-07 07:24:55Z vanilla $
 
 PORTNAME=	mecab
 PORTVERSION=	0.5.0.20121209

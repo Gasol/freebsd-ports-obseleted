@@ -1,5 +1,5 @@
 # Created by: David Thiel <lx@FreeBSD.org>
-# $FreeBSD: head/security/nacl/Makefile 360999 2014-07-06 19:16:29Z johans $
+# $FreeBSD: head/security/nacl/Makefile 393529 2015-08-04 16:37:42Z amdmi3 $
 
 PORTNAME=	nacl
 PORTVERSION=	20110221
@@ -23,9 +23,9 @@ HOSTNAME_CMD?=	/bin/hostname -s
 MYARCH=		${ARCH:S/i386/x86/:S/powerpc/ppc/}
 
 post-patch:
-	@${REINPLACE_CMD} -i -e "s/$$/ -fPIC/" ${WRKSRC}/okcompilers/c
-	@${REINPLACE_CMD} -i -e "s/gcc/${CC}/" ${WRKSRC}/okcompilers/c
-	@${REINPLACE_CMD} -i -e "s/c++/${CXX}/" ${WRKSRC}/okcompilers/cpp
+	@${REINPLACE_CMD} -i -e "s|$$| -fPIC|" ${WRKSRC}/okcompilers/c
+	@${REINPLACE_CMD} -i -e "s|gcc|${CC}|" ${WRKSRC}/okcompilers/c
+	@${REINPLACE_CMD} -i -e "s|c++|${CXX}|" ${WRKSRC}/okcompilers/cpp
 
 pre-build:
 	${RM} -rf ${WRKSRC}/crypto_onetimeauth/poly1305/amd64

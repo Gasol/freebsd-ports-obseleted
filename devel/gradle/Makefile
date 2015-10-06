@@ -1,8 +1,8 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/gradle/Makefile 372284 2014-11-07 17:49:29Z pawel $
+# $FreeBSD: head/devel/gradle/Makefile 390955 2015-06-30 11:50:52Z girgen $
 
 PORTNAME=	gradle
-PORTVERSION=	2.1
+PORTVERSION=	2.4
 CATEGORIES=	devel java
 MASTER_SITES=	https://services.gradle.org/distributions/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-bin
