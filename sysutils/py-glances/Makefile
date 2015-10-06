@@ -2,7 +2,7 @@
 # $FreeBSD: head/sysutils/py-glances/Makefile 389765 2015-06-15 23:31:06Z amdmi3 $
 
 PORTNAME=	glances
-PORTVERSION=	2.4.2
+PORTVERSION=	2.5.0
 DISTVERSIONPREFIX=	v
 CATEGORIES=	sysutils python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -20,6 +20,7 @@ OPTIONS_SUB=	yes
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	nicolargo
+GH_TAGNAME=	v2.5
 
 USES=		python
 USE_PYTHON=	autoplist distutils
