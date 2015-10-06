@@ -20,7 +20,7 @@ BUILD_DEPENDS=	bash:${PORTSDIR}/shells/bash \
 		iconv:${PORTSDIR}/converters/libiconv \
 		mecab-config:${PORTSDIR}/japanese/mecab
 
-USES=		perl5 shebangfix
+USES=		iconv perl5 shebangfix
 NO_BUILD=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	neologd
