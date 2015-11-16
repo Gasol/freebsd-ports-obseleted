@@ -1,8 +1,8 @@
 # Created by: Jin-Sih Lin <linpct@gmail.com>
-# $FreeBSD: head/www/phalcon/Makefile 396476 2015-09-09 13:28:29Z vanilla $
+# $FreeBSD: head/www/phalcon/Makefile 398399 2015-10-02 01:37:39Z vanilla $
 
 PORTNAME=	phalcon
-PORTVERSION=	2.0.7
+PORTVERSION=	2.0.8
 DISTVERSIONPREFIX=	${PORTNAME}-v
 CATEGORIES=	www
 

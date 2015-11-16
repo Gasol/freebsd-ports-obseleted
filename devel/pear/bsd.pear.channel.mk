@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/pear/bsd.pear.channel.mk 340722 2014-01-22 17:00:46Z mat $
+# $FreeBSD: head/devel/pear/bsd.pear.channel.mk 397988 2015-09-26 15:36:20Z antoine $
 #
 # Common code for PEAR channels
 
@@ -18,8 +18,7 @@ PEAR_CHANNEL_ALIAS?=	${PORTNAME}
 PEAR_CHANNEL_REG?=	${FILESDIR}/${PEAR_CHANNEL_HOST}.reg
 
 PLIST_FILES=	${LPEARDIR}/.channels/.alias/${PEAR_CHANNEL_ALIAS}.txt \
-		${LPEARDIR}/.channels/${PEAR_CHANNEL_HOST}.reg \
-		"@exec ${MKDIR} %D/${LPEARDIR}/.registry/.channel.${PEAR_CHANNEL_HOST}"
+		${LPEARDIR}/.channels/${PEAR_CHANNEL_HOST}.reg
 PLIST_DIRS=	${LPEARDIR}/.registry/.channel.${PEAR_CHANNEL_HOST}
 
 .if !defined(PEAR_CHANNEL_HOST)
