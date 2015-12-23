@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/sysutils/py-glances/Makefile 389765 2015-06-15 23:31:06Z amdmi3 $
+# $FreeBSD: head/sysutils/py-glances/Makefile 399506 2015-10-16 19:23:44Z pawel $
 
 PORTNAME=	glances
 PORTVERSION=	2.5.0
@@ -24,6 +24,7 @@ GH_TAGNAME=	v2.5
 
 USES=		python
 USE_PYTHON=	autoplist distutils
+NO_ARCH=	yes
 
 PLIST_FILES=	%%ETCDIR%%/glances.conf.sample \
 		man/man1/glances.1.gz

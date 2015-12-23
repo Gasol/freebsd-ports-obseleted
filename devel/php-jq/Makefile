@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: head/devel/php-jq/Makefile 400601 2015-11-01 09:13:14Z pi $
 
 PORTNAME=	jq
 PORTVERSION=	0.0.1

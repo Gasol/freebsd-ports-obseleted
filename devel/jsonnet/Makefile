@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: head/devel/jsonnet/Makefile 400404 2015-10-28 17:41:45Z pawel $
 
 PORTNAME=	jsonnet
 PORTVERSION=	0.7.6
@@ -12,16 +12,16 @@ COMMENT=	JSON data templating language
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		gmake
+USE_GITHUB=	yes
+GH_ACCOUNT=	google
+
+USES=		compiler:c++11-lib gmake
+USE_CXXSTD=	c++11
 USE_LDCONFIG=	yes
 
 ALL_TARGET=	jsonnet libjsonnet.so
-CFLAGS+=	-std=c99 -fPIC
-CXXFLAGS+=	-std=c++0x
+CXXFLAGS+=	-fPIC
 PLIST_FILES=	bin/jsonnet include/libjsonnet.h lib/libjsonnet.so
-
-USE_GITHUB=	yes
-GH_ACCOUNT=	google
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin
