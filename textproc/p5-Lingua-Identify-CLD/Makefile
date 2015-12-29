@@ -22,4 +22,7 @@ RUN_DEPENDS=	p5-XSLoader>=0:${PORTSDIR}/devel/p5-XSLoader
 USES=		perl5
 USE_PERL5=	modbuild
 
+post-install:
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/${SITE_ARCH_REL}/auto/Lingua/Identify/CLD/CLD.so
+
 .include <bsd.port.mk>
