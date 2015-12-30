@@ -1,8 +1,8 @@
 # Created by: Ju Pengfei <jupengfei@gmail.com>
-# $FreeBSD: head/sysutils/py-psutil/Makefile 398589 2015-10-04 17:59:45Z sunpoet $
+# $FreeBSD: head/sysutils/py-psutil/Makefile 404452 2015-12-25 19:44:22Z sunpoet $
 
 PORTNAME=	psutil
-PORTVERSION=	3.2.2
+PORTVERSION=	3.3.0
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -11,6 +11,7 @@ MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Process utilities module for Python
 
 LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USE_PYTHON=	autoplist concurrent distutils
 USES=		python

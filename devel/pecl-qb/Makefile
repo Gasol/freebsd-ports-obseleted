@@ -1,8 +1,9 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-qb/Makefile 377169 2015-01-16 12:02:40Z ale $
+# $FreeBSD: head/devel/pecl-qb/Makefile 403604 2015-12-12 14:44:39Z amdmi3 $
 
 PORTNAME=	qb
 PORTVERSION=	2.4.0
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
@@ -13,7 +14,6 @@ COMMENT=	PHP Accelerator designed mainly for graphic work
 
 LICENSE=	PHP301
 
-CONFIGURE_ARGS=	--with-cpu=native
 USE_PHP=	yes
 USE_PHPEXT=	yes
 USES=		tar:tgz

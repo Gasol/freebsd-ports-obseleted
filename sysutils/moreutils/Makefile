@@ -1,5 +1,5 @@
 # Created by: Charlie Kester <corky1951@comcast.net>
-# $FreeBSD: head/sysutils/moreutils/Makefile 392789 2015-07-24 08:59:11Z sunpoet $
+# $FreeBSD: head/sysutils/moreutils/Makefile 402671 2015-11-30 14:26:13Z marino $
 
 PORTNAME=	moreutils
 PORTVERSION=	0.57
@@ -21,6 +21,8 @@ OPTIONS_SUB=	yes
 ALL_TARGET=	errnos.h ${CANNED_MANPAGES:R}
 USES=		perl5 shebangfix
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
+
+MAKE_JOBS_UNSAFE=	yes
 
 CANNED_MANPAGES=errno.1 \
 		ifdata.1 \

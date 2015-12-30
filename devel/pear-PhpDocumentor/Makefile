@@ -1,11 +1,11 @@
 # Created by: Gerrit Beine (<gerrit.beine@gmx.de>)
-# $FreeBSD: head/devel/pear-PhpDocumentor/Makefile 369068 2014-09-23 15:15:04Z bapt $
+# $FreeBSD: head/devel/pear-PhpDocumentor/Makefile 402439 2015-11-26 12:04:00Z miwi $
 
 PORTNAME=	PhpDocumentor
 PORTVERSION=	1.4.4
 CATEGORIES=	devel www pear
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	miwi@FreeBSD.org
 COMMENT=	Provides automatic documenting of php-api from the source
 
 BUILD_DEPENDS=	${PEARDIR}/PEAR.php:${PORTSDIR}/devel/pear

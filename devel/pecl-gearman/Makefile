@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/pecl-gearman/Makefile 379804 2015-02-24 15:23:01Z vanilla $
+# $FreeBSD: head/devel/pecl-gearman/Makefile 402450 2015-11-26 14:39:58Z miwi $
 
 PORTNAME=	gearman
 PORTVERSION=	1.1.2
@@ -8,7 +8,7 @@ MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
 DIST_SUBDIR=	PECL
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	miwi@FreeBSD.org
 COMMENT=	Gearman API
 
 LICENSE=	PHP301

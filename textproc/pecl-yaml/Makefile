@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/textproc/pecl-yaml/Makefile 386939 2015-05-21 16:04:32Z amdmi3 $
+# $FreeBSD: head/textproc/pecl-yaml/Makefile 402450 2015-11-26 14:39:58Z miwi $
 
 PORTNAME=	yaml
 PORTVERSION=	1.2.0
@@ -8,7 +8,7 @@ MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
 DIST_SUBDIR=	PECL
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	miwi@FreeBSD.org
 COMMENT=	YAML-1.1 parser and emitter
 
 LICENSE=	MIT

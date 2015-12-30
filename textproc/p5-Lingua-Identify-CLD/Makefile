@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: head/textproc/p5-Lingua-Identify-CLD/Makefile 404563 2015-12-27 12:03:48Z antoine $
 
 PORTNAME=	Lingua-Identify-CLD
 PORTVERSION=	0.09
@@ -12,11 +12,11 @@ COMMENT=	Interface to Chrome language detection library
 
 LICENSE=	BSD3CLAUSE
 
+LIB_DEPENDS=	libcld.so:${PORTSDIR}/devel/cld
 BUILD_DEPENDS=	p5-Config-AutoConf>=0.16:${PORTSDIR}/devel/p5-Config-AutoConf \
 		p5-ExtUtils-CBuilder>0.27:${PORTSDIR}/devel/p5-ExtUtils-CBuilder \
 		p5-ExtUtils-ParseXS>=0:${PORTSDIR}/devel/p5-ExtUtils-ParseXS \
 		p5-ExtUtils-LibBuilder>=0.02:${PORTSDIR}/devel/p5-ExtUtils-LibBuilder
-LIB_DEPENDS=	libcld.so:${PORTSDIR}/devel/cld
 RUN_DEPENDS=	p5-XSLoader>=0:${PORTSDIR}/devel/p5-XSLoader
 
 USES=		perl5

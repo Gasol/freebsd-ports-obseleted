@@ -1,8 +1,9 @@
 # Created by: John Chen <johnpupu@gmail.com>
-# $FreeBSD: head/devel/pecl-ev/Makefile 400745 2015-11-04 16:46:39Z vanilla $
+# $FreeBSD: head/devel/pecl-ev/Makefile 404164 2015-12-21 18:35:04Z sunpoet $
 
 PORTNAME=	ev
 PORTVERSION=	0.2.15
+PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
@@ -12,12 +13,12 @@ MAINTAINER=	johnpupu@gmail.com
 COMMENT=	Libev extension for PHP
 
 LICENSE=	PHP301
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		tar:tgz
 USE_PHP=	yes
 USE_PHP_BUILD=	yes
 USE_PHPIZE=	yes
 USE_PHPEXT=	yes
-IGNORE_WITH_PHP=52 53
 
 .include <bsd.port.mk>

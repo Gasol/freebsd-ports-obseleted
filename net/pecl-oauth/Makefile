@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/net/pecl-oauth/Makefile 379771 2015-02-24 09:09:06Z vanilla $
+# $FreeBSD: head/net/pecl-oauth/Makefile 402450 2015-11-26 14:39:58Z miwi $
 
 PORTNAME=	oauth
 PORTVERSION=	1.2.3
@@ -8,7 +8,7 @@ MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
 DIST_SUBDIR=	PECL
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	miwi@FreeBSD.org
 COMMENT=	Php Interface to the OAuth Protocol
 
 LICENSE=	BSD3CLAUSE
