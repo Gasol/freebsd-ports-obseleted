@@ -2,7 +2,7 @@
 # $FreeBSD: head/security/pecl-crypto/Makefile 401985 2015-11-20 03:55:34Z junovitch $
 
 PORTNAME=	crypto
-PORTVERSION=	0.2.1
+PORTVERSION=	0.2.2
 CATEGORIES=	security
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
