@@ -2,7 +2,8 @@
 # $FreeBSD: head/textproc/php-mecab/Makefile 396253 2015-09-07 07:24:55Z vanilla $
 
 PORTNAME=	mecab
-PORTVERSION=	0.5.0.20121209
+PORTVERSION=	0.6.0
+DISTVERSIONPREFIX=	v
 CATEGORIES=	textproc
 PKGNAMEPREFIX=	php-
 
@@ -16,7 +17,6 @@ LIB_DEPENDS=	libmecab.so:${PORTSDIR}/japanese/mecab
 USE_GITHUB=	yes
 GH_ACCOUNT=	rsky
 GH_PROJECT=	${PKGNAMEPREFIX}${PORTNAME}
-GH_TAGNAME=	55e6481
 
 WRKSRC=		${WRKDIR}/${GH_PROJECT}-${GH_TAGNAME_EXTRACT}/mecab
 CONFIGURE_ARGS+=	--with-mecab=${LOCALBASE}/bin/mecab-config
