@@ -2,7 +2,7 @@
 # $FreeBSD: head/net/libcapn/Makefile 391078 2015-07-01 16:20:20Z amdmi3 $
 
 PORTNAME=	libcapn
-PORTVERSION=	1.0.0
+PORTVERSION=	1.1.0
 CATEGORIES=	net
 
 MAINTAINER=	gasol.wu@gmail.com
