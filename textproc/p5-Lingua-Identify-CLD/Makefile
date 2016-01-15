@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/textproc/p5-Lingua-Identify-CLD/Makefile 404563 2015-12-27 12:03:48Z antoine $
+# $FreeBSD: head/textproc/p5-Lingua-Identify-CLD/Makefile 404845 2015-12-30 12:13:55Z sunpoet $
 
 PORTNAME=	Lingua-Identify-CLD
 PORTVERSION=	0.09

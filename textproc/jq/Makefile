@@ -1,12 +1,12 @@
 # Created by: Jui-Nan Lin <jnlin@csie.nctu.edu.tw>
-# $FreeBSD: head/textproc/jq/Makefile 403735 2015-12-14 20:29:46Z amdmi3 $
+# $FreeBSD: head/textproc/jq/Makefile 405183 2016-01-03 20:33:19Z pi $
 
 PORTNAME=	jq
 PORTVERSION=	1.5
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	textproc
 
-MAINTAINER=	jnlin@csie.nctu.edu.tw
+MAINTAINER=	yuri@rawbw.com
 COMMENT=	Lightweight and flexible command-line JSON processor
 
 LICENSE=	MIT
