@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/net/libcapn/Makefile 391078 2015-07-01 16:20:20Z amdmi3 $
+# $FreeBSD: head/net/libcapn/Makefile 405613 2016-01-09 07:56:25Z miwi $
 
 PORTNAME=	libcapn
 PORTVERSION=	1.1.0

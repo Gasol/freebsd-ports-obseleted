@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/sysutils/py-glances/Makefile 403255 2015-12-08 09:05:15Z mat $
+# $FreeBSD: head/sysutils/py-glances/Makefile 406635 2016-01-19 05:59:20Z vanilla $
 
 PORTNAME=	glances
 PORTVERSION=	2.5.1
