@@ -9,7 +9,7 @@ PKGNAMEPREFIX=	pecl-
 DIST_SUBDIR=	PECL
 
 MAINTAINER=	gasol.wu@gmail.com
-COMMENT=	Wrapper for the Sodium cryptographic library
+COMMENT=	PHP wrapper for the Sodium cryptographic library
 
 LICENSE=	BSD2CLAUSE
 
