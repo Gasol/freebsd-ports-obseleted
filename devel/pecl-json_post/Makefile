@@ -15,7 +15,7 @@ LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		tar:tgz
-USE_PHP=	yes
+USE_PHP=	json
 USE_PHPEXT=	yes
 
 .include <bsd.port.mk>
