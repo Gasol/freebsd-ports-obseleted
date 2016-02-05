@@ -16,6 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		tar:tgz
 USE_PHP=	json
+USE_PHP_BUILD=	yes
 USE_PHPEXT=	yes
 
 .include <bsd.port.mk>
