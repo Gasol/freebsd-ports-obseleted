@@ -1,11 +1,11 @@
---- bin/install-mecab-ipadic-neologd.orig	2015-09-15 22:56:58 UTC
+--- bin/install-mecab-ipadic-neologd.orig	2016-02-17 10:06:20 UTC
 +++ bin/install-mecab-ipadic-neologd
-@@ -184,7 +184,7 @@ fi
+@@ -216,7 +216,7 @@ fi
  echo "$ECHO_PREFIX Start.."
  
- echo "$ECHO_PREFIX Check the exists of libraries"
--COMMANDS=(find sort head cut egrep mecab mecab-config make curl sed cat diff tar unxz xargs grep iconv)
-+COMMANDS=(find sort head cut egrep mecab mecab-config make sed cat diff tar unxz xargs grep iconv)
+ echo "$ECHO_PREFIX Check the existance of libraries"
+-COMMANDS=(find sort head cut egrep mecab mecab-config make curl sed cat diff tar unxz xargs grep iconv patch which file openssl)
++COMMANDS=(find sort head cut egrep mecab mecab-config make sed cat diff tar unxz xargs grep iconv patch which file openssl)
  for COMMAND in ${COMMANDS[@]};do
      if [ ! `which ${COMMAND}` ]; then
-         echo "$ECHO_PREFIX ${COMMAND} is not found."
+         echo "$ECHO_PREFIX     ${COMMAND} is not found."
