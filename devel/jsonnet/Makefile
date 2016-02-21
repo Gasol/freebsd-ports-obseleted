@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 USE_GITHUB=	yes
 GH_ACCOUNT=	google
 
-USES=		compiler:c++11-lib gmake
+USES=		compiler:c++11-lang gmake
 USE_CXXSTD=	c++11
 USE_LDCONFIG=	yes
 
