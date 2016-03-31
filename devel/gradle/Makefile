@@ -2,7 +2,7 @@
 # $FreeBSD: head/devel/gradle/Makefile 390955 2015-06-30 11:50:52Z girgen $
 
 PORTNAME=	gradle
-PORTVERSION=	2.10
+PORTVERSION=	2.12
 CATEGORIES=	devel java
 MASTER_SITES=	https://services.gradle.org/distributions/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-bin
