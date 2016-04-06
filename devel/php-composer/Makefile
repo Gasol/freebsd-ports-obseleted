@@ -2,8 +2,7 @@
 # $FreeBSD: head/devel/php-composer/Makefile 402447 2015-11-26 13:36:45Z mat $
 
 PORTNAME=	composer
-DISTVERSION=	1.0.0-alpha11
-PORTREVISION=	1
+DISTVERSION=	1.0.0
 CATEGORIES=	devel
 MASTER_SITES=	http://getcomposer.org/download/${DISTVERSION}/
 PKGNAMEPREFIX=	php-
@@ -20,7 +19,7 @@ RUN_DEPENDS=	ca_root_nss>0:${PORTSDIR}/security/ca_root_nss
 
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
-USE_PHP=	intl openssl phar json ctype
+USE_PHP=	ctype filter hash intl json mbstring openssl phar zip zlib
 
 PLIST_FILES=	bin/composer \
 		bin/composer.phar
