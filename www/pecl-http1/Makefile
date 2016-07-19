@@ -3,6 +3,7 @@
 
 PORTNAME=	http
 PORTVERSION=	1.7.6
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
@@ -21,7 +22,7 @@ USES=		tar:tgz
 USE_PHP=	yes
 USE_PHPEXT=	yes
 PHP_MODNAME=	http
-IGNORE_WITH_PHP=	56 70
+IGNORE_WITH_PHP=	70
 CONFLICTS=	pecl-http-*
 
 CONFIGURE_ARGS+=	--with-http-curl-requests \
