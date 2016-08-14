@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-TheSeer_DirectoryScanner/Makefile 369068 2014-09-23 15:15:04Z bapt $
+# $FreeBSD: head/devel/pear-TheSeer_DirectoryScanner/Makefile 412346 2016-04-01 14:00:51Z mat $
 
 PORTNAME=	DirectoryScanner
 PORTVERSION=	1.2.0
@@ -12,8 +12,8 @@ COMMENT=	Recursive directory scanner and filter
 
 LICENSE=	BSD2CLAUSE
 
-BUILD_DEPENDS=	${PEARDIR}/.channels/pear.netpirates.net.reg:${PORTSDIR}/devel/pear-channel-theseer
-RUN_DEPENDS=	${PEARDIR}/.channels/pear.netpirates.net.reg:${PORTSDIR}/devel/pear-channel-theseer
+BUILD_DEPENDS=	${PEARDIR}/.channels/pear.netpirates.net.reg:devel/pear-channel-theseer
+RUN_DEPENDS=	${PEARDIR}/.channels/pear.netpirates.net.reg:devel/pear-channel-theseer
 
 USE_PHP=	fileinfo
 PEAR_CHANNEL=	theseer

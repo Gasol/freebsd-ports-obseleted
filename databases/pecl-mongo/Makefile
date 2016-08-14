@@ -1,8 +1,8 @@
 # Created by: wen
-# $FreeBSD: head/databases/pecl-mongo/Makefile 397056 2015-09-16 11:26:40Z bofh $
+# $FreeBSD: head/databases/pecl-mongo/Makefile 417719 2016-06-28 14:00:45Z mat $
 
 PORTNAME=	mongo
-PORTVERSION=	1.6.11
+PORTVERSION=	1.6.14
 CATEGORIES=	databases pear
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
@@ -13,13 +13,12 @@ COMMENT=	PECL classes for Mongo Database Driver
 
 LICENSE=	APACHE20
 
-BUILD_DEPENDS=	re2c>=0.13.4:${PORTSDIR}/devel/re2c
+BUILD_DEPENDS=	re2c>=0.13.4:devel/re2c
 
-USES=		tar:tgz
-USE_PHP=	spl
-USE_PHP_BUILD=	yes
-USE_PHPEXT=	yes
+USES=		php:ext tar:tgz
+USE_PHP=	spl:build
 CONFIGURE_ARGS=	--enable-mongo
 SUB_FILES=	pkg-message
+IGNORE_WITH_PHP=	70
 
 .include <bsd.port.mk>

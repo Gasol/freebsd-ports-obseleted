@@ -1,4 +1,4 @@
-# $FreeBSD: head/devel/pear/bsd.pear.channel.mk 397988 2015-09-26 15:36:20Z antoine $
+# $FreeBSD: head/devel/pear/bsd.pear.channel.mk 412346 2016-04-01 14:00:51Z mat $
 #
 # Common code for PEAR channels
 
@@ -7,8 +7,8 @@ PKGNAMEPREFIX?=	pear-channel-
 MASTER_SITES?=	#no master sites
 DISTFILES?=	#no distfiles
 
-BUILD_DEPENDS?=	${LOCALBASE}/bin/pear:${PORTSDIR}/devel/pear
-RUN_DEPENDS?=	${LOCALBASE}/bin/pear:${PORTSDIR}/devel/pear
+BUILD_DEPENDS?=	${LOCALBASE}/bin/pear:devel/pear
+RUN_DEPENDS?=	${LOCALBASE}/bin/pear:devel/pear
 
 NO_BUILD?=	yes
 

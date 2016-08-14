@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-Pirum/Makefile 369068 2014-09-23 15:15:04Z bapt $
+# $FreeBSD: head/devel/pear-Pirum/Makefile 412346 2016-04-01 14:00:51Z mat $
 
 PORTNAME=	Pirum
 PORTVERSION=	1.1.5
@@ -12,8 +12,8 @@ COMMENT=	Simple PEAR channel server manager
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	${PEARDIR}/.channels/pear.pirum-project.org.reg:${PORTSDIR}/devel/pear-channel-pirum
-RUN_DEPENDS=	${PEARDIR}/.channels/pear.pirum-project.org.reg:${PORTSDIR}/devel/pear-channel-pirum
+BUILD_DEPENDS=	${PEARDIR}/.channels/pear.pirum-project.org.reg:devel/pear-channel-pirum
+RUN_DEPENDS=	${PEARDIR}/.channels/pear.pirum-project.org.reg:devel/pear-channel-pirum
 
 PEAR_CHANNEL=	pirum
 USES=	pear

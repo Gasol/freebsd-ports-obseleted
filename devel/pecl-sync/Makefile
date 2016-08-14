@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-sync/Makefile 369573 2014-09-30 06:36:51Z vanilla $
+# $FreeBSD: head/devel/pecl-sync/Makefile 417719 2016-06-28 14:00:45Z mat $
 
 PORTNAME=	sync
 PORTVERSION=	1.0.1
@@ -14,7 +14,7 @@ COMMENT=	Named and unnamed synchronization objects in PHP
 
 LICENSE=	MIT
 
-USE_PHP=	yes
-USE_PHPEXT=	yes
+USES=		php:ext
+IGNORE_WITH_PHP=	70
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-qb/Makefile 403604 2015-12-12 14:44:39Z amdmi3 $
+# $FreeBSD: head/devel/pecl-qb/Makefile 417719 2016-06-28 14:00:45Z mat $
 
 PORTNAME=	qb
 PORTVERSION=	2.4.0
@@ -14,15 +14,14 @@ COMMENT=	PHP Accelerator designed mainly for graphic work
 
 LICENSE=	PHP301
 
-USE_PHP=	yes
-USE_PHPEXT=	yes
-USES=		tar:tgz
+USES=		php:ext tar:tgz
 USE_GCC=	any
+IGNORE_WITH_PHP=	70
 
 .include <bsd.port.pre.mk>
 
 .if ${OSVERSION} < 1000034
-LIB_DEPENDS+=	libmissing.so:${PORTSDIR}/math/libmissing
+LIB_DEPENDS+=	libmissing.so:math/libmissing
 CONFIGURE_ARGS=	--with-libmissing=${LOCALBASE}
 EXTRA_PATCHES+=	${FILESDIR}/extra-patch-libmissing
 .endif

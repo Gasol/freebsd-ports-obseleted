@@ -1,5 +1,5 @@
 # Created by: Max Baryshnikov <mephius@gmail.com>
-# $FreeBSD: head/www/pecl-sphinx/Makefile 389178 2015-06-11 09:36:58Z amdmi3 $
+# $FreeBSD: head/www/pecl-sphinx/Makefile 417719 2016-06-28 14:00:45Z mat $
 
 PORTNAME=	sphinx
 DISTVERSION=	1.3.3
@@ -13,11 +13,10 @@ COMMENT=	Sphinx search engine php client
 
 LICENSE=	PHP301
 
-LIB_DEPENDS=	libsphinxclient.so:${PORTSDIR}/textproc/libsphinxclient
+LIB_DEPENDS=	libsphinxclient.so:textproc/libsphinxclient
 
-USES=		tar:tgz
-USE_PHP=	yes
-USE_PHPEXT=	yes
+USES=		php:ext tar:tgz
+IGNORE_WITH_PHP=	70
 
 SUB_FILES=	pkg-message
 PKGMESSAGE=	${WRKDIR}/pkg-message

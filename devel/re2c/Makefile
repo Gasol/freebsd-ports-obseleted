@@ -1,10 +1,10 @@
 # Created by: Eivind Eklund <eivind@FreeBSD.org>
-# $FreeBSD: head/devel/re2c/Makefile 392436 2015-07-18 17:06:33Z sunpoet $
+# $FreeBSD: head/devel/re2c/Makefile 410256 2016-03-06 06:19:32Z sunpoet $
 
 PORTNAME=	re2c
 PORTVERSION=	0.14.3
 CATEGORIES=	devel
-MASTER_SITES=	SF
+MASTER_SITES=	SF/${PORTNAME}/${PORTVERSION}
 
 MAINTAINER=	chalpin@cs.wisc.edu
 COMMENT=	Compile regular expression to C (much faster final code than flex)
@@ -18,9 +18,11 @@ PLIST_FILES=	bin/re2c \
 PORTDOCS=	*
 PORTEXAMPLES=	*
 
-post-install:
+post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}/
 	(cd ${WRKSRC}/doc/ && ${COPYTREE_SHARE} . ${STAGEDIR}${DOCSDIR}/)
+
+post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}/
 	(cd ${WRKSRC}/examples/ && ${COPYTREE_SHARE} . ${STAGEDIR}${EXAMPLESDIR}/)
 

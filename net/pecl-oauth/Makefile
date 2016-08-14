@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/net/pecl-oauth/Makefile 402450 2015-11-26 14:39:58Z miwi $
+# $FreeBSD: head/net/pecl-oauth/Makefile 417719 2016-06-28 14:00:45Z mat $
 
 PORTNAME=	oauth
 PORTVERSION=	1.2.3
@@ -14,14 +14,13 @@ COMMENT=	Php Interface to the OAuth Protocol
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${LOCALBASE}/include/curl/curl.h:${PORTSDIR}/ftp/curl
+BUILD_DEPENDS=	${LOCALBASE}/include/curl/curl.h:ftp/curl
 
 CFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 CONFIGURE_ARGS+=	CFLAGS="${CFLAGS}" LDFLAGS="${LDFLAGS}"
 
-USES=		tar:tgz
-USE_PHP=	yes
-USE_PHPEXT=	yes
+USES=		php:ext tar:tgz
+IGNORE_WITH_PHP=	70
 
 .include <bsd.port.mk>

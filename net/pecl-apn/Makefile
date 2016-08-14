@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/net/pecl-apn/Makefile 352709 2014-05-01 01:31:06Z vanilla $
+# $FreeBSD: head/net/pecl-apn/Makefile 417719 2016-06-28 14:00:45Z mat $
 
 PORTNAME=	apn
 PORTVERSION=	1.0.3
@@ -15,12 +15,10 @@ COMMENT=	Extension to interact with Apple Push Notification Service
 
 LICENSE=	PHP301
 
-LIB_DEPENDS=	libcapn.so:${PORTSDIR}/net/libcapn
+LIB_DEPENDS=	libcapn.so:net/libcapn
 
-USE_PHP=	yes
-USE_PHPIZE=	yes
-USE_PHPEXT=	yes
+USES=		php:ext
 CONFIGURE_ARGS=	--with-apn=${LOCALBASE}
-IGNORE_WITH_PHP=52
+IGNORE_WITH_PHP=	70
 
 .include <bsd.port.mk>

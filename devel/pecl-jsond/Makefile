@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-jsond/Makefile 385366 2015-05-04 02:25:03Z vanilla $
+# $FreeBSD: head/devel/pecl-jsond/Makefile 417719 2016-06-28 14:00:45Z mat $
 
 PORTNAME=	jsond
 PORTVERSION=	1.3.0
@@ -13,8 +13,7 @@ COMMENT=	JavaScript Object Notation in PHP
 
 LICENSE=	PHP301
 
-USES=		tar:tgz
-USE_PHP=	yes
-USE_PHPEXT=	yes
+USES=		php:ext tar:tgz
+IGNORE_WITH_PHP=	70
 
 .include <bsd.port.mk>

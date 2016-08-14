@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/net/pecl-mosquitto/Makefile 396020 2015-09-03 16:47:04Z sunpoet $
+# $FreeBSD: head/net/pecl-mosquitto/Makefile 417719 2016-06-28 14:00:45Z mat $
 
 PORTNAME=	mosquitto
 PORTVERSION=	0.3.0
@@ -14,10 +14,9 @@ COMMENT=	Extension for libmosquitto
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	mosquitto>=0:${PORTSDIR}/net/mosquitto
+BUILD_DEPENDS=	mosquitto>=0:net/mosquitto
 
-USE_PHP=	yes
-USE_PHPEXT=	yes
-USES=		tar:tgz
+USES=		php:ext tar:tgz
+IGNORE_WITH_PHP=	70
 
 .include <bsd.port.mk>

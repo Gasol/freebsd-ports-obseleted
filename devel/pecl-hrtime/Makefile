@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-hrtime/Makefile 396250 2015-09-07 07:12:28Z vanilla $
+# $FreeBSD: head/devel/pecl-hrtime/Makefile 417719 2016-06-28 14:00:45Z mat $
 
 PORTNAME=	hrtime
 PORTVERSION=	0.5.1
@@ -13,8 +13,6 @@ COMMENT=	High resolution timing for PHP
 
 LICENSE=	BSD2CLAUSE
 
-USES=		tar:tgz
-USE_PHP=	yes
-USE_PHPEXT=	yes
+USES=		php:ext tar:tgz
 
 .include <bsd.port.mk>

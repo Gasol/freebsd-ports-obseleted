@@ -1,0 +1,30 @@
+diff -ruN /var/cache/portshaker/ports//misc/pecl-timezonedb/Makefile ./Makefile
+--- /var/cache/portshaker/ports//misc/pecl-timezonedb/Makefile	2015-12-07 01:51:54.000000000 +0800
++++ ./Makefile	2016-02-03 15:35:42.611902000 +0800
+@@ -2,7 +2,7 @@
+ # $FreeBSD: head/misc/pecl-timezonedb/Makefile 403134 2015-12-06 17:51:54Z sunpoet $
+ 
+ PORTNAME=	timezonedb
+-PORTVERSION=	2015.7
++PORTVERSION=	2016.1
+ CATEGORIES=	misc
+ MASTER_SITES=	http://pecl.php.net/get/
+ PKGNAMEPREFIX=	pecl-
+@@ -11,7 +11,8 @@
+ MAINTAINER=	sunpoet@FreeBSD.org
+ COMMENT=	Timezone Database to be used with PHP date and time functions
+ 
+-LICENSE=	PHP30
++LICENSE=	PHP301
++LICENSE_FILE=	${WRKSRC}/LICENSE
+ 
+ CONFIGURE_ARGS=	--enable-timezonedb
+ USE_PHP=	yes
+diff -ruN /var/cache/portshaker/ports//misc/pecl-timezonedb/distinfo ./distinfo
+--- /var/cache/portshaker/ports//misc/pecl-timezonedb/distinfo	2015-12-07 01:51:54.000000000 +0800
++++ ./distinfo	2016-02-03 15:34:50.029377000 +0800
+@@ -1,2 +1,2 @@
+-SHA256 (PECL/timezonedb-2015.7.tgz) = 16f59dc2314acc7f870c7a48212db430c17d3aa52f5fd76a1cf1dfacf8d84722
+-SIZE (PECL/timezonedb-2015.7.tgz) = 415259
++SHA256 (PECL/timezonedb-2016.1.tgz) = 042acac0f0021690de8bbdaeb7358485b89ae37693ca912d03c03909922d04fa
++SIZE (PECL/timezonedb-2016.1.tgz) = 415133

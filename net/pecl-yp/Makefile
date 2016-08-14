@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/net/pecl-yp/Makefile 354577 2014-05-19 18:38:54Z sunpoet $
+# $FreeBSD: head/net/pecl-yp/Makefile 417719 2016-06-28 14:00:45Z mat $
 
 PORTNAME=	yp
 PORTVERSION=	1.0.1
@@ -13,8 +13,7 @@ COMMENT=	YP/NIS functions binding for PHP
 
 LICENSE=	PHP301
 
-USE_PHP=	yes
-USE_PHPEXT=	yes
-USES=		tar:tgz
+USES=		php:ext tar:tgz
+IGNORE_WITH_PHP=	70
 
 .include <bsd.port.mk>

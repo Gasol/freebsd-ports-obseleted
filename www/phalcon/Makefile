@@ -1,8 +1,8 @@
 # Created by: Jin-Sih Lin <linpct@gmail.com>
-# $FreeBSD: head/www/phalcon/Makefile 405045 2016-01-02 05:23:11Z miwi $
+# $FreeBSD: head/www/phalcon/Makefile 417719 2016-06-28 14:00:45Z mat $
 
 PORTNAME=	phalcon
-PORTVERSION=	2.0.9
+PORTVERSION=	2.0.13
 DISTVERSIONPREFIX=	${PORTNAME}-v
 CATEGORIES=	www
 
@@ -11,10 +11,9 @@ COMMENT=	Phalcon PHP Framework written in C-language
 
 LICENSE=	BSD3CLAUSE
 
-USE_PHP=	hash pdo
-USE_PHPEXT=	yes
-USE_PHPIZE=	yes
-USE_PHP_BUILD=	yes
+USES=		php:ext
+USE_PHP=	hash:build pdo:build
+IGNORE_WITH_PHP=	70
 
 ONLY_FOR_ARCHS=	amd64 i386
 

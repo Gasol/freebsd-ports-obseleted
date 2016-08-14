@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/textproc/pecl-cld/Makefile 385931 2015-05-10 07:54:00Z demon $
+# $FreeBSD: head/textproc/pecl-cld/Makefile 417719 2016-06-28 14:00:45Z mat $
 
 PORTNAME=	cld
 PORTVERSION=	0.5.0
@@ -13,14 +13,11 @@ COMMENT=	PHP Bindings for Chromium Compact Language Detector
 
 LICENSE=	BSD2CLAUSE
 
-LIB_DEPENDS=	libcld.so:${PORTSDIR}/devel/cld
+LIB_DEPENDS=	libcld.so:devel/cld
 
 CONFIGURE_ARGS=	--enable-cld --with-libcld-dir=${LOCALBASE}/lib
-USES=		tar:tgz
-USE_PHP=	yes
-USE_PHP_BUILD=	yes
-USE_PHPIZE=	yes
-USE_PHPEXT=	yes
+USES=		php:ext tar:tgz
+IGNORE_WITH_PHP=	70
 
 post-install:
 	@${STRIP_CMD} ${STAGEDIR}/${PREFIX}/lib/php/${PHP_EXT_DIR}/cld.so

@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-PHPUnit_MockObject/Makefile 375249 2014-12-22 17:12:26Z feld $
+# $FreeBSD: head/devel/pear-PHPUnit_MockObject/Makefile 412346 2016-04-01 14:00:51Z mat $
 
 PORTNAME=	PHPUnit_MockObject
 PORTVERSION=	1.2.2
@@ -12,10 +12,10 @@ COMMENT=	Mock Object library for PHPUnit
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	${PEARDIR}/Text/Template.php:${PORTSDIR}/textproc/pear-Text_Template \
-		${PEARDIR}/.channels/pear.phpunit.de.reg:${PORTSDIR}/devel/pear-channel-phpunit
-RUN_DEPENDS=	${PEARDIR}/Text/Template.php:${PORTSDIR}/textproc/pear-Text_Template \
-		${PEARDIR}/.channels/pear.phpunit.de.reg:${PORTSDIR}/devel/pear-channel-phpunit
+BUILD_DEPENDS=	${PEARDIR}/Text/Template.php:textproc/pear-Text_Template \
+		${PEARDIR}/.channels/pear.phpunit.de.reg:devel/pear-channel-phpunit
+RUN_DEPENDS=	${PEARDIR}/Text/Template.php:textproc/pear-Text_Template \
+		${PEARDIR}/.channels/pear.phpunit.de.reg:devel/pear-channel-phpunit
 
 USES=	pear
 PEAR_CHANNEL=	phpunit

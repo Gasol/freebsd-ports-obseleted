@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/textproc/pecl-yaml/Makefile 402450 2015-11-26 14:39:58Z miwi $
+# $FreeBSD: head/textproc/pecl-yaml/Makefile 417719 2016-06-28 14:00:45Z mat $
 
 PORTNAME=	yaml
 PORTVERSION=	1.2.0
@@ -14,11 +14,9 @@ COMMENT=	YAML-1.1 parser and emitter
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-LIB_DEPENDS=	libyaml.so:${PORTSDIR}/textproc/libyaml
+LIB_DEPENDS=	libyaml.so:textproc/libyaml
 
-USES=		tar:tgz
-USE_PHP=	yes
-USE_PHP_BUILD=	yes
-USE_PHPEXT=	yes
+USES=		php:ext tar:tgz
+IGNORE_WITH_PHP=	70
 
 .include <bsd.port.mk>

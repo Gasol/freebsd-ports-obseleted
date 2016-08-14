@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/pecl-gearman/Makefile 402450 2015-11-26 14:39:58Z miwi $
+# $FreeBSD: head/devel/pecl-gearman/Makefile 417719 2016-06-28 14:00:45Z mat $
 
 PORTNAME=	gearman
 PORTVERSION=	1.1.2
@@ -13,12 +13,10 @@ COMMENT=	Gearman API
 
 LICENSE=	PHP301
 
-LIB_DEPENDS=	libgearman.so:${PORTSDIR}/devel/gearmand
+LIB_DEPENDS=	libgearman.so:devel/gearmand
 
-USES=		tar:tgz
+USES=		php:ext tar:tgz
 CONFIGURE_ARGS=	--with-gearman
-PHP_MODNAME=	${PORTNAME}
-USE_PHP=	yes
-USE_PHPEXT=	yes
+IGNORE_WITH_PHP=	70
 
 .include <bsd.port.mk>

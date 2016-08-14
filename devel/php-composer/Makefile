@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/php-composer/Makefile 402447 2015-11-26 13:36:45Z mat $
+# $FreeBSD: head/devel/php-composer/Makefile 416089 2016-05-29 08:55:41Z pawel $
 
 PORTNAME=	composer
-DISTVERSION=	1.0.0
+DISTVERSION=	1.1.0
 CATEGORIES=	devel
 MASTER_SITES=	http://getcomposer.org/download/${DISTVERSION}/
 PKGNAMEPREFIX=	php-
@@ -15,11 +15,11 @@ COMMENT=	Dependency Manager for PHP
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	ca_root_nss>0:${PORTSDIR}/security/ca_root_nss
+RUN_DEPENDS=	ca_root_nss>0:security/ca_root_nss
 
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
-USE_PHP=	ctype filter hash intl json mbstring openssl phar zip zlib
+USE_PHP=	intl openssl phar json ctype
 
 PLIST_FILES=	bin/composer \
 		bin/composer.phar

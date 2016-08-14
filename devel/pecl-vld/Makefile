@@ -1,5 +1,5 @@
 # Created by: chinsan
-# $FreeBSD: head/devel/pecl-vld/Makefile 402450 2015-11-26 14:39:58Z miwi $
+# $FreeBSD: head/devel/pecl-vld/Makefile 417719 2016-06-28 14:00:45Z mat $
 
 PORTNAME=	vld
 PORTVERSION=	0.13.0
@@ -13,9 +13,8 @@ COMMENT=	Dump the internal representation of PHP scripts
 
 LICENSE=	BSD2CLAUSE
 
-USES=		tar:tgz
-USE_PHP=	yes
-USE_PHPEXT=	yes
+USES=		php:ext tar:tgz
+IGNORE_WITH_PHP=	70
 
 CONFIGURE_ARGS=	--enable-vld
 

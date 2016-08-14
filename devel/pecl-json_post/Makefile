@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: head/devel/pecl-json_post/Makefile 417719 2016-06-28 14:00:45Z mat $
 
 PORTNAME=	json_post
 PORTVERSION=	1.0.1
@@ -14,9 +14,9 @@ COMMENT=	JSON POST handler in PHP
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		tar:tgz
-USE_PHP=	json
-USE_PHP_BUILD=	yes
-USE_PHPEXT=	yes
+BROKEN_powerpc64=	Does not build
+
+USES=		php:ext tar:tgz
+USE_PHP=	json:build
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-ezc_ConsoleTools/Makefile 375249 2014-12-22 17:12:26Z feld $
+# $FreeBSD: head/devel/pear-ezc_ConsoleTools/Makefile 412346 2016-04-01 14:00:51Z mat $
 
 PORTNAME=	ConsoleTools
 PORTVERSION=	1.6.1
@@ -12,10 +12,10 @@ COMMENT=	Set of classes to do different actions with the console
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	pear-ezc_Base>=1.8:${PORTSDIR}/devel/pear-ezc_Base \
-		${PEARDIR}/.channels/components.ez.no.reg:${PORTSDIR}/devel/pear-channel-ezc
-RUN_DEPENDS=	pear-ezc_Base>=1.8:${PORTSDIR}/devel/pear-ezc_Base \
-		${PEARDIR}/.channels/components.ez.no.reg:${PORTSDIR}/devel/pear-channel-ezc
+BUILD_DEPENDS=	pear-ezc_Base>=1.8:devel/pear-ezc_Base \
+		${PEARDIR}/.channels/components.ez.no.reg:devel/pear-channel-ezc
+RUN_DEPENDS=	pear-ezc_Base>=1.8:devel/pear-ezc_Base \
+		${PEARDIR}/.channels/components.ez.no.reg:devel/pear-channel-ezc
 
 PEAR_CHANNEL=	ezc
 USES=	pear

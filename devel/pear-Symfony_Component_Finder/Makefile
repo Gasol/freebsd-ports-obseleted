@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-Symfony_Component_Finder/Makefile 369776 2014-10-01 22:19:18Z wg $
+# $FreeBSD: head/devel/pear-Symfony_Component_Finder/Makefile 412346 2016-04-01 14:00:51Z mat $
 
 PORTNAME=	Finder
 PORTVERSION=	2.3.4
@@ -13,8 +13,8 @@ COMMENT=	Symfony2 Finder Component
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	${PEARDIR}/.channels/pear.symfony.com.reg:${PORTSDIR}/devel/pear-channel-symfony2
-RUN_DEPENDS=	${PEARDIR}/.channels/pear.symfony.com.reg:${PORTSDIR}/devel/pear-channel-symfony2
+BUILD_DEPENDS=	${PEARDIR}/.channels/pear.symfony.com.reg:devel/pear-channel-symfony2
+RUN_DEPENDS=	${PEARDIR}/.channels/pear.symfony.com.reg:devel/pear-channel-symfony2
 
 USES=		pear
 PEAR_CHANNEL=	symfony2

@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/pear-Net_Gearman/Makefile 390421 2015-06-23 16:04:55Z amdmi3 $
+# $FreeBSD: head/devel/pear-Net_Gearman/Makefile 412346 2016-04-01 14:00:51Z mat $
 
 PORTNAME=	Net_Gearman
 PORTVERSION=	0.2.3
@@ -11,8 +11,8 @@ COMMENT=	Gearman client libraray for PHP
 
 LICENSE=	BSD2CLAUSE
 
-BUILD_DEPENDS=	${LOCALBASE}/share/pear/PEAR.php:${PORTSDIR}/devel/pear
-RUN_DEPENDS=	${LOCALBASE}/share/pear/PEAR.php:${PORTSDIR}/devel/pear
+BUILD_DEPENDS=	${LOCALBASE}/share/pear/PEAR.php:devel/pear
+RUN_DEPENDS=	${LOCALBASE}/share/pear/PEAR.php:devel/pear
 
 USE_PHP=	json mbstring sockets
 USES=		pear

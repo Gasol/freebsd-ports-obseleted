@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/security/pecl-crypto/Makefile 405210 2016-01-04 05:41:53Z miwi $
+# $FreeBSD: head/security/pecl-crypto/Makefile 417719 2016-06-28 14:00:45Z mat $
 
 PORTNAME=	crypto
 PORTVERSION=	0.2.2
@@ -13,11 +13,8 @@ COMMENT=	Objective wrapper for OpenSSL Crypto Library
 
 LICENSE=	PHP301
 
-USES=		tar:tgz
+USES=		php:ext tar:tgz
 CONFIGURE_ARGS=	--with-crypto
 USE_OPENSSL=	yes
-USE_PHP=	yes
-USE_PHPEXT=	yes
-USE_PHPIZE=	yes
 
 .include <bsd.port.mk>

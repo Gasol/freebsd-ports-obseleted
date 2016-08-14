@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-jsonc/Makefile 385367 2015-05-04 02:27:16Z vanilla $
+# $FreeBSD: head/devel/pecl-jsonc/Makefile 417719 2016-06-28 14:00:45Z mat $
 
 PORTNAME=	jsonc
 PORTVERSION=	1.3.7
@@ -13,14 +13,12 @@ COMMENT=	PECL extension for JSON manipulation
 
 LICENSE=	PHP301
 
-LIB_DEPENDS=	libjson-c.so:${PORTSDIR}/devel/json-c
+LIB_DEPENDS=	libjson-c.so:devel/json-c
 
-USES=		pkgconfig tar:tgz
+USES=		php:ext pkgconfig tar:tgz
 CONFIGURE_ARGS=	--with-jsonc --with-libjson
 MAKE_ARGS=	EXTRA_CFLAGS=-DCOMPILE_DL_JSON=1
-USE_PHP=	yes
-USE_PHPEXT=	yes
-IGNORE_WITH_PHP=52 53
+IGNORE_WITH_PHP=70
 CONFLICTS_INSTALL=	php54-json-5* php55-json-5* php5-json-5*
 
 .include <bsd.port.mk>

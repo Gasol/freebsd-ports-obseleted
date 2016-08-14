@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/textproc/p5-Lingua-Identify-CLD/Makefile 404845 2015-12-30 12:13:55Z sunpoet $
+# $FreeBSD: head/textproc/p5-Lingua-Identify-CLD/Makefile 412349 2016-04-01 14:25:16Z mat $
 
 PORTNAME=	Lingua-Identify-CLD
 PORTVERSION=	0.09
@@ -13,12 +13,12 @@ COMMENT=	Interface to Chrome language detection library
 
 LICENSE=	BSD3CLAUSE
 
-LIB_DEPENDS=	libcld.so:${PORTSDIR}/devel/cld
-BUILD_DEPENDS=	p5-Config-AutoConf>=0.16:${PORTSDIR}/devel/p5-Config-AutoConf \
-		p5-ExtUtils-CBuilder>0.27:${PORTSDIR}/devel/p5-ExtUtils-CBuilder \
-		p5-ExtUtils-ParseXS>=0:${PORTSDIR}/devel/p5-ExtUtils-ParseXS \
-		p5-ExtUtils-LibBuilder>=0.02:${PORTSDIR}/devel/p5-ExtUtils-LibBuilder
-RUN_DEPENDS=	p5-XSLoader>=0:${PORTSDIR}/devel/p5-XSLoader
+LIB_DEPENDS=	libcld.so:devel/cld
+BUILD_DEPENDS=	p5-Config-AutoConf>=0.16:devel/p5-Config-AutoConf \
+		p5-ExtUtils-CBuilder>0.27:devel/p5-ExtUtils-CBuilder \
+		p5-ExtUtils-ParseXS>=0:devel/p5-ExtUtils-ParseXS \
+		p5-ExtUtils-LibBuilder>=0.02:devel/p5-ExtUtils-LibBuilder
+RUN_DEPENDS=	p5-XSLoader>=0:devel/p5-XSLoader
 
 USES=		perl5
 USE_PERL5=	modbuild

@@ -1,2 +1,3 @@
-SHA256 (composer-1.0.0/composer.phar) = 1acc000cf23bd9d19e1590c2edeb44fb915f88d85f1798925ec989c601db0bd6
-SIZE (composer-1.0.0/composer.phar) = 1592980
+TIMESTAMP = 1463432980
+SHA256 (composer-1.1.0/composer.phar) = d8e1d21081b7076dfc9a570620e082111ab196dabd83780e50025c52d62b801c
+SIZE (composer-1.1.0/composer.phar) = 1639528

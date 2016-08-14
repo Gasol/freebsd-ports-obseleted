@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-TheSeer_phpDox/Makefile 375249 2014-12-22 17:12:26Z feld $
+# $FreeBSD: head/devel/pear-TheSeer_phpDox/Makefile 412346 2016-04-01 14:00:51Z mat $
 
 PORTNAME=	phpDox
 PORTVERSION=	0.5.0
@@ -12,16 +12,16 @@ COMMENT=	PHP Documentation generation framework and tool
 
 LICENSE=	BSD3CLAUSE
 
-BUILD_DEPENDS=	pear-TheSeer_DirectoryScanner>=1.1.0:${PORTSDIR}/devel/pear-TheSeer_DirectoryScanner \
-		pear-TheSeer_fDOMDocument>=1.2.3:${PORTSDIR}/devel/pear-TheSeer_fDOMDocument \
-		pear-TheSeer_fXSL>=1.0.4:${PORTSDIR}/devel/pear-TheSeer_fXSL \
-		pear-ezc_ConsoleTools>=1.6:${PORTSDIR}/devel/pear-ezc_ConsoleTools \
-		pear-pdepend_staticReflection>=0.2.1:${PORTSDIR}/devel/pear-pdepend-staticReflection
-RUN_DEPENDS=	pear-TheSeer_DirectoryScanner>=1.1.0:${PORTSDIR}/devel/pear-TheSeer_DirectoryScanner \
-		pear-TheSeer_fDOMDocument>=1.2.3:${PORTSDIR}/devel/pear-TheSeer_fDOMDocument \
-		pear-TheSeer_fXSL>=1.0.4:${PORTSDIR}/devel/pear-TheSeer_fXSL \
-		pear-ezc_ConsoleTools>=1.6:${PORTSDIR}/devel/pear-ezc_ConsoleTools \
-		pear-pdepend_staticReflection>=0.2.1:${PORTSDIR}/devel/pear-pdepend-staticReflection
+BUILD_DEPENDS=	pear-TheSeer_DirectoryScanner>=1.1.0:devel/pear-TheSeer_DirectoryScanner \
+		pear-TheSeer_fDOMDocument>=1.2.3:devel/pear-TheSeer_fDOMDocument \
+		pear-TheSeer_fXSL>=1.0.4:devel/pear-TheSeer_fXSL \
+		pear-ezc_ConsoleTools>=1.6:devel/pear-ezc_ConsoleTools \
+		pear-pdepend_staticReflection>=0.2.1:devel/pear-pdepend-staticReflection
+RUN_DEPENDS=	pear-TheSeer_DirectoryScanner>=1.1.0:devel/pear-TheSeer_DirectoryScanner \
+		pear-TheSeer_fDOMDocument>=1.2.3:devel/pear-TheSeer_fDOMDocument \
+		pear-TheSeer_fXSL>=1.0.4:devel/pear-TheSeer_fXSL \
+		pear-ezc_ConsoleTools>=1.6:devel/pear-ezc_ConsoleTools \
+		pear-pdepend_staticReflection>=0.2.1:devel/pear-pdepend-staticReflection
 
 USE_PHP=	dom tokenizer xsl iconv
 PEAR_CHANNEL=	theseer

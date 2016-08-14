@@ -1,5 +1,5 @@
 # Created by: William Grzybowski <wg@FreeBSD.org>
-# $FreeBSD: head/devel/pear-Symfony_Component_Console/Makefile 369777 2014-10-01 22:20:44Z wg $
+# $FreeBSD: head/devel/pear-Symfony_Component_Console/Makefile 412346 2016-04-01 14:00:51Z mat $
 
 PORTNAME=	Console
 PORTVERSION=	2.4.4
@@ -13,8 +13,8 @@ COMMENT=	Symfony2 Console Component
 
 LICENSE=	MIT
 
-BUILD_DEPENDS+= ${PEARDIR}/.channels/pear.symfony.com.reg:${PORTSDIR}/devel/pear-channel-symfony2
-RUN_DEPENDS+=	${PEARDIR}/.channels/pear.symfony.com.reg:${PORTSDIR}/devel/pear-channel-symfony2
+BUILD_DEPENDS+= ${PEARDIR}/.channels/pear.symfony.com.reg:devel/pear-channel-symfony2
+RUN_DEPENDS+=	${PEARDIR}/.channels/pear.symfony.com.reg:devel/pear-channel-symfony2
 
 USES=		pear
 PEAR_CHANNEL=	symfony2

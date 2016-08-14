@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-judy/Makefile 340722 2014-01-22 17:00:46Z mat $
+# $FreeBSD: head/devel/pecl-judy/Makefile 417719 2016-06-28 14:00:45Z mat $
 
 PORTNAME=	judy
 PORTVERSION=	1.0.2
@@ -15,11 +15,11 @@ COMMENT=	PHP Judy implements sparse dynamic arrays
 
 LICENSE=	PHP301
 
-RUN_DEPENDS=	Judy>=0:${PORTSDIR}/devel/judy
-BUILD_DEPENDS=	Judy>=0:${PORTSDIR}/devel/judy
+RUN_DEPENDS=	Judy>=0:devel/judy
+BUILD_DEPENDS=	Judy>=0:devel/judy
 
 CONFIGURE_ARGS=	--with-judy=${LOCALBASE}
-USE_PHP=	yes
-USE_PHPEXT=	yes
+USES=		php:ext
+IGNORE_WITH_PHP=	70
 
 .include <bsd.port.mk>

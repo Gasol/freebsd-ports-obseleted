@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-trace/Makefile 391967 2015-07-14 03:11:40Z pi $
+# $FreeBSD: head/devel/pecl-trace/Makefile 417719 2016-06-28 14:00:45Z mat $
 
 PORTNAME=	trace
 PORTVERSION=	0.3.0
@@ -13,14 +13,12 @@ COMMENT=	Low-overhead tracing tool for PHP
 
 LICENSE=	APACHE20
 
-WRKSRC=		${WRKDIR}/${DISTNAME}/extension
+WRKSRC_SUBDIR=	extension
 CMDTOOLSRC=	${WRKSRC}/../cmdtool
 
 GNU_CONFIGURE=	yes
-USES=		gmake shebangfix tar:tgz
-USE_PHP=	yes
-USE_PHP_BUILD=	yes
-USE_PHPEXT=	yes
+USES=		gmake php:ext shebangfix tar:tgz
+IGNORE_WITH_PHP=	70
 
 SHEBANG_FILES=	${CMDTOOLSRC}/phptrace
 PLIST_FILES=	bin/phptrace \

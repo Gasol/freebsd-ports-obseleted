@@ -1,5 +1,5 @@
 # Created by: David Thiel <lx@FreeBSD.org>
-# $FreeBSD: head/security/nacl/Makefile 393529 2015-08-04 16:37:42Z amdmi3 $
+# $FreeBSD: head/security/nacl/Makefile 413746 2016-04-21 16:43:14Z swills $
 
 PORTNAME=	nacl
 PORTVERSION=	20110221
@@ -9,6 +9,8 @@ MASTER_SITES=	http://hyperelliptic.org/nacl/
 
 MAINTAINER= 	johans@FreeBSD.org
 COMMENT=	High speed cryptography library
+
+BROKEN_powerpc64=	Does not build
 
 USES=		tar:bzip2
 ALL_TARGET=	do

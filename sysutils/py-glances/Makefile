@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/sysutils/py-glances/Makefile 406635 2016-01-19 05:59:20Z vanilla $
+# $FreeBSD: head/sysutils/py-glances/Makefile 412349 2016-04-01 14:25:16Z mat $
 
 PORTNAME=	glances
 PORTVERSION=	2.5.1
@@ -13,7 +13,7 @@ COMMENT=	CLI curses based monitoring tool for GNU/Linux and BSD OS
 LICENSE=	LGPL3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psutil>=2.1.1:${PORTSDIR}/sysutils/py-psutil
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psutil>=2.1.1:sysutils/py-psutil
 
 OPTIONS_DEFINE=	DOCS
 OPTIONS_SUB=	yes

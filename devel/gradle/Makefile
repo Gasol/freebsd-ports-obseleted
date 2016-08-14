@@ -1,8 +1,9 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/gradle/Makefile 390955 2015-06-30 11:50:52Z girgen $
+# $FreeBSD: head/devel/gradle/Makefile 418287 2016-07-09 18:43:40Z pi $
 
 PORTNAME=	gradle
 PORTVERSION=	2.12
+PORTREVISION=	1
 CATEGORIES=	devel java
 MASTER_SITES=	https://services.gradle.org/distributions/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-bin
@@ -11,6 +12,11 @@ MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	Project automation tool
 
 LICENSE=	APACHE20
+
+# Gradle depends on native-platform which has a native component that
+# requires libstdc++.so.6, because it was compiled with g++.
+# See https://github.com/adammurdoch/native-platform/issues/8
+LIB_DEPENDS=	libstdc++.so.6:misc/compat9x
 
 USES=		zip
 USE_JAVA=	yes

@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-uuid/Makefile 386175 2015-05-12 22:45:22Z vanilla $
+# $FreeBSD: head/devel/pecl-uuid/Makefile 417719 2016-06-28 14:00:45Z mat $
 
 PORTNAME=	uuid
 PORTVERSION=	1.0.4
@@ -13,10 +13,8 @@ COMMENT=	UUID extension in PHP
 
 LICENSE=	LGPL3
 
-LIB_DEPENDS=	libuuid.so:${PORTSDIR}/misc/e2fsprogs-libuuid
+LIB_DEPENDS=	libuuid.so:misc/e2fsprogs-libuuid
 
-USES=		tar:tgz
-USE_PHP=	yes
-USE_PHPEXT=	yes
+USES=		php:ext tar:tgz
 
 .include <bsd.port.mk>

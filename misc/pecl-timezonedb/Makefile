@@ -1,8 +1,8 @@
 # Created by: Marcus Alves Grando <mnag@FreeBSD.org>
-# $FreeBSD: head/misc/pecl-timezonedb/Makefile 403134 2015-12-06 17:51:54Z sunpoet $
+# $FreeBSD: head/misc/pecl-timezonedb/Makefile 417719 2016-06-28 14:00:45Z mat $
 
 PORTNAME=	timezonedb
-PORTVERSION=	2016.1
+PORTVERSION=	2016.5
 CATEGORIES=	misc
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
@@ -15,8 +15,6 @@ LICENSE=	PHP301
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 CONFIGURE_ARGS=	--enable-timezonedb
-USE_PHP=	yes
-USE_PHPEXT=	yes
-USES=		tar:tgz
+USES=		php:ext tar:tgz
 
 .include <bsd.port.mk>

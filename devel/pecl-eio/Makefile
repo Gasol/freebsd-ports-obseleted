@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-eio/Makefile 340830 2014-01-23 15:12:50Z miwi $
+# $FreeBSD: head/devel/pecl-eio/Makefile 417719 2016-06-28 14:00:45Z mat $
 
 PORTNAME=	eio
 PORTVERSION=	1.2.1
@@ -15,8 +15,7 @@ COMMENT=	Provides interface to the libeio library
 LICENSE=	PHP301
 
 CONFIGURE_ARGS=	--enable-eio
-USE_PHP=	yes
-USE_PHPEXT=	yes
-IGNORE_WITH_PHP=	52
+USES=		php:ext
+IGNORE_WITH_PHP=	70
 
 .include <bsd.port.mk>

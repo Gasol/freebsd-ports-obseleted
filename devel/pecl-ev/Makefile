@@ -1,5 +1,5 @@
 # Created by: John Chen <johnpupu@gmail.com>
-# $FreeBSD: head/devel/pecl-ev/Makefile 404164 2015-12-21 18:35:04Z sunpoet $
+# $FreeBSD: head/devel/pecl-ev/Makefile 417719 2016-06-28 14:00:45Z mat $
 
 PORTNAME=	ev
 PORTVERSION=	0.2.15
@@ -15,10 +15,7 @@ COMMENT=	Libev extension for PHP
 LICENSE=	PHP301
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		tar:tgz
-USE_PHP=	yes
-USE_PHP_BUILD=	yes
-USE_PHPIZE=	yes
-USE_PHPEXT=	yes
+USES=		php:ext tar:tgz
+IGNORE_WITH_PHP=	70
 
 .include <bsd.port.mk>

@@ -1,28 +1,28 @@
 # Created by: Charlie Kester <corky1951@comcast.net>
-# $FreeBSD: head/sysutils/moreutils/Makefile 402671 2015-11-30 14:26:13Z marino $
+# $FreeBSD: head/sysutils/moreutils/Makefile 417547 2016-06-26 17:13:54Z sunpoet $
 
 PORTNAME=	moreutils
-PORTVERSION=	0.57
+PORTVERSION=	0.59
+DISTVERSIONSUFFIX=	.orig
 CATEGORIES=	sysutils
 MASTER_SITES=	DEBIAN_POOL
-DISTNAME=	${PORTNAME}_${PORTVERSION}.orig
+DISTNAME=	${PORTNAME}_${DISTVERSIONFULL}
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Additional Unix utilities
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	p5-IPC-Run>=0:${PORTSDIR}/devel/p5-IPC-Run
+RUN_DEPENDS=	p5-IPC-Run>=0:devel/p5-IPC-Run
 
 OPTIONS_DEFINE=	MANPAGES
 OPTIONS_DEFAULT=MANPAGES
 OPTIONS_SUB=	yes
 
 ALL_TARGET=	errnos.h ${CANNED_MANPAGES:R}
-USES=		perl5 shebangfix
-WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
-
 MAKE_JOBS_UNSAFE=	yes
+USES=		perl5 shebangfix
+WRKSRC=		${WRKDIR}/${PORTNAME}-${DISTVERSIONFULL}
 
 CANNED_MANPAGES=errno.1 \
 		ifdata.1 \

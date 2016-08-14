@@ -21,8 +21,5 @@ lib/libfb303.a
 %%PYTHON_SITELIBDIR%%/fb303_scripts/__init__.pyc
 %%PYTHON_SITELIBDIR%%/fb303_scripts/fb303_simple_mgmt.py
 %%PYTHON_SITELIBDIR%%/fb303_scripts/fb303_simple_mgmt.pyc
-%%PYTHON_SITELIBDIR%%/thrift_fb303-%%PORTVERSION%%-py%%PYTHON_VER%%.egg-info/PKG-INFO
-%%PYTHON_SITELIBDIR%%/thrift_fb303-%%PORTVERSION%%-py%%PYTHON_VER%%.egg-info/SOURCES.txt
-%%PYTHON_SITELIBDIR%%/thrift_fb303-%%PORTVERSION%%-py%%PYTHON_VER%%.egg-info/dependency_links.txt
-%%PYTHON_SITELIBDIR%%/thrift_fb303-%%PORTVERSION%%-py%%PYTHON_VER%%.egg-info/top_level.txt
+%%PYTHON_SITELIBDIR%%/thrift_fb303-%%PORTVERSION%%-py%%PYTHON_VER%%.egg-info
 %%DATADIR%%/if/fb303.thrift

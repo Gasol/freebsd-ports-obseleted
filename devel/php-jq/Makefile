@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/php-jq/Makefile 400601 2015-11-01 09:13:14Z pi $
+# $FreeBSD: head/devel/php-jq/Makefile 417719 2016-06-28 14:00:45Z mat $
 
 PORTNAME=	jq
 PORTVERSION=	0.0.1
@@ -11,16 +11,14 @@ COMMENT=	Jq shared extension for php
 
 LICENSE=	MIT
 
-LIB_DEPENDS=	libjq.so:${PORTSDIR}/textproc/jq
+LIB_DEPENDS=	libjq.so:textproc/jq
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	kjdev
 GH_PROJECT=	php-ext-jq
 
-USE_PHP=	yes
-USE_PHPIZE=	yes
-USE_PHPEXT=	yes
-USES=		tar:tgz
+IGNORE_WITH_PHP=	70
+USES=		php:ext tar:tgz
 
 JQ_CMD=		${LOCALBASE}/bin/jq
 

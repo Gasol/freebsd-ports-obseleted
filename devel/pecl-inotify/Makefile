@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-inotify/Makefile 344286 2014-02-14 17:16:19Z miwi $
+# $FreeBSD: head/devel/pecl-inotify/Makefile 417719 2016-06-28 14:00:45Z mat $
 
 PORTNAME=	inotify
 PORTVERSION=	0.1.6
@@ -15,11 +15,9 @@ COMMENT=	This extension allows to use inotify functions in a PHP scripts
 
 LICENSE=	PHP301
 
-LIB_DEPENDS=	libinotify.so:${PORTSDIR}/devel/libinotify
+LIB_DEPENDS=	libinotify.so:devel/libinotify
 
-USE_PHP=	yes
-USE_PHP_BUILD=	yes
-USE_PHPIZE=	yes
-USE_PHPEXT=	yes
+USES=		php:ext
+IGNORE_WITH_PHP=	70
 
 .include <bsd.port.mk>
