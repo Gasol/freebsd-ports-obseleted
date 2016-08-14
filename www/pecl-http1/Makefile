@@ -1,16 +1,16 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/www/pecl-http1/Makefile 412351 2016-04-01 14:33:55Z mat $
+# $FreeBSD: head/www/pecl-http1/Makefile 419514 2016-08-03 12:47:05Z mat $
 
 PORTNAME=	http
 PORTVERSION=	1.7.6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
 PKGNAMESUFFIX=	1
 DISTNAME=	pecl_http-${PORTVERSION}
 
-MAINTAINER=	miwi@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Extended HTTP Support
 
 LICENSE=	BSD2CLAUSE
@@ -18,10 +18,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libcurl.so:ftp/curl
 
-USES=		tar:tgz
-USE_PHP=	yes
-USE_PHPEXT=	yes
-PHP_MODNAME=	http
+USES=		php:ext tar:tgz
 IGNORE_WITH_PHP=	70
 CONFLICTS=	pecl-http-*
 
