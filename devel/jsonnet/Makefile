@@ -2,7 +2,7 @@
 # $FreeBSD: head/devel/jsonnet/Makefile 400404 2015-10-28 17:41:45Z pawel $
 
 PORTNAME=	jsonnet
-PORTVERSION=	0.8.6
+PORTVERSION=	0.8.9
 DISTVERSIONPREFIX=	v
 PORTREVISION=	1
 CATEGORIES=	devel
