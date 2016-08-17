@@ -2,7 +2,7 @@
 # $FreeBSD: head/sysutils/shmcat/Makefile 367727 2014-09-09 12:24:58Z jhale $
 
 PORTNAME=	shmcat
-PORTVERSION=	1.7
+PORTVERSION=	1.8
 CATEGORIES=	sysutils
 MASTER_SITES=	SF/${PORTNAME}
 
