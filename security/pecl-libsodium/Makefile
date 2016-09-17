@@ -1,8 +1,8 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: head/security/pecl-libsodium/Makefile 420139 2016-08-12 19:16:13Z pi $
 
 PORTNAME=	libsodium
-PORTVERSION=	1.0.2
+PORTVERSION=	1.0.6
 CATEGORIES=	security
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
@@ -13,11 +13,8 @@ COMMENT=	PHP wrapper for the Sodium cryptographic library
 
 LICENSE=	BSD2CLAUSE
 
-LIB_DEPENDS=	libsodium.so:${PORTSDIR}/security/libsodium
+LIB_DEPENDS=	libsodium.so:security/libsodium
 
-USES=		tar:tgz
-USE_PHP=	yes
-USE_PHPEXT=	yes
-USE_PHPIZE=	yes
+USES=		php:ext tar:tgz
 
 .include <bsd.port.mk>

@@ -1,8 +1,9 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-jsmin/Makefile 417719 2016-06-28 14:00:45Z mat $
+# $FreeBSD: head/devel/pecl-jsmin/Makefile 419514 2016-08-03 12:47:05Z mat $
 
 PORTNAME=	jsmin
 PORTVERSION=	2.0.1
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-

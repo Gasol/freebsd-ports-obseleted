@@ -1,17 +1,15 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/devel/pear/Makefile 417719 2016-06-28 14:00:45Z mat $
+# $FreeBSD: head/devel/pear/Makefile 422175 2016-09-15 01:41:28Z swills $
 
 PORTNAME=	pear
 PORTVERSION=	1.10.1
 CATEGORIES=	devel
 MASTER_SITES=	http://mirror.miwibox.org/
 
-MAINTAINER=	miwi@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	PEAR framework for PHP
 
 LICENSE=	PHP301
-
-BROKEN_powerpc64=	Does not build
 
 USES=		cpe php:cli tar:bzip2
 CPE_VENDOR=	php

@@ -1,8 +1,9 @@
 # Created by: Max Baryshnikov <mephius@gmail.com>
-# $FreeBSD: head/www/pecl-sphinx/Makefile 417719 2016-06-28 14:00:45Z mat $
+# $FreeBSD: head/www/pecl-sphinx/Makefile 419514 2016-08-03 12:47:05Z mat $
 
 PORTNAME=	sphinx
 DISTVERSION=	1.3.3
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-

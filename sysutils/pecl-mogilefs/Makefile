@@ -1,9 +1,9 @@
 # Created by: Wen Heping<wen@FreeBSD.org>
-# $FreeBSD: head/sysutils/pecl-mogilefs/Makefile 417719 2016-06-28 14:00:45Z mat $
+# $FreeBSD: head/sysutils/pecl-mogilefs/Makefile 419514 2016-08-03 12:47:05Z mat $
 
 PORTNAME=	mogilefs
 PORTVERSION=	0.9.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils pear
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-

@@ -1,8 +1,9 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/security/pecl-crypto/Makefile 417719 2016-06-28 14:00:45Z mat $
+# $FreeBSD: head/security/pecl-crypto/Makefile 421790 2016-09-11 04:37:07Z marino $
 
 PORTNAME=	crypto
 PORTVERSION=	0.2.2
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
@@ -13,8 +14,9 @@ COMMENT=	Objective wrapper for OpenSSL Crypto Library
 
 LICENSE=	PHP301
 
-USES=		php:ext tar:tgz
+USES=		php:ext ssl tar:tgz
 CONFIGURE_ARGS=	--with-crypto
-USE_OPENSSL=	yes
+CFLAGS+=	-I${OPENSSLINC}
+LDFLAGS+=	-L${OPENSSLLIB}
 
 .include <bsd.port.mk>

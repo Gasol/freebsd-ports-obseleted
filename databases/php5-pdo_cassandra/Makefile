@@ -1,9 +1,9 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/databases/php5-pdo_cassandra/Makefile 417719 2016-06-28 14:00:45Z mat $
+# $FreeBSD: head/databases/php5-pdo_cassandra/Makefile 419514 2016-08-03 12:47:05Z mat $
 
 PORTNAME=	pdo_cassandra
 PORTVERSION=	0.2.1
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	databases
 PKGNAMEPREFIX=	php5-
 

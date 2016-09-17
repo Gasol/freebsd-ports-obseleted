@@ -1,8 +1,9 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/textproc/php-mecab/Makefile 417719 2016-06-28 14:00:45Z mat $
+# $FreeBSD: head/textproc/php-mecab/Makefile 419514 2016-08-03 12:47:05Z mat $
 
 PORTNAME=	php-mecab
 PORTVERSION=	0.6.0
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	textproc
 

@@ -1,8 +1,9 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/php-jq/Makefile 417719 2016-06-28 14:00:45Z mat $
+# $FreeBSD: head/devel/php-jq/Makefile 419514 2016-08-03 12:47:05Z mat $
 
 PORTNAME=	jq
 PORTVERSION=	0.0.1
+PORTREVISION=	1
 CATEGORIES=	devel
 PKGNAMEPREFIX=	php-
 

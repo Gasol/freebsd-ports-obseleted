@@ -1,8 +1,9 @@
 # Created by: Marcus Alves Grando <mnag@FreeBSD.org>
-# $FreeBSD: head/misc/pecl-timezonedb/Makefile 417719 2016-06-28 14:00:45Z mat $
+# $FreeBSD: head/misc/pecl-timezonedb/Makefile 419514 2016-08-03 12:47:05Z mat $
 
 PORTNAME=	timezonedb
 PORTVERSION=	2016.5
+PORTREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
