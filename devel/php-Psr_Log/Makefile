@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/php-Psr_Log/Makefile 385521 2015-05-06 15:16:53Z mat $
+# $FreeBSD: head/devel/php-Psr_Log/Makefile 424590 2016-10-24 19:39:05Z rene $
 
 PORTNAME=	Psr_Log
 PORTVERSION=	1.0.0
@@ -27,8 +27,6 @@ PLIST_FILES=	share/pear/Psr/Log/AbstractLogger.php \
 		share/pear/Psr/Log/LoggerTrait.php \
 		share/pear/Psr/Log/NullLogger.php \
 		share/pear/Psr/Log/Test/LoggerInterfaceTest.php
-
-IGNORE_WITH_PHP=52
 
 do-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/share/pear/Psr/Log/Test

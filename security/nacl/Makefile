@@ -1,5 +1,5 @@
 # Created by: David Thiel <lx@FreeBSD.org>
-# $FreeBSD: head/security/nacl/Makefile 413746 2016-04-21 16:43:14Z swills $
+# $FreeBSD: head/security/nacl/Makefile 425954 2016-11-12 13:57:46Z johans $
 
 PORTNAME=	nacl
 PORTVERSION=	20110221
@@ -7,22 +7,18 @@ PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://hyperelliptic.org/nacl/
 
-MAINTAINER= 	johans@FreeBSD.org
+MAINTAINER=	johans@FreeBSD.org
 COMMENT=	High speed cryptography library
-
-BROKEN_powerpc64=	Does not build
 
 USES=		tar:bzip2
 ALL_TARGET=	do
 USE_BINUTILS=	yes
 MAKE_JOBS_UNSAFE=	yes
 
-BROKEN_ia64=	Does not compile on ia64, powerpc, or sparc64
-BROKEN_powerpc=	Does not compile on ia64, powerpc, or sparc64
-BROKEN_sparc64=	Does not compile on ia64, powerpc, or sparc64
+ONLY_FOR_ARCHS=	i386 amd64
 
 HOSTNAME_CMD?=	/bin/hostname -s
-MYARCH=		${ARCH:S/i386/x86/:S/powerpc/ppc/}
+MYARCH=		${ARCH:S/i386/x86/}
 
 post-patch:
 	@${REINPLACE_CMD} -i -e "s|$$| -fPIC|" ${WRKSRC}/okcompilers/c
@@ -30,7 +26,7 @@ post-patch:
 	@${REINPLACE_CMD} -i -e "s|c++|${CXX}|" ${WRKSRC}/okcompilers/cpp
 
 pre-build:
-	${RM} -rf ${WRKSRC}/crypto_onetimeauth/poly1305/amd64
+	${RM} -r ${WRKSRC}/crypto_onetimeauth/poly1305/amd64
 
 do-build:
 	cd ${WRKSRC} && ./do

@@ -1,8 +1,9 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/php-composer/Makefile 419260 2016-07-29 15:18:09Z pawel $
+# $FreeBSD: head/devel/php-composer/Makefile 423753 2016-10-11 09:01:54Z tz $
 
 PORTNAME=	composer
-DISTVERSION=	1.2.0
+DISTVERSION=	1.2.1
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://getcomposer.org/download/${DISTVERSION}/
 PKGNAMEPREFIX=	php-
@@ -20,7 +21,7 @@ RUN_DEPENDS=	ca_root_nss>0:security/ca_root_nss
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
 USES=		php
-USE_PHP=	intl openssl phar json ctype
+USE_PHP=	intl openssl phar json ctype filter
 
 PLIST_FILES=	bin/composer \
 		bin/composer.phar

@@ -1,9 +1,9 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/pecl-intl/Makefile 419514 2016-08-03 12:47:05Z mat $
+# $FreeBSD: head/devel/pecl-intl/Makefile 426525 2016-11-19 18:21:20Z jbeich $
 
 PORTNAME=	intl
 PORTVERSION=	3.0.0
-PORTREVISION=	5
+PORTREVISION=	7
 CATEGORIES=	devel pear
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-

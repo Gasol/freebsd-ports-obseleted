@@ -1,5 +1,5 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/textproc/pear-Text_Template/Makefile 419057 2016-07-25 20:01:02Z rene $
+# $FreeBSD: head/textproc/pear-Text_Template/Makefile 425301 2016-11-04 07:50:45Z jbeich $
 
 PORTNAME=	Text_Template
 PORTVERSION=	1.2.0
@@ -7,7 +7,7 @@ CATEGORIES=	textproc www pear
 MASTER_SITES=	http://pear.phpunit.de/get/
 PKGNAMEPREFIX=	pear-
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	joneum@bsdproject.de
 COMMENT=	Simple template engine
 
 BUILD_DEPENDS=	${PEARDIR}/.channels/pear.phpunit.de.reg:devel/pear-channel-phpunit

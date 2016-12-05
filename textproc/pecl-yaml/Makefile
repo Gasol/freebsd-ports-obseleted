@@ -1,21 +1,22 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/textproc/pecl-yaml/Makefile 419514 2016-08-03 12:47:05Z mat $
+# $FreeBSD: head/textproc/pecl-yaml/Makefile 423795 2016-10-11 20:37:05Z pawel $
 
 PORTNAME=	yaml
-PORTVERSION=	1.2.0
-PORTREVISION=	1
+PORTVERSION=	1.3.0
 CATEGORIES=	textproc pear
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
 DIST_SUBDIR=	PECL
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	dbaio@bsd.com.br
 COMMENT=	YAML-1.1 parser and emitter
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libyaml.so:textproc/libyaml
+
+PORTSCOUT=	limit:^1.*
 
 USES=		php:ext tar:tgz
 IGNORE_WITH_PHP=	70
