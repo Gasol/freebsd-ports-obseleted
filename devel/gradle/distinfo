@@ -1,3 +1,4 @@
-TIMESTAMP = 1471402066
-SHA256 (gradle-2.14-bin.zip) = 993b4f33b652c689e9721917d8e021cab6bbd3eae81b39ab2fd46fdb19a928d5
+TIMESTAMP = 1480376878
+SHA256 (gradle-3.2.1-bin.zip) = 9843a3654d3e57dce54db06d05f18b664b95c22bf90c6becccb61fc63ce60689
+SIZE (gradle-3.2.1-bin.zip) = 69149629
 SIZE (gradle-2.14-bin.zip) = 45033194
