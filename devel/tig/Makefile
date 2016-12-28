@@ -1,10 +1,10 @@
 # Created by: Denise H. G. <darcsis@gmail.com>
-# $FreeBSD: head/devel/tig/Makefile 423383 2016-10-05 19:57:02Z amdmi3 $
+# $FreeBSD: head/devel/tig/Makefile 428500 2016-12-13 15:28:24Z amdmi3 $
 
 PORTNAME=	tig
-PORTVERSION=	2.2
+PORTVERSION=	2.2.1
 CATEGORIES=	devel
-MASTER_SITES=	http://jonas.nitro.dk/tig/releases/
+MASTER_SITES=	https://github.com/jonas/tig/releases/download/${DISTNAME}/
 
 MAINTAINER=	darcsis@gmail.com
 COMMENT=	Text-mode interface for git
@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	git:devel/git
 
-USES=		autoreconf iconv gmake ncurses readline:port
+USES=		iconv gmake ncurses readline:port
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	${ICONV_CONFIGURE_BASE}
 MAKE_ARGS=	V=1

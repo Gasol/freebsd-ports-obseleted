@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/php-Psr_Log/Makefile 424590 2016-10-24 19:39:05Z rene $
+# $FreeBSD: head/devel/php-Psr_Log/Makefile 429305 2016-12-24 03:23:44Z wen $
 
 PORTNAME=	Psr_Log
 PORTVERSION=	1.0.2
@@ -12,8 +12,9 @@ COMMENT=	PSR-3 logger interface
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
-
+ 
 USES=		tar:tgz
+
 NO_BUILD=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	php-fig

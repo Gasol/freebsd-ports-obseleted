@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/jsonnet/Makefile 400404 2015-10-28 17:41:45Z pawel $
+# $FreeBSD: head/devel/jsonnet/Makefile 428035 2016-12-07 06:55:26Z wen $
 
 PORTNAME=	jsonnet
 PORTVERSION=	0.9.0

@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-jsonnet/Makefile 419514 2016-08-03 12:47:05Z mat $
+# $FreeBSD: head/devel/pecl-jsonnet/Makefile 428199 2016-12-09 12:57:37Z sunpoet $
 
 PORTNAME=	jsonnet
 PORTVERSION=	1.1.1
@@ -15,9 +15,9 @@ COMMENT=	Google JsonNet for PHP
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BROKEN_powerpc64=	Does not build
-
 LIB_DEPENDS=	libjsonnet.so:devel/jsonnet
+
+BROKEN_powerpc64=	does not build
 
 USES=		php:ext tar:tgz
 USE_PHP=	json:build

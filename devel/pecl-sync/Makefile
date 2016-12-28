@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-sync/Makefile 419514 2016-08-03 12:47:05Z mat $
+# $FreeBSD: head/devel/pecl-sync/Makefile 428557 2016-12-14 11:38:37Z amdmi3 $
 
 PORTNAME=	sync
 PORTVERSION=	1.1.0

@@ -1,8 +1,9 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/libr3/Makefile 424427 2016-10-21 15:21:13Z mat $
+# $FreeBSD: head/devel/libr3/Makefile 428143 2016-12-08 17:26:09Z tijl $
 
 PORTNAME=	libr3
 PORTVERSION=	1.0.0
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	gasol.wu@gmail.com

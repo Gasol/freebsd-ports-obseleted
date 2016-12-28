@@ -1,14 +1,16 @@
 # Created by: David Thiel <lx@FreeBSD.org>
-# $FreeBSD: head/security/nacl/Makefile 425954 2016-11-12 13:57:46Z johans $
+# $FreeBSD: head/security/nacl/Makefile 428596 2016-12-14 21:48:10Z johans $
 
 PORTNAME=	nacl
 PORTVERSION=	20110221
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	http://hyperelliptic.org/nacl/
 
-MAINTAINER=	johans@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	High speed cryptography library
+
+LICENSE=	PD
 
 USES=		tar:bzip2
 ALL_TARGET=	do
@@ -21,9 +23,9 @@ HOSTNAME_CMD?=	/bin/hostname -s
 MYARCH=		${ARCH:S/i386/x86/}
 
 post-patch:
-	@${REINPLACE_CMD} -i -e "s|$$| -fPIC|" ${WRKSRC}/okcompilers/c
-	@${REINPLACE_CMD} -i -e "s|gcc|${CC}|" ${WRKSRC}/okcompilers/c
-	@${REINPLACE_CMD} -i -e "s|c++|${CXX}|" ${WRKSRC}/okcompilers/cpp
+	@${REINPLACE_CMD} -e "s|$$| -fPIC|" ${WRKSRC}/okcompilers/c
+	@${REINPLACE_CMD} -e "s|gcc|${CC}|" ${WRKSRC}/okcompilers/c
+	@${REINPLACE_CMD} -e "s|g++|${CXX}|" ${WRKSRC}/okcompilers/cpp
 
 pre-build:
 	${RM} -r ${WRKSRC}/crypto_onetimeauth/poly1305/amd64

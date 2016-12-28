@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: head/devel/pecl-request/Makefile 429244 2016-12-23 10:50:57Z vanilla $
 
 PORTNAME=	request
 PORTVERSION=	1.0.0b1

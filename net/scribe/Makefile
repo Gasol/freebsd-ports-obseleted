@@ -1,9 +1,9 @@
 # Created by: Jui-Nan Lin <jnlin@csie.nctu.edu.tw>
-# $FreeBSD: head/net/scribe/Makefile 413746 2016-04-21 16:43:14Z swills $
+# $FreeBSD: head/net/scribe/Makefile 426908 2016-11-23 12:45:46Z jbeich $
 
 PORTNAME=	scribe
 DISTVERSION=	2.2.2013.04.15
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net
 
 MAINTAINER=	ports@FreeBSD.org

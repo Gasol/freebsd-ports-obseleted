@@ -1,5 +1,5 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/php-composer/Makefile 423753 2016-10-11 09:01:54Z tz $
+# $FreeBSD: head/devel/php-composer/Makefile 428131 2016-12-08 16:02:19Z tz $
 
 PORTNAME=	composer
 DISTVERSION=	1.2.4

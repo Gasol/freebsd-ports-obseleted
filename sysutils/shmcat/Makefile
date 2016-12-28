@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/sysutils/shmcat/Makefile 367727 2014-09-09 12:24:58Z jhale $
+# $FreeBSD: head/sysutils/shmcat/Makefile 426696 2016-11-21 06:58:05Z olivierd $
 
 PORTNAME=	shmcat
 PORTVERSION=	1.8

@@ -1,9 +1,10 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: head/chinese/php-opencc/Makefile 428730 2016-12-17 12:53:14Z sunpoet $
 
-PORTNAME=	php-opencc
+PORTNAME=	opencc
 PORTVERSION=	0.0.0.20161110
 CATEGORIES=	chinese
+PKGNAMEPREFIX=	php-
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	OpenCC shared extension for php
@@ -16,8 +17,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	NauxLiu
 GH_PROJECT=	opencc4php
 GH_TAGNAME=	8007639
-PHP_MODNAME=	opencc
 
-USES=	php:ext tar:tgz
+USES=		php:ext
 
 .include <bsd.port.mk>

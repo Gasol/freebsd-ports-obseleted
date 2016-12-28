@@ -1,8 +1,8 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/textproc/pear-Symfony_Component_Yaml/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/pear-Symfony_Component_Yaml/Makefile 429284 2016-12-23 20:36:49Z rakuco $
 
 PORTNAME=	Yaml
-PORTVERSION=	2.1.2
+PORTVERSION=	2.4.4
 CATEGORIES=	textproc pear
 MASTER_SITES=	http://pear.symfony.com/get/
 PKGNAMEPREFIX=	pear-Symfony_Component_
