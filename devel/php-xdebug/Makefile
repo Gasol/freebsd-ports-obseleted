@@ -2,8 +2,7 @@
 # $FreeBSD: head/devel/php-xdebug/Makefile 419514 2016-08-03 12:47:05Z mat $
 
 PORTNAME=	xdebug
-PORTVERSION=	2.4.0
-PORTREVISION=	1
+PORTVERSION=	2.5.0
 CATEGORIES=	devel
 MASTER_SITES=	https://xdebug.org/files/
 PKGNAMEPREFIX=	php-
