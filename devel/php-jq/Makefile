@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/php-jq/Makefile 419514 2016-08-03 12:47:05Z mat $
+# $FreeBSD: head/devel/php-jq/Makefile 429612 2016-12-27 12:20:41Z amdmi3 $
 
 PORTNAME=	jq
 PORTVERSION=	0.0.1
@@ -11,6 +11,7 @@ MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	Jq shared extension for php
 
 LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libjq.so:textproc/jq
 
@@ -19,7 +20,7 @@ GH_ACCOUNT=	kjdev
 GH_PROJECT=	php-ext-jq
 
 IGNORE_WITH_PHP=	70
-USES=		php:ext tar:tgz
+USES=		php:ext
 
 JQ_CMD=		${LOCALBASE}/bin/jq
 

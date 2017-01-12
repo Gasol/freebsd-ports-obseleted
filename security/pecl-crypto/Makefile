@@ -1,9 +1,8 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/security/pecl-crypto/Makefile 421790 2016-09-11 04:37:07Z marino $
+# $FreeBSD: head/security/pecl-crypto/Makefile 429717 2016-12-28 07:13:51Z wen $
 
 PORTNAME=	crypto
-PORTVERSION=	0.2.2
-PORTREVISION=	1
+PORTVERSION=	0.3.1
 CATEGORIES=	security
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-

@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-Pirum/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/pear-Pirum/Makefile 429663 2016-12-27 21:19:22Z rakuco $
 
 PORTNAME=	Pirum
 PORTVERSION=	1.1.5
@@ -7,7 +7,7 @@ CATEGORIES=	devel www pear
 MASTER_SITES=	http://pear.pirum-project.org/get/
 PKGNAMEPREFIX=	pear-
 
-MAINTAINER=	gasol.wu@gmail.com
+MAINTAINER=	joneum@bsdproject.de
 COMMENT=	Simple PEAR channel server manager
 
 LICENSE=	MIT

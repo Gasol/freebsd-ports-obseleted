@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-PHP_CodeCoverage/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/pear-PHP_CodeCoverage/Makefile 429663 2016-12-27 21:19:22Z rakuco $
 
 PORTNAME=	PHP_CodeCoverage
 PORTVERSION=	1.2.7
@@ -7,7 +7,7 @@ CATEGORIES=	devel pear
 MASTER_SITES=	http://pear.phpunit.de/get/
 PKGNAMEPREFIX=	pear-
 
-MAINTAINER=	gasol.wu@gmail.com
+MAINTAINER=	joneum@bsdproject.de
 COMMENT=	Library that provides PHP code coverage information
 
 LICENSE=	BSD3CLAUSE

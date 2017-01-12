@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/textproc/pear-Symfony_Component_Yaml/Makefile 429284 2016-12-23 20:36:49Z rakuco $
+# $FreeBSD: head/textproc/pear-Symfony_Component_Yaml/Makefile 429663 2016-12-27 21:19:22Z rakuco $
 
 PORTNAME=	Yaml
 PORTVERSION=	2.4.4
@@ -8,7 +8,7 @@ MASTER_SITES=	http://pear.symfony.com/get/
 PKGNAMEPREFIX=	pear-Symfony_Component_
 DIST_SUBDIR=	Symfony2
 
-MAINTAINER=	gasol.wu@gmail.com
+MAINTAINER=	joneum@bsdproject.de
 COMMENT=	Symfony2 Yaml Component
 
 LICENSE=	MIT

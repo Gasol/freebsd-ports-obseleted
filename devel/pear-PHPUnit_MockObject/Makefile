@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-PHPUnit_MockObject/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/pear-PHPUnit_MockObject/Makefile 429663 2016-12-27 21:19:22Z rakuco $
 
 PORTNAME=	PHPUnit_MockObject
 PORTVERSION=	1.2.2
@@ -7,7 +7,7 @@ CATEGORIES=	devel pear
 MASTER_SITES=	http://pear.phpunit.de/get/
 PKGNAMEPREFIX=	pear-
 
-MAINTAINER=	gasol.wu@gmail.com
+MAINTAINER=	joneum@bsdproject.de
 COMMENT=	Mock Object library for PHPUnit
 
 LICENSE=	BSD3CLAUSE

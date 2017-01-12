@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-SebastianBergmann_PHPCPD/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/pear-SebastianBergmann_PHPCPD/Makefile 429663 2016-12-27 21:19:22Z rakuco $
 
 PORTNAME=	PHPCPD
 PORTVERSION=	1.4.0
@@ -8,7 +8,7 @@ MASTER_SITES=	http://pear.phpunit.de/get/
 PKGNAMEPREFIX=	pear-SebastianBergmann_
 DISTNAME=	phpcpd-${PORTVERSION}
 
-MAINTAINER=	gasol.wu@gmail.com
+MAINTAINER=	joneum@bsdproject.de
 COMMENT=	Copy/Paste Detector (CPD) for PHP code
 
 LICENSE=	BSD3CLAUSE

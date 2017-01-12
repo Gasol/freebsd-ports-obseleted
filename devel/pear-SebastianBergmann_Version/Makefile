@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-SebastianBergmann_Version/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/pear-SebastianBergmann_Version/Makefile 429663 2016-12-27 21:19:22Z rakuco $
 
 PORTNAME=	Version
 PORTVERSION=	1.0.1
@@ -7,7 +7,7 @@ CATEGORIES=	devel pear
 MASTER_SITES=	http://pear.phpunit.de/get/
 PKGNAMEPREFIX=	pear-SebastianBergmann_
 
-MAINTAINER=	gasol.wu@gmail.com
+MAINTAINER=	joneum@bsdproject.de
 COMMENT=	Managing the version number of Git-hosted PHP projects
 
 LICENSE=	BSD3CLAUSE

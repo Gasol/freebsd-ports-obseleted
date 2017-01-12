@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-PPW/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/pear-PPW/Makefile 429663 2016-12-27 21:19:22Z rakuco $
 
 PORTNAME=	PPW
 PORTVERSION=	1.0.4
@@ -8,7 +8,7 @@ MASTER_SITES=	http://pear.phpunit.de/get/
 PKGNAMEPREFIX=	pear-
 DISTNAME=	ppw-${DISTVERSION}
 
-MAINTAINER=	gasol.wu@gmail.com
+MAINTAINER=	joneum@bsdproject.de
 COMMENT=	PHP Project Wizard
 
 LICENSE=	BSD3CLAUSE

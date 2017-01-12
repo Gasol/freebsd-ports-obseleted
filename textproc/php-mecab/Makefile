@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/textproc/php-mecab/Makefile 419514 2016-08-03 12:47:05Z mat $
+# $FreeBSD: head/textproc/php-mecab/Makefile 429918 2016-12-29 14:29:18Z amdmi3 $
 
 PORTNAME=	php-mecab
 PORTVERSION=	0.6.0
@@ -18,8 +18,8 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	rsky
 
 WRKSRC_SUBDIR=	mecab
-CONFIGURE_ARGS+=	--with-mecab=${LOCALBASE}/bin/mecab-config
-USES=		php:ext tar:tgz
+CONFIGURE_ARGS=	--with-mecab=${LOCALBASE}/bin/mecab-config
+USES=		php:ext
 PHP_MODNAME=	mecab
 
 .include <bsd.port.mk>

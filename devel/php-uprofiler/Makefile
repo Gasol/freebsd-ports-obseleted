@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/php-uprofiler/Makefile 425758 2016-11-08 19:29:56Z linimon $
+# $FreeBSD: head/devel/php-uprofiler/Makefile 430106 2016-12-31 11:57:11Z antoine $
 
 PORTNAME=	uprofiler
 PORTVERSION=	0.11.0.20150219
@@ -11,6 +11,7 @@ MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	Lightweight profiler for PHP
 
 LICENSE=	APACHE20
+LICENSE_FILE=	${WRKSRC}/../LICENSE
 
 BROKEN_aarch64=		Does not build: invokes x86 asm
 BROKEN_mips64=		Does not build: invokes x86 asm
@@ -22,7 +23,7 @@ GH_ACCOUNT=	FriendsOfPHP
 GH_TAGNAME=	483c1e5
 
 WRKSRC_SUBDIR=	extension
-USES=		php:ext tar:tgz
+USES=		php:ext
 IGNORE_WITH_PHP=	70
 
 .include <bsd.port.mk>

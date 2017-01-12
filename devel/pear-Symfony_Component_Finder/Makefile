@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-Symfony_Component_Finder/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/pear-Symfony_Component_Finder/Makefile 429663 2016-12-27 21:19:22Z rakuco $
 
 PORTNAME=	Finder
 PORTVERSION=	2.3.4
@@ -8,7 +8,7 @@ MASTER_SITES=	http://pear.symfony.com/get/
 PKGNAMEPREFIX=	pear-Symfony_Component_
 DIST_SUBDIR=	Symfony2
 
-MAINTAINER=	gasol.wu@gmail.com
+MAINTAINER=	joneum@bsdproject.de
 COMMENT=	Symfony2 Finder Component
 
 LICENSE=	MIT

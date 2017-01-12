@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-TheSeer_fXSL/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/pear-TheSeer_fXSL/Makefile 429663 2016-12-27 21:19:22Z rakuco $
 
 PORTNAME=	fXSL
 PORTVERSION=	1.1.0
@@ -8,7 +8,7 @@ MASTER_SITES=	http://pear.netpirates.net/get/
 PKGNAMEPREFIX=	pear-TheSeer_
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	gasol.wu@gmail.com
+MAINTAINER=	joneum@bsdproject.de
 COMMENT=	XSL wrapper / extension to the PHP 5.x XSLTProcessor
 
 LICENSE=	BSD3CLAUSE

@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/gradle/Makefile 418287 2016-07-09 18:43:40Z pi $
+# $FreeBSD: head/devel/gradle/Makefile 430572 2017-01-04 15:58:39Z asomers $
 
 PORTNAME=	gradle
 PORTVERSION=	3.2.1
@@ -18,6 +18,7 @@ LICENSE=	APACHE20
 # See https://github.com/adammurdoch/native-platform/issues/8
 LIB_DEPENDS=	libstdc++.so.6:misc/compat9x
 
+NO_ARCH=	yes
 USES=		zip
 USE_JAVA=	yes
 NO_BUILD=	yes

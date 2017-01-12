@@ -1,12 +1,12 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/pear-Net_Gearman/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/pear-Net_Gearman/Makefile 429663 2016-12-27 21:19:22Z rakuco $
 
 PORTNAME=	Net_Gearman
 PORTVERSION=	0.2.3
 PORTREVISION=	3
 CATEGORIES=	devel pear
 
-MAINTAINER=	gasol.wu@gmail.com
+MAINTAINER=	joneum@bsdproject.de
 COMMENT=	Gearman client libraray for PHP
 
 LICENSE=	BSD2CLAUSE

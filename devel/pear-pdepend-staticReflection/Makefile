@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-pdepend-staticReflection/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/pear-pdepend-staticReflection/Makefile 429663 2016-12-27 21:19:22Z rakuco $
 
 PORTNAME=	staticReflection
 PORTVERSION=	1.0.0
@@ -7,7 +7,7 @@ CATEGORIES=	devel pear
 MASTER_SITES=	http://pear.pdepend.org/get/
 PKGNAMEPREFIX=	pear-${PEAR_CHANNEL}_
 
-MAINTAINER=	gasol.wu@gmail.com
+MAINTAINER=	joneum@bsdproject.de
 COMMENT=	staticReflection package for PHP
 
 LICENSE=	BSD3CLAUSE

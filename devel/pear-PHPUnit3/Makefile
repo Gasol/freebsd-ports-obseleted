@@ -1,5 +1,5 @@
 # Created by: Gerrit Beine (<gerrit.beine@gmx.de>)
-# $FreeBSD: head/devel/pear-PHPUnit3/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/pear-PHPUnit3/Makefile 430647 2017-01-05 18:24:00Z rene $
 
 PORTNAME=	PHPUnit
 PORTVERSION=	3.7.6
@@ -9,7 +9,7 @@ MASTER_SITES=	http://pear.phpunit.de/get/
 PKGNAMEPREFIX=	pear-
 PKGNAMESUFFIX=	3
 
-MAINTAINER=	gasol.wu@gmail.com
+MAINTAINER=	joneum@bsdproject.de
 COMMENT=	PEAR regression testing framework for unit tests
 
 LICENSE=	BSD3CLAUSE
@@ -29,6 +29,9 @@ RUN_DEPENDS=	pear-File_Iterator>=1.3.1:devel/pear-File_Iterator \
 		pear-PHPUnit_MockObject>=1.2.0:devel/pear-PHPUnit_MockObject \
 		pear-Symfony_Component_Yaml>=2.1.0:textproc/pear-Symfony_Component_Yaml \
 		${PEARDIR}/.channels/pear.phpunit.de.reg:devel/pear-channel-phpunit
+
+DEPRECATED=	Deprecated by upstream, use devel/phpunit instead
+EXPIRATION_DATE=	2017-01-31
 
 CONFLICTS=	pear-PHPUnit-[12]*
 

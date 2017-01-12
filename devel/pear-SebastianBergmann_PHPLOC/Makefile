@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-SebastianBergmann_PHPLOC/Makefile 412346 2016-04-01 14:00:51Z mat $
+# $FreeBSD: head/devel/pear-SebastianBergmann_PHPLOC/Makefile 429663 2016-12-27 21:19:22Z rakuco $
 
 PORTNAME=	PHPLOC
 PORTVERSION=	2.0.3
@@ -8,7 +8,7 @@ MASTER_SITES=	http://pear.phpunit.de/get/
 PKGNAMEPREFIX=	pear-SebastianBergmann_
 DISTNAME=	phploc-${PORTVERSION}
 
-MAINTAINER=	gasol.wu@gmail.com
+MAINTAINER=	joneum@bsdproject.de
 COMMENT=	Tool for quickly measuring the size of a PHP project
 
 LICENSE=	BSD3CLAUSE
