@@ -21,5 +21,6 @@ PLIST_FILES=	bin/phptrace
 pre-install:
 	cd ${WRKSRC} && \
 		${MAKE_CMD} install-cli PHP_TRACE_BINDIR=${STAGEDIR}${PREFIX}/bin
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/phptrace
 
 .include <bsd.port.mk>
