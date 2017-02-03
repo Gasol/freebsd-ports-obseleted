@@ -15,7 +15,6 @@ LICENSE=	APACHE20
 
 WRKSRC_SUBDIR=	extension
 
-GNU_CONFIGURE=	yes
 USES=		gmake php:ext tar:tgz
 PLIST_FILES=	bin/phptrace
 
