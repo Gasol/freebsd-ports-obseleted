@@ -1,9 +1,9 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/textproc/p5-Lingua-Identify-CLD/Makefile 412349 2016-04-01 14:25:16Z mat $
+# $FreeBSD: head/textproc/p5-Lingua-Identify-CLD/Makefile 432932 2017-01-31 16:21:45Z mat $
 
 PORTNAME=	Lingua-Identify-CLD
 PORTVERSION=	0.09
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	textproc perl5
 MASTER_SITES=	CPAN
 PKGNAMEPREFIX=	p5-

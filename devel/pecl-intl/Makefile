@@ -1,5 +1,5 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/devel/pecl-intl/Makefile 426525 2016-11-19 18:21:20Z jbeich $
+# $FreeBSD: head/devel/pecl-intl/Makefile 433066 2017-02-01 19:43:37Z sunpoet $
 
 PORTNAME=	intl
 PORTVERSION=	3.0.0
@@ -16,7 +16,7 @@ LICENSE=	PHP301
 
 LIB_DEPENDS=	libicui18n.so:devel/icu
 
+IGNORE_WITH_PHP=70 71
 USES=		php:ext tar:tgz
-IGNORE_WITH_PHP=	70
 
 .include <bsd.port.mk>

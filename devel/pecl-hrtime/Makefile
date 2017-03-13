@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-hrtime/Makefile 419514 2016-08-03 12:47:05Z mat $
+# $FreeBSD: head/devel/pecl-hrtime/Makefile 431161 2017-01-11 08:28:08Z vanilla $
 
 PORTNAME=	hrtime
 PORTVERSION=	0.6.0
