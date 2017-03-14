@@ -1,9 +1,8 @@
 # Created by: John Chen <johnpupu@gmail.com>
-# $FreeBSD: head/devel/pecl-ev/Makefile 419514 2016-08-03 12:47:05Z mat $
+# $FreeBSD: head/devel/pecl-ev/Makefile 433757 2017-02-09 18:06:14Z krion $
 
 PORTNAME=	ev
-PORTVERSION=	0.2.15
-PORTREVISION=	3
+PORTVERSION=	1.0.4
 CATEGORIES=	devel
 MASTER_SITES=	http://pecl.php.net/get/
 PKGNAMEPREFIX=	pecl-
@@ -16,6 +15,5 @@ LICENSE=	PHP301
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		php:ext tar:tgz
-IGNORE_WITH_PHP=	70
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-judy/Makefile 419514 2016-08-03 12:47:05Z mat $
+# $FreeBSD: head/devel/pecl-judy/Makefile 433543 2017-02-07 12:14:34Z mat $
 
 PORTNAME=	judy
 PORTVERSION=	1.0.2
@@ -21,6 +21,6 @@ BUILD_DEPENDS=	Judy>=0:devel/judy
 
 CONFIGURE_ARGS=	--with-judy=${LOCALBASE}
 USES=		php:ext
-IGNORE_WITH_PHP=	70
+IGNORE_WITH_PHP=	70 71
 
 .include <bsd.port.mk>

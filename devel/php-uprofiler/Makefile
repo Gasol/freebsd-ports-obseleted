@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/php-uprofiler/Makefile 430106 2016-12-31 11:57:11Z antoine $
+# $FreeBSD: head/devel/php-uprofiler/Makefile 434867 2017-02-26 12:56:41Z linimon $
 
 PORTNAME=	uprofiler
 PORTVERSION=	0.11.0.20150219
@@ -14,6 +14,7 @@ LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/../LICENSE
 
 BROKEN_aarch64=		Does not build: invokes x86 asm
+BROKEN_armv6=		Does not build: invokes x86 asm
 BROKEN_mips64=		Does not build: invokes x86 asm
 BROKEN_powerpc64=	Does not build
 BROKEN_sparc64=		Does not build: invokes x86 asm
@@ -24,6 +25,6 @@ GH_TAGNAME=	483c1e5
 
 WRKSRC_SUBDIR=	extension
 USES=		php:ext
-IGNORE_WITH_PHP=	70
+IGNORE_WITH_PHP=	70 71
 
 .include <bsd.port.mk>

@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-PHP_Timer/Makefile 429663 2016-12-27 21:19:22Z rakuco $
+# $FreeBSD: head/devel/pear-PHP_Timer/Makefile 434974 2017-02-27 17:10:41Z sunpoet $
 
 PORTNAME=	PHP_Timer
 PORTVERSION=	1.0.4
@@ -12,6 +12,9 @@ COMMENT=	Utility class for timing
 
 BUILD_DEPENDS=	${PEARDIR}/.channels/pear.phpunit.de.reg:devel/pear-channel-phpunit
 RUN_DEPENDS=	${PEARDIR}/.channels/pear.phpunit.de.reg:devel/pear-channel-phpunit
+
+DEPRECATED=	This is only one PHP-File. To install read: https://github.com/sebastianbergmann/php-timer
+EXPIRATION_DATE=2017-03-28
 
 USES=	pear
 PEAR_CHANNEL=	phpunit
