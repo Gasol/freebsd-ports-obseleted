@@ -1,8 +1,8 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/php-composer/Makefile 428131 2016-12-08 16:02:19Z tz $
+# $FreeBSD: head/devel/php-composer/Makefile 436450 2017-03-18 22:31:18Z sunpoet $
 
 PORTNAME=	composer
-DISTVERSION=	1.2.4
+DISTVERSION=	1.4.1
 CATEGORIES=	devel
 MASTER_SITES=	http://getcomposer.org/download/${DISTVERSION}/
 PKGNAMEPREFIX=	php-
@@ -17,6 +17,7 @@ LICENSE=	MIT
 
 RUN_DEPENDS=	ca_root_nss>0:security/ca_root_nss
 
+NO_ARCH=	yes
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
 USES=		php
