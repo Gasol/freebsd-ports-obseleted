@@ -1,13 +1,10 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-uuid/Makefile 419514 2016-08-03 12:47:05Z mat $
+# $FreeBSD: head/devel/pecl-uuid/Makefile 438175 2017-04-10 15:08:47Z mat $
 
 PORTNAME=	uuid
 PORTVERSION=	1.0.4
 PORTREVISION=	1
 CATEGORIES=	devel pear
-MASTER_SITES=	http://pecl.php.net/get/
-PKGNAMEPREFIX=	pecl-
-DIST_SUBDIR=	PECL
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	UUID extension in PHP
@@ -16,6 +13,6 @@ LICENSE=	LGPL3
 
 LIB_DEPENDS=	libuuid.so:misc/e2fsprogs-libuuid
 
-USES=		php:ext tar:tgz
+USES=		php:pecl
 
 .include <bsd.port.mk>

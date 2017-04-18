@@ -1,19 +1,16 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-jsonc/Makefile 429855 2016-12-29 02:48:24Z wen $
+# $FreeBSD: head/devel/pecl-jsonc/Makefile 438175 2017-04-10 15:08:47Z mat $
 
 PORTNAME=	jsonc
 PORTVERSION=	1.3.10
 CATEGORIES=	devel
-MASTER_SITES=	http://pecl.php.net/get/
-PKGNAMEPREFIX=	pecl-
-DIST_SUBDIR=	PECL
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	PECL extension for JSON manipulation
 
 LICENSE=	PHP301
 
-USES=		php:ext pkgconfig tar:tgz
+USES=		php:pecl pkgconfig
 CONFIGURE_ARGS=	--with-jsonc
 MAKE_ARGS=	EXTRA_CFLAGS=-DCOMPILE_DL_JSON=1
 IGNORE_WITH_PHP=70

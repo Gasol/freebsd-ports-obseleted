@@ -1,15 +1,11 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-judy/Makefile 433543 2017-02-07 12:14:34Z mat $
+# $FreeBSD: head/devel/pecl-judy/Makefile 438175 2017-04-10 15:08:47Z mat $
 
 PORTNAME=	judy
 PORTVERSION=	1.0.2
 PORTREVISION=	1
 CATEGORIES=	devel
-MASTER_SITES=	http://pecl.php.net/get/
-PKGNAMEPREFIX=	pecl-
 DISTNAME=	Judy-${PORTVERSION}
-EXTRACT_SUFX=	.tgz
-DIST_SUBDIR=	PECL
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	PHP Judy implements sparse dynamic arrays
@@ -20,7 +16,7 @@ RUN_DEPENDS=	Judy>=0:devel/judy
 BUILD_DEPENDS=	Judy>=0:devel/judy
 
 CONFIGURE_ARGS=	--with-judy=${LOCALBASE}
-USES=		php:ext
+USES=		php:pecl
 IGNORE_WITH_PHP=	70 71
 
 .include <bsd.port.mk>

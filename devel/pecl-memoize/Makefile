@@ -1,20 +1,17 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-memoize/Makefile 420242 2016-08-15 15:28:03Z mat $
+# $FreeBSD: head/devel/pecl-memoize/Makefile 438175 2017-04-10 15:08:47Z mat $
 
 PORTNAME=	memoize
 PORTVERSION=	0.2.0
 PORTREVISION=	2
 CATEGORIES=	devel
-MASTER_SITES=	http://pecl.php.net/get/
-PKGNAMEPREFIX=	pecl-
-DIST_SUBDIR=	PECL
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	PHP extension which transparently caches PHP functions
 
 LICENSE=	PHP301
 
-USES=		php:ext tar:tgz
+USES=		php:pecl
 CONFIGURE_ARGS=	--enable-memoize
 IGNORE_WITH_PHP=	70
 

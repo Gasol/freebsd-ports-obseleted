@@ -1,23 +1,15 @@
-# Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# Created by: vanilla@
+# $FreeBSD: head/devel/pecl-grpc/Makefile 438175 2017-04-10 15:08:47Z mat $
 
 PORTNAME=	grpc
-PORTVERSION=	0.5.0
-CATEGORIES=	devel
-MASTER_SITES=	http://pecl.php.net/get/
-PKGNAMEPREFIX=	pecl-
-DIST_SUBDIR=	PECL
+PORTVERSION=	1.2.0
+CATEGORIES=	devel net
 
-MAINTAINER=	gasol.wu@gmail.com
-COMMENT=	RPC library for PHP
+MAINTAINER=	vanilla@FreeBSD.org
+COMMENT=	High performance, general RPC framework
 
 LICENSE=	BSD3CLAUSE
-LICENSE_FILE=	${WRKSRC}/LICENSE
 
-LIB_DEPENDS=	libgrpc.so:${PORTSDIR}/devel/grpc-c
-
-USES=		tar:tgz
-USE_PHP=	yes
-USE_PHPEXT=	yes
+USES=		php:pecl
 
 .include <bsd.port.mk>

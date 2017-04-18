@@ -1,13 +1,10 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-jsonnet/Makefile 428199 2016-12-09 12:57:37Z sunpoet $
+# $FreeBSD: head/devel/pecl-jsonnet/Makefile 438175 2017-04-10 15:08:47Z mat $
 
 PORTNAME=	jsonnet
 PORTVERSION=	1.1.1
 CATEGORIES=	devel
-MASTER_SITES=	http://pecl.php.net/get/
-PKGNAMEPREFIX=	pecl-
 DISTNAME=	JsonNet-${PORTVERSION}
-DIST_SUBDIR=	PECL
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	Google JsonNet for PHP
@@ -17,9 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libjsonnet.so:devel/jsonnet
 
-BROKEN_powerpc64=	does not build
-
-USES=		php:ext tar:tgz
+USES=		php:pecl
 USE_PHP=	json:build
 CONFIGURE_ARGS=	--with-jsonnet=${LOCALBASE}
 IGNORE_WITH_PHP=	70

@@ -1,8 +1,8 @@
 # Created by: Alex Dupre <ale@FreeBSD.org>
-# $FreeBSD: head/devel/pear/Makefile 425191 2016-11-03 06:32:16Z jbeich $
+# $FreeBSD: head/devel/pear/Makefile 436958 2017-03-26 11:47:29Z miwi $
 
 PORTNAME=	pear
-PORTVERSION=	1.10.1
+PORTVERSION=	1.10.3
 CATEGORIES=	devel
 MASTER_SITES=	http://mirror.miwibox.org/
 

@@ -1,13 +1,9 @@
-# $FreeBSD: head/databases/pecl-rrd/Makefile 419514 2016-08-03 12:47:05Z mat $
+# $FreeBSD: head/databases/pecl-rrd/Makefile 438175 2017-04-10 15:08:47Z mat $
 
 PORTNAME=	rrd
 DISTVERSION=	1.1.3
 PORTREVISION=	4
 CATEGORIES=	databases pear
-MASTER_SITES=	http://pecl.php.net/get/
-PKGNAMEPREFIX=	pecl-
-EXTRACT_SUFX=	.tgz
-DIST_SUBDIR=	PECL
 
 MAINTAINER=	flo@FreeBSD.org
 COMMENT=	PHP bindings to rrd tool system
@@ -18,7 +14,7 @@ LIB_DEPENDS=	librrd.so:databases/rrdtool
 
 LDFLAGS+=	-L${LOCALBASE}/lib
 
-USES=		php:ext
+USES=		php:pecl
 IGNORE_WITH_PHP=	70
 
 .include <bsd.port.mk>

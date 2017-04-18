@@ -1,19 +1,16 @@
 # Created by: chinsan
-# $FreeBSD: head/devel/pecl-vld/Makefile 429575 2016-12-26 21:40:25Z rakuco $
+# $FreeBSD: head/devel/pecl-vld/Makefile 438175 2017-04-10 15:08:47Z mat $
 
 PORTNAME=	vld
 PORTVERSION=	0.14.0
 CATEGORIES=	devel pear
-MASTER_SITES=	http://pecl.php.net/get/
-PKGNAMEPREFIX=	pecl-
-DIST_SUBDIR=	PECL
 
 MAINTAINER=	joneum@bsdproject.de
 COMMENT=	Dump the internal representation of PHP scripts
 
 LICENSE=	BSD2CLAUSE
 
-USES=		php:ext tar:tgz
+USES=		php:pecl
 IGNORE_WITH_PHP=	70
 
 CONFIGURE_ARGS=	--enable-vld

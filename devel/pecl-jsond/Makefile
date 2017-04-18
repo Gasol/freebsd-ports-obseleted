@@ -1,20 +1,17 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-jsond/Makefile 419514 2016-08-03 12:47:05Z mat $
+# $FreeBSD: head/devel/pecl-jsond/Makefile 438175 2017-04-10 15:08:47Z mat $
 
 PORTNAME=	jsond
 PORTVERSION=	1.3.0
 PORTREVISION=	1
 CATEGORIES=	devel
-MASTER_SITES=	http://pecl.php.net/get/
-PKGNAMEPREFIX=	pecl-
-DIST_SUBDIR=	PECL
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	JavaScript Object Notation in PHP
 
 LICENSE=	PHP301
 
-USES=		php:ext tar:tgz
+USES=		php:pecl
 IGNORE_WITH_PHP=	70
 
 .include <bsd.port.mk>
