@@ -2,7 +2,7 @@
 # $FreeBSD: head/devel/gradle/Makefile 430572 2017-01-04 15:58:39Z asomers $
 
 PORTNAME=	gradle
-PORTVERSION=	3.2.1
+PORTVERSION=	3.5
 CATEGORIES=	devel java
 MASTER_SITES=	https://services.gradle.org/distributions/ \
 		http://services.gradle.org/distributions/
@@ -12,11 +12,6 @@ MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	Project automation tool
 
 LICENSE=	APACHE20
-
-# Gradle depends on native-platform which has a native component that
-# requires libstdc++.so.6, because it was compiled with g++.
-# See https://github.com/adammurdoch/native-platform/issues/8
-LIB_DEPENDS=	libstdc++.so.6:misc/compat9x
 
 NO_ARCH=	yes
 USES=		zip
