@@ -12,6 +12,8 @@ COMMENT=	Export Prometheus metrics from arbitrary unstructured log data
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BROKEN_i386=	fails to compile
+
 LIB_DEPENDS=	libonig.so:devel/oniguruma
 
 USES=		go
