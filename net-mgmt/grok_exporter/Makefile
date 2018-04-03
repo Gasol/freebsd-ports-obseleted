@@ -1,10 +1,9 @@
-# Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: head/net-mgmt/grok_exporter/Makefile 465147 2018-03-21 05:37:37Z lwhsu $
 
 PORTNAME=	grok_exporter
 PORTVERSION=	0.2.3
 DISTVERSIONPREFIX=v
-CATEGORIES=	sysutils
+CATEGORIES=	net-mgmt
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	Export Prometheus metrics from arbitrary unstructured log data
