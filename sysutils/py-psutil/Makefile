@@ -1,8 +1,8 @@
 # Created by: Ju Pengfei <jupengfei@gmail.com>
-# $FreeBSD: head/sysutils/py-psutil/Makefile 438278 2017-04-11 15:56:03Z sunpoet $
+# $FreeBSD: head/sysutils/py-psutil/Makefile 457875 2018-01-02 15:33:18Z sunpoet $
 
 PORTNAME=	psutil
-PORTVERSION=	5.2.2
+PORTVERSION=	5.4.3
 CATEGORIES=	sysutils python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -13,8 +13,10 @@ COMMENT=	Process utilities module for Python
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>=0:devel/py-mock \
-		${PYTHON_PKGNAMEPREFIX}unittest2>=0:devel/py-unittest2
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>=0:devel/py-mock@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}unittest2>=0:devel/py-unittest2@${FLAVOR}
+
+CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}psutil121
 
 USE_PYTHON=	autoplist concurrent distutils
 USES=		python

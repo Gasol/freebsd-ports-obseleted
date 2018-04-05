@@ -1,11 +1,11 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/php-jq/Makefile 433543 2017-02-07 12:14:34Z mat $
+# $FreeBSD: head/devel/php-jq/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	jq
 PORTVERSION=	0.0.1
 PORTREVISION=	1
 CATEGORIES=	devel
-PKGNAMEPREFIX=	php-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	Jq shared extension for php
@@ -19,7 +19,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	kjdev
 GH_PROJECT=	php-ext-jq
 
-IGNORE_WITH_PHP=	70 71
+IGNORE_WITH_PHP=	70 71 72
 USES=		php:ext
 
 JQ_CMD=		${LOCALBASE}/bin/jq

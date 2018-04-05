@@ -1,11 +1,11 @@
 # Created by: Wen Heping <wen@FreeBSD.org>
-# $FreeBSD: head/textproc/pecl-yaml/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/textproc/pecl-yaml/Makefile 465055 2018-03-20 02:20:07Z dbaio $
 
 PORTNAME=	yaml
-PORTVERSION=	2.0.0
+PORTVERSION=	2.0.2
 CATEGORIES=	textproc pear
 
-MAINTAINER=	dbaio@bsd.com.br
+MAINTAINER=	dbaio@FreeBSD.org
 COMMENT=	YAML-1.1 parser and emitter
 
 LICENSE=	MIT

@@ -1,48 +1,41 @@
-# Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# Created by: vanilla@
+# $FreeBSD: head/devel/grpc/Makefile 463481 2018-03-03 12:19:01Z vanilla $
 
 PORTNAME=	grpc
-PORTVERSION=	0.9.1
-DISTVERSIONPREFIX=	release-
+PORTVERSION=	1.10.0
+DISTVERSIONPREFIX=	v
 CATEGORIES=	devel
 
-MAINTAINER?=	gasol.wu@gmail.com
-COMMENT?=	RPC library and framework
+MAINTAINER=	vanilla@FreeBSD.org
+COMMENT=	HTTP/2-based RPC framework
 
-LICENSE?=	BSD3CLAUSE
+LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BROKEN_SSL=	openssl-devel
+BROKEN_SSL_REASON_openssl-devel=	use of undeclared identifier 'SSL_get0_next_proto_negotiated'
+
+BUILD_DEPENDS=	go:lang/go \
+		yasm:devel/yasm
+LIB_DEPENDS=	libgflags.so:devel/gflags \
+		libprotobuf.so:devel/protobuf \
+		libcares.so:dns/c-ares
+
+USES=		cmake localbase:ldflags perl5 pkgconfig ssl
 USE_GITHUB=	yes
-GH_ACCOUNT=	grpc
-GH_TAGNAME=	${DISTVERSIONFULL:S/./_/g}
+GH_TUPLE=	google:benchmark:v1.3.0:benchmark/third_party/benchmark
+USE_LDCONFIG=	yes
+USE_PERL5=	build
+PLIST_SUB+=	SOVERSION=${PORTVERSION}
+LDFLAGS+=	-lcares
 
-.if defined(GRPC_LANG)
-DISTINFO_FILE=	${.CURDIR}/distinfo
-.else
-DISTFILES=	# none
-
-NO_BUILD=	yes
-NO_INSTALL=	yes
-NO_PACKAGE=	yes
-NO_MTREE=	yes
-
-OPTIONS_DEFINE=	C CPP PYTHON PHP
-OPTIONS_DEFAULT=	C
-
-C_DESC=		Install ANSI C library
-CPP_DESC=	Install C++ library
-PYTHON_DESC=	Install Python library
-PHP_DESC=	Install PHP library
-
-C_LIB_DEPENDS=		libgrpc.so:${PORTSDIR}/devel/grpc-c
-CPP_LIB_DEPENDS=	libgrpc++.so:${PORTSDIR}/devel/grpc-cpp
-PYTHON_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}grpc>=${PORTVERSION}:${PORTSDIR}/devel/py-grpc
-PHP_BUILD_DEPENDS=	pecl-grpc>=0.5:${PORTSDIR}/devel/pecl-grpc
-
-.include <bsd.port.options.mk>
-
-.if ${PORT_OPTIONS:MPYTHON}
-USES=		python
-.endif
-.endif
+CMAKE_ARGS=	-DgRPC_ZLIB_PROVIDER:STRING="package" \
+		-DgRPC_PROTOBUF_PROVIDER:STRING="package" \
+		-DgRPC_GFLAGS_PROVIDER:STRING="package" \
+		-DgRPC_SSL_PROVIDER:STRING="package" \
+		-DgRPC_CARES_PROVIDER:STRING="package" \
+		-DgRPC_BENCHMARK_PROVIDER:STRING="module" \
+		-DBENCHMARK_USE_LIBCXX=ON \
+		-DBUILD_SHARED_LIBS=ON
 
 .include <bsd.port.mk>

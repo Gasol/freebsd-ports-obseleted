@@ -1,11 +1,11 @@
 # Created by: chinsan
-# $FreeBSD: head/devel/pecl-vld/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/devel/pecl-vld/Makefile 441000 2017-05-16 13:37:51Z joneum $
 
 PORTNAME=	vld
 PORTVERSION=	0.14.0
 CATEGORIES=	devel pear
 
-MAINTAINER=	joneum@bsdproject.de
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Dump the internal representation of PHP scripts
 
 LICENSE=	BSD2CLAUSE

@@ -1,17 +1,18 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/databases/php5-pdo_cassandra/Makefile 437439 2017-04-01 15:23:30Z gerald $
+# $FreeBSD: head/databases/php5-pdo_cassandra/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	pdo_cassandra
 PORTVERSION=	0.2.1
-PORTREVISION=	9
+PORTREVISION=	14
 CATEGORIES=	databases
-PKGNAMEPREFIX=	php5-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	PDO driver for Apache Cassandra
 
 LICENSE=	APACHE20
 
+BROKEN=		fails to build
 BROKEN_powerpc64=	Does not build
 
 LIB_DEPENDS=	libboost_iostreams.so:devel/boost-libs
@@ -25,7 +26,7 @@ USES=		compiler:c++11-lib php:ext pkgconfig
 USE_CXXSTD=	c++11
 USE_PHP=	pdo:build
 
-IGNORE_WITH_PHP=	70 71
+IGNORE_WITH_PHP=	70 71 72
 
 .include <bsd.port.pre.mk>
 .include "${PORTSDIR}/devel/thrift/bsd.thrift.mk"

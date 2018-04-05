@@ -1,5 +1,5 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pecl-qb/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/devel/pecl-qb/Makefile 456296 2017-12-14 13:57:28Z tz $
 
 PORTNAME=	qb
 PORTVERSION=	2.4.0
@@ -11,7 +11,9 @@ COMMENT=	PHP Accelerator designed mainly for graphic work
 
 LICENSE=	PHP301
 
+BROKEN_powerpc64=	fails to build: Killing runaway build after 7200 seconds with no output
+
 USES=		php:pecl
-IGNORE_WITH_PHP=	70
+IGNORE_WITH_PHP=	70 71 72
 
 .include <bsd.port.mk>

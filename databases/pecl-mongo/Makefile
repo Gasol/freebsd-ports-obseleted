@@ -1,9 +1,8 @@
 # Created by: wen
-# $FreeBSD: head/databases/pecl-mongo/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/databases/pecl-mongo/Makefile 456296 2017-12-14 13:57:28Z tz $
 
 PORTNAME=	mongo
-PORTVERSION=	1.6.14
-PORTREVISION=	1
+PORTVERSION=	1.6.16
 CATEGORIES=	databases pear
 
 MAINTAINER=	bofh@FreeBSD.org
@@ -17,6 +16,6 @@ USES=		php:pecl
 USE_PHP=	spl:build
 CONFIGURE_ARGS=	--enable-mongo
 SUB_FILES=	pkg-message
-IGNORE_WITH_PHP=	70 71
+IGNORE_WITH_PHP=	70 71 72
 
 .include <bsd.port.mk>

@@ -1,12 +1,12 @@
 # Created by: Wen Heping <wenheping@gmail.com>
-# $FreeBSD: head/net/pecl-oauth/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/net/pecl-oauth/Makefile 465055 2018-03-20 02:20:07Z dbaio $
 
 PORTNAME=	oauth
 PORTVERSION=	1.2.3
 PORTREVISION=	2
 CATEGORIES=	net pear
 
-MAINTAINER=	dbaio@bsd.com.br
+MAINTAINER=	dbaio@FreeBSD.org
 COMMENT=	Php Interface to the OAuth Protocol
 
 LICENSE=	BSD3CLAUSE
@@ -14,13 +14,13 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libcurl.so:ftp/curl
 
-PORTSCOUT=	limit:^1.*
+USES=		php:pecl
+IGNORE_WITH_PHP=	70 71 72
 
 CFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-L${LOCALBASE}/lib
 CONFIGURE_ARGS+=	CFLAGS="${CFLAGS}" LDFLAGS="${LDFLAGS}"
 
-USES=		php:pecl
-IGNORE_WITH_PHP=	70 71
+PORTSCOUT=	limit:^1.*
 
 .include <bsd.port.mk>

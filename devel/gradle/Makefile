@@ -1,12 +1,11 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/gradle/Makefile 430572 2017-01-04 15:58:39Z asomers $
+# $FreeBSD: head/devel/gradle/Makefile 445657 2017-07-13 15:46:06Z tobik $
 
 PORTNAME=	gradle
-PORTVERSION=	3.5
+PORTVERSION=	4.0
 CATEGORIES=	devel java
-MASTER_SITES=	https://services.gradle.org/distributions/ \
-		http://services.gradle.org/distributions/
-DISTNAME=	${PORTNAME}-${PORTVERSION}-bin
+MASTER_SITES=	https://downloads.gradle.org/distributions/
+EXTRACT_SUFX=	-bin.zip
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	Project automation tool
@@ -17,7 +16,6 @@ NO_ARCH=	yes
 USES=		zip
 USE_JAVA=	yes
 NO_BUILD=	yes
-WRKSRC=		${WRKDIR}/${DISTNAME:S/-bin$$//}
 SUB_LIST=	PORTVERSION=${PORTVERSION} \
 		JAVA=${JAVA}
 SUB_FILES=	gradle

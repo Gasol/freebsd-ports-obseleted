@@ -1,5 +1,4 @@
-# Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD$
+# $FreeBSD: head/sysutils/phpfpm_exporter/Makefile 462476 2018-02-21 07:49:21Z lwhsu $
 
 PORTNAME=	phpfpm_exporter
 PORTVERSION=	0.3.3

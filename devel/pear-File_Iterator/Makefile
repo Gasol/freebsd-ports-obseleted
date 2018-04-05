@@ -1,19 +1,31 @@
 # Created by: Martin Matuska <mm@FreeBSD.org>
-# $FreeBSD: head/devel/pear-File_Iterator/Makefile 429663 2016-12-27 21:19:22Z rakuco $
+# $FreeBSD: head/devel/pear-File_Iterator/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	File_Iterator
-PORTVERSION=	1.3.3
+DISTVERSION=	1.4.5
 CATEGORIES=	devel www pear
-MASTER_SITES=	http://pear.phpunit.de/get/
-PKGNAMEPREFIX=	pear-
+PKGNAMEPREFIX=	${PEAR_PKGNAMEPREFIX}
 
-MAINTAINER=	joneum@bsdproject.de
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	PEAR FileIterator implementation
 
-BUILD_DEPENDS=	${PEARDIR}/.channels/pear.phpunit.de.reg:devel/pear-channel-phpunit
-RUN_DEPENDS=	${PEARDIR}/.channels/pear.phpunit.de.reg:devel/pear-channel-phpunit
+LICENSE=	BSD3CLAUSE
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=	pear
+USES=	pear:env
 PEAR_CHANNEL=	phpunit
+USE_GITHUB=	yes
+GH_ACCOUNT=	sebastianbergmann
+GH_PROJECT=	php-file-iterator
+
+NO_ARCH=	yes
+
+NO_BUILD=	yes
+
+PLIST_FILES=	${DATADIR}/Iterator.php
+
+do-install:
+	${MKDIR} ${STAGEDIR}${DATADIR}
+	${INSTALL_DATA} ${WRKSRC}/src/Iterator.php ${STAGEDIR}${DATADIR}
 
 .include <bsd.port.mk>

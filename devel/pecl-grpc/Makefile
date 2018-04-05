@@ -1,15 +1,27 @@
 # Created by: vanilla@
-# $FreeBSD: head/devel/pecl-grpc/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/devel/pecl-grpc/Makefile 464387 2018-03-13 15:06:22Z vanilla $
 
 PORTNAME=	grpc
-PORTVERSION=	1.2.0
+PORTVERSION=	1.10.0
 CATEGORIES=	devel net
 
 MAINTAINER=	vanilla@FreeBSD.org
 COMMENT=	High performance, general RPC framework
 
-LICENSE=	BSD3CLAUSE
+LICENSE=	APACHE20
+LICENSE_FILE=	${WRKSRC}/LICENSE
+
+BROKEN_aarch64=		fails to compile: fatal error: sys/auxv.h file not found
+BROKEN_mips=		fails to compile: fatal error: sys/auxv.h file not found
+BROKEN_mips64=		fails to compile: fatal error: sys/auxv.h file not found
+BROKEN_powerpc64=	fails to compile: cc1: error: unrecognized command line option "-Wno-parentheses-equality"
 
 USES=		php:pecl
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${FLAVOR} == php72 && ${ARCH} == i386
+BROKEN=		error: fastcall calling convention ignored on variadic function [-Werror,-Wignored-attributes]
+.endif
+
+.include <bsd.port.post.mk>

@@ -1,23 +1,23 @@
 # Created by: Gerrit Beine (<gerrit.beine@gmx.de>)
-# $FreeBSD: head/devel/pear-PhpDocumentor/Makefile 425191 2016-11-03 06:32:16Z jbeich $
+# $FreeBSD: head/devel/pear-PhpDocumentor/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	PhpDocumentor
 PORTVERSION=	1.4.4
 CATEGORIES=	devel www pear
 
-MAINTAINER=	joneum@bsdproject.de
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Provides automatic documenting of php-api from the source
 
-BUILD_DEPENDS=	${PEARDIR}/PEAR.php:devel/pear
+BUILD_DEPENDS=	${PEARDIR}/PEAR.php:devel/pear@${PHP_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 CONFLICTS=	pear-PHPDoc-[0-9]*
 
-USES=	pear
+USES=		pear
 OPTIONS_DEFINE=	XML_BEAUTIFIER
 XML_BEAUTIFIER_DESC=	XML_Beautifier support
 
-XML_BEAUTIFIER_RUN_DEPENDS=	${PEARDIR}/XML/Beautifier.php:textproc/pear-XML_Beautifier
+XML_BEAUTIFIER_RUN_DEPENDS=	${PEARDIR}/XML/Beautifier.php:textproc/pear-XML_Beautifier@${PHP_FLAVOR}
 
 post-extract:
 .for dir in ${DUMMYDIRS}

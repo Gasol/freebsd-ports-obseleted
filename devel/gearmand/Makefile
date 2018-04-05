@@ -1,9 +1,9 @@
 # Created by: Gea-Suan Lin <gslin@gslin.org>
-# $FreeBSD: head/devel/gearmand/Makefile 434427 2017-02-20 02:57:04Z jbeich $
+# $FreeBSD: head/devel/gearmand/Makefile 460065 2018-01-27 00:34:13Z bdrewery $
 
 PORTNAME=	gearmand
 PORTVERSION=	1.0.6
-PORTREVISION=	9
+PORTREVISION=	13
 CATEGORIES=	devel
 MASTER_SITES=	http://launchpad.net/gearmand/1.0/${PORTVERSION}/+download/
 
@@ -20,15 +20,15 @@ CONFLICTS=	p5-Gearman-Server-1.* gearmand-1.1.*
 USERS=		gearmand
 GROUPS=		gearmand
 
-BROKEN_powerpc64=	Does not build
 BROKEN_sparc64=		Does not build: cannot link with boost
 
 USE_PERL5=	build
 GNU_CONFIGURE=	yes
-USES=		pathfix gmake perl5 python:build libtool execinfo
+USES=		pathfix gmake perl5 python:build libtool
 USE_LDCONFIG=	yes
 USE_RC_SUBR=	gearmand
 SUB_LIST+=	USERS=${USERS} GROUPS=${GROUPS}
+USE_CXXSTD=	gnu++98
 
 CONFIGURE_ARGS+=--with-lib-prefix=${LOCALBASE} --with-boost=${LOCALBASE} \
 		--localstatedir=/var/db/${PORTNAME} --enable-static

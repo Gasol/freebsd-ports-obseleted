@@ -1,16 +1,16 @@
 # Created by: Gasol Wu <gasol.wu@gmail.com>
-# $FreeBSD: head/devel/pear-PHP_TokenStream/Makefile 435475 2017-03-05 13:33:06Z miwi $
+# $FreeBSD: head/devel/pear-PHP_TokenStream/Makefile 463917 2018-03-08 19:48:41Z mat $
 
 PORTNAME=	PHP_TokenStream
 PORTVERSION=	1.4.11
 CATEGORIES=	devel pear
-PKGNAMEPREFIX=	pear-
 
-MAINTAINER=	joneum@bsdproject.de
+MAINTAINER=	joneum@FreeBSD.org
 COMMENT=	Wrapper around PHP tokenizer extension
 
 LICENSE=	BSD3CLAUSE
 
+USES=		pear:env
 USE_GITHUB=	yes
 GH_ACCOUNT=	sebastianbergmann
 GH_PROJECT=	php-token-stream

@@ -1,5 +1,5 @@
 # Created by: Wen Heping<wen@FreeBSD.org>
-# $FreeBSD: head/sysutils/pecl-mogilefs/Makefile 438175 2017-04-10 15:08:47Z mat $
+# $FreeBSD: head/sysutils/pecl-mogilefs/Makefile 456296 2017-12-14 13:57:28Z tz $
 
 PORTNAME=	mogilefs
 PORTVERSION=	0.9.2
@@ -9,12 +9,12 @@ CATEGORIES=	sysutils pear
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	PHP client library to communicate with the MogileFS storage
 
-LICENSE=	BSD
+LICENSE=	BSD3CLAUSE
 
 LIB_DEPENDS=	libneon.so:www/neon
 
 USES=		php:pecl
-IGNORE_WITH_PHP=	70 71
+IGNORE_WITH_PHP=	70 71 72
 
 post-extract:
 	@${REINPLACE_CMD} -e 's#/usr/local#${LOCALBASE}#g' ${WRKSRC}/config.m4
