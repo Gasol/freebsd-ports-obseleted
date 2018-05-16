@@ -1,0 +1,8 @@
+Libvirt-php is basically just PHP binding for libvirt virtualization toolkit.
+
+Libvirt provides a portable, long term stable C API for managing the
+virtualization technologies provided by many operating systems. It includes
+support for QEMU, KVM, Xen, LXC, bhyve, Virtuozzo, VMware vCenter and ESX,
+VMware Desktop, Hyper-V, VirtualBox and the POWER Hypervisor.
+
+WWW: https://libvirt.org/php/
