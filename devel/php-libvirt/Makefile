@@ -12,7 +12,8 @@ COMMENT=	PHP binding for libvirt virtualization toolkit
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC:H}/COPYING
 
-LIB_DEPENDS=	libvirt.so:devel/libvirt
+LIB_DEPENDS=	libvirt.so:devel/libvirt \
+		libxml2.so:textproc/libxml2
 
 USES=		php:ext pkgconfig
 WRKSRC_SUBDIR=	src
