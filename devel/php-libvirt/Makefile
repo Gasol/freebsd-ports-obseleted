@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC:H}/COPYING
 
 LIB_DEPENDS=	libvirt.so:devel/libvirt
 
-USES=		php:ext
+USES=		php:ext pkgconfig
 WRKSRC_SUBDIR=	src
 USE_GITHUB=	yes
 GH_ACCOUNT=	libvirt
