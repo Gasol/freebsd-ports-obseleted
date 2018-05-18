@@ -4,7 +4,7 @@
 PORTNAME=	libvirt
 PORTVERSION=	0.5.4
 CATEGORIES=	devel
-PKGNAMEPREFIX=	php-
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	PHP binding for libvirt virtualization toolkit
