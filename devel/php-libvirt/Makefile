@@ -4,7 +4,7 @@
 PORTNAME=	libvirt
 PORTVERSION=	0.5.4
 CATEGORIES=	devel
-PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
+PKGNAMEPREFIX=	php-
 
 MAINTAINER=	gasol.wu@gmail.com
 COMMENT=	PHP binding for libvirt virtualization toolkit
@@ -12,10 +12,9 @@ COMMENT=	PHP binding for libvirt virtualization toolkit
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC:H}/COPYING
 
-LIB_DEPENDS=	libvirt.so:devel/libvirt \
-		libxml2.so:textproc/libxml2
+LIB_DEPENDS=	libvirt.so:devel/libvirt
 
-USES=		php:ext pkgconfig
+USES=		php:ext
 WRKSRC_SUBDIR=	src
 USE_GITHUB=	yes
 GH_ACCOUNT=	libvirt
